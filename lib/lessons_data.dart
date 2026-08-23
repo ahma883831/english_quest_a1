@@ -25,7 +25,7 @@ final lesson1 = Lesson(
       'How are you? → I\'m fine, thank you.',
 
   words: const [
-    Word('hello', 'سلام', 'heh-LOH', '👋'),
+    Word('hello', 'سلام', 'heh-LOH',  '👋'),
     Word('hi', 'سلام (غیررسمی)', 'HAI', '🙋'),
     Word('goodbye', 'خداحافظ', 'good-BAI', '👋'),
     Word('bye', 'بای', 'BAI', '👋'),
@@ -5646,6 +5646,290 @@ final lesson27 = Lesson(
       'What does "travel" mean?',
       ['سفر کردن', 'نوشتن', 'خوردن', 'ساختن'],
       'سفر کردن',
+    ),
+  ],
+);
+// ==========================================================
+// LESSON 28: Present Perfect - Ever, Never, Already, Yet, Just
+// ==========================================================
+final lesson28 = Lesson(
+  id: 28,
+  title: 'Present Perfect: Ever, Never, Already, Yet, Just',
+  subtitle: 'کلمات مهم در زمان حال کامل',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور با Present Perfect درباره تجربه‌ها، اتفاق‌های انجام‌شده و اتفاق‌های تازه صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. EVER یعنی «تا حالا» و بیشتر در سوال‌ها استفاده می‌شود: Have you ever visited Tehran?\n'
+      '۲. NEVER یعنی «هرگز» و برای گفتن اینکه چیزی تا حالا اتفاق نیفتاده استفاده می‌شود: I have never visited London.\n'
+      '۳. ALREADY یعنی «قبلاً / از قبل» و نشان می‌دهد کاری زودتر از زمان مورد انتظار انجام شده: I have already finished.\n'
+      '۴. YET یعنی «هنوز / تا حالا» و معمولاً در جمله‌های منفی و سوالی، در انتهای جمله می‌آید: Have you finished yet?\n'
+      '۵. JUST یعنی «تازه / همین الان» و برای اتفاقی که خیلی اخیراً رخ داده استفاده می‌شود: She has just arrived.\n'
+      '۶. جایگاه EVER معمولاً قبل از شکل سوم فعل است: Have you ever seen...?\n'
+      '۷. جایگاه NEVER معمولاً بعد از have/has است: I have never seen...\n'
+      '۸. ALREADY و JUST معمولاً بین have/has و شکل سوم فعل قرار می‌گیرند.\n'
+      '۹. YET معمولاً در انتهای جمله قرار می‌گیرد.\n\n'
+      '💡 مثال\n'
+      'Have you ever eaten sushi? → آیا تا حالا سوشی خورده‌ای؟\n'
+      'I have never eaten sushi. → من هرگز سوشی نخورده‌ام.\n'
+      'I have already finished my homework. → من قبلاً تکالیفم را تمام کرده‌ام.\n'
+      'I have not finished yet. → هنوز تمام نکرده‌ام.\n'
+      'She has just arrived. → او تازه رسیده است.',
+  formula:
+      'EVER:\n'
+      'Have/Has + subject + ever + past participle?\n\n'
+      'NEVER:\n'
+      'Subject + have/has + never + past participle\n\n'
+      'ALREADY:\n'
+      'Subject + have/has + already + past participle\n\n'
+      'YET:\n'
+      'Subject + have/has + not + past participle + yet\n\n'
+      'JUST:\n'
+      'Subject + have/has + just + past participle',
+  words: const [
+    Word('ever', 'تا حالا', 'EV-er', '❓'),
+    Word('never', 'هرگز', 'NEV-er', '🚫'),
+    Word('already', 'قبلاً/از قبل', 'awl-RED-ee', '✅'),
+    Word('yet', 'هنوز/تا حالا', 'YET', '⏳'),
+    Word('just', 'تازه/همین الان', 'JUST', '⚡'),
+    Word('recently', 'اخیراً', 'REE-sent-lee', '🕐'),
+    Word('before', 'قبلاً/پیش از این', 'bee-FOR', '⏮️'),
+    Word('once', 'یک بار', 'WUNS', '1️⃣'),
+    Word('twice', 'دو بار', 'TWAIS', '2️⃣'),
+    Word('many', 'زیاد/بسیاری', 'MEN-ee', '🔢'),
+    Word('times', 'دفعات/بارها', 'TAIMZ', '🔄'),
+    Word('experience', 'تجربه', 'ik-SPEER-ee-ens', '🎯'),
+    Word('abroad', 'خارج از کشور', 'uh-BRAWD', '🌍'),
+    Word('movie', 'فیلم', 'MOO-vee', '🎬'),
+    Word('restaurant', 'رستوران', 'RES-tuh-ront', '🍽️'),
+    Word('sushi', 'سوشی', 'SOO-shee', '🍣'),
+    Word('airport', 'فرودگاه', 'AIR-port', '✈️'),
+    Word('arrive', 'رسیدن', 'uh-RAIV', '📍'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '✅'),
+    Word('start', 'شروع کردن', 'START', '🚀'),
+    Word('visit', 'بازدید کردن', 'VIZ-it', '🏙️'),
+    Word('travel', 'سفر کردن', 'TRAV-ul', '✈️'),
+    Word('try', 'امتحان کردن', 'TRAI', '💪'),
+    Word('see', 'دیدن', 'SEE', '👀'),
+    Word('eat', 'خوردن', 'EET', '🍎'),
+    Word('meet', 'ملاقات کردن', 'MEET', '🤝'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('write', 'نوشتن', 'RAIT', '✍️'),
+    Word('call', 'تماس گرفتن', 'KAWL', '📞'),
+    Word('complete', 'کامل/تمام کردن', 'kum-PLEET', '🏁'),
+  ],
+  examples: const [
+    'Have you ever visited Tehran? — آیا تا حالا از تهران دیدن کرده‌ای؟',
+    'Have you ever traveled abroad? — آیا تا حالا به خارج از کشور سفر کرده‌ای؟',
+    'Have you ever eaten sushi? — آیا تا حالا سوشی خورده‌ای؟',
+    'Have you ever seen this movie? — آیا تا حالا این فیلم را دیده‌ای؟',
+    'Have you ever met a famous person? — آیا تا حالا یک فرد مشهور را ملاقات کرده‌ای؟',
+    'I have never visited London. — من هرگز از لندن دیدن نکرده‌ام.',
+    'I have never eaten sushi. — من هرگز سوشی نخورده‌ام.',
+    'She has never traveled abroad. — او هرگز به خارج از کشور سفر نکرده است.',
+    'He has never seen this movie. — او هرگز این فیلم را ندیده است.',
+    'We have never tried this restaurant. — ما هرگز این رستوران را امتحان نکرده‌ایم.',
+    'I have already finished my homework. — من قبلاً تکالیفم را تمام کرده‌ام.',
+    'She has already eaten lunch. — او قبلاً ناهار خورده است.',
+    'They have already arrived. — آن‌ها قبلاً رسیده‌اند.',
+    'He has already called me. — او قبلاً با من تماس گرفته است.',
+    'We have already started the lesson. — ما قبلاً درس را شروع کرده‌ایم.',
+    'Have you finished your homework yet? — آیا هنوز تکالیفت را تمام کرده‌ای؟',
+    'Has she arrived yet? — آیا او هنوز رسیده است؟',
+    'I have not finished yet. — من هنوز تمام نکرده‌ام.',
+    'He has not called me yet. — او هنوز به من زنگ نزده است.',
+    'They have not arrived yet. — آن‌ها هنوز نرسیده‌اند.',
+    'I have just finished my homework. — من تازه تکالیفم را تمام کرده‌ام.',
+    'She has just arrived. — او تازه رسیده است.',
+    'He has just called me. — او همین الان به من زنگ زده است.',
+    'We have just started. — ما تازه شروع کرده‌ایم.',
+    'They have just left. — آن‌ها تازه رفته‌اند.',
+    'I have seen this movie twice. — من این فیلم را دو بار دیده‌ام.',
+    'She has visited Paris once. — او یک بار از پاریس دیدن کرده است.',
+    'Have you ever tried this food? — آیا تا حالا این غذا را امتحان کرده‌ای؟',
+    'I have never been abroad. — من هرگز خارج از کشور نبوده‌ام.',
+    'Have you finished yet? — هنوز تمام کرده‌ای؟',
+  ],
+  questions: const [
+    Question(
+      'What does "ever" mean?',
+      ['هرگز', 'تا حالا', 'قبلاً', 'هنوز'],
+      'تا حالا',
+    ),
+    Question(
+      'What does "never" mean?',
+      ['تا حالا', 'هرگز', 'تازه', 'قبلاً'],
+      'هرگز',
+    ),
+    Question(
+      'What does "already" mean?',
+      ['هنوز', 'هرگز', 'قبلاً/از قبل', 'تازه'],
+      'قبلاً/از قبل',
+    ),
+    Question(
+      'What does "yet" mean?',
+      ['هنوز/تا حالا', 'هرگز', 'قبلاً', 'یک بار'],
+      'هنوز/تا حالا',
+    ),
+    Question(
+      'What does "just" mean?',
+      ['هرگز', 'تازه/همین الان', 'تا حالا', 'دو بار'],
+      'تازه/همین الان',
+    ),
+    Question(
+      'Complete: "Have you ___ visited Tehran?"',
+      ['ever', 'never', 'already', 'just'],
+      'ever',
+    ),
+    Question(
+      'Complete: "I have ___ eaten sushi."',
+      ['never', 'yet', 'ever', 'tomorrow'],
+      'never',
+    ),
+    Question(
+      'Complete: "I have ___ finished my homework."',
+      ['already', 'yet', 'ever', 'never'],
+      'already',
+    ),
+    Question(
+      'Complete: "I have not finished ___."',
+      ['yet', 'already', 'ever', 'never'],
+      'yet',
+    ),
+    Question(
+      'Complete: "She has ___ arrived."',
+      ['just', 'yet', 'ever', 'never'],
+      'just',
+    ),
+    Question(
+      'Which word is usually used in questions about experience?',
+      ['ever', 'already', 'yet', 'just'],
+      'ever',
+    ),
+    Question(
+      'Which word means "هرگز"?',
+      ['Ever', 'Never', 'Already', 'Yet'],
+      'Never',
+    ),
+    Question(
+      'Which word usually comes at the end of a negative Present Perfect sentence?',
+      ['yet', 'ever', 'already', 'just'],
+      'yet',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'Have you ever seen this movie?',
+        'Have you seen ever this movie?',
+        'Ever have you seen this movie?',
+        'Have ever you seen this movie?'
+      ],
+      'Have you ever seen this movie?',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I have never eaten sushi.',
+        'I never have eaten sushi.',
+        'I have eaten never sushi.',
+        'Never I have eaten sushi.'
+      ],
+      'I have never eaten sushi.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'She has already finished.',
+        'She already has finished.',
+        'She has finished already homework.',
+        'Already she has finished.'
+      ],
+      'She has already finished.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I have not finished yet.',
+        'I have yet not finished.',
+        'Yet I have not finished.',
+        'I not have finished yet.'
+      ],
+      'I have not finished yet.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'He has just arrived.',
+        'He just has arrived.',
+        'He has arrived just.',
+        'Just he has arrived.'
+      ],
+      'He has just arrived.',
+    ),
+    Question(
+      'How do you say "آیا تا حالا این غذا را امتحان کرده‌ای؟"',
+      [
+        'Have you ever tried this food?',
+        'Have you never tried this food?',
+        'Did you ever try this food yesterday?',
+        'You have tried ever this food?'
+      ],
+      'Have you ever tried this food?',
+    ),
+    Question(
+      'How do you say "من هرگز به لندن نرفته‌ام"?',
+      [
+        'I have never been to London.',
+        'I have ever been to London.',
+        'I never have go London.',
+        'I have not already London.'
+      ],
+      'I have never been to London.',
+    ),
+    Question(
+      'Complete: "They have ___ arrived."',
+      ['just', 'yet', 'ever', 'never'],
+      'just',
+    ),
+    Question(
+      'Complete: "Have you finished ___?"',
+      ['yet', 'never', 'already', 'just'],
+      'yet',
+    ),
+    Question(
+      'Complete: "She has ___ eaten lunch."',
+      ['already', 'ever', 'yet', 'never'],
+      'already',
+    ),
+    Question(
+      'Complete: "Have you ___ traveled abroad?"',
+      ['ever', 'already', 'yet', 'just'],
+      'ever',
+    ),
+    Question(
+      'Complete: "He has ___ seen this movie."',
+      ['never', 'yet', 'ever', 'tomorrow'],
+      'never',
+    ),
+    Question(
+      'What does "once" mean?',
+      ['یک بار', 'دو بار', 'هرگز', 'همیشه'],
+      'یک بار',
+    ),
+    Question(
+      'What does "twice" mean?',
+      ['یک بار', 'دو بار', 'سه بار', 'هرگز'],
+      'دو بار',
+    ),
+    Question(
+      'Complete: "I have seen this movie ___."',
+      ['twice', 'yet', 'ever', 'never'],
+      'twice',
+    ),
+    Question(
+      'Which word means "تازه" in Present Perfect?',
+      ['Just', 'Ever', 'Never', 'Yet'],
+      'Just',
     ),
   ],
 );
