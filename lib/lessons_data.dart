@@ -1,4 +1,5 @@
 // lessons_data.dart
+
 import 'models.dart';
 
 // ==========================================================
@@ -9,13 +10,16 @@ final lesson1 = Lesson(
   title: 'Greetings & Introductions',
   subtitle: 'سلام و احوال‌پرسی و معرفی خود',
   explanation:
-      'برای معرفی خودمون از فعل "to be" استفاده می‌کنیم:\n'
-      'I am (I\'m) = من هستم | You are = تو هستی | He/She is = او هست\n\n'
-      'مثال: "I am Ahmad." = من احمد هستم.\n'
-      '"What is your name?" = اسم شما چیه؟\n'
-      '"Nice to meet you." = از آشناییت خوشحالم.\n\n'
-      'برای احوال‌پرسی: "How are you?" و جواب معمول: "I\'m fine, thank you."',
-  formula: 'I → am\nYou/We/They → are\nHe/She/It → is',
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور خودت رو معرفی کنی، به کسی سلام بدی، و بپرسی حالش چطوره — با استفاده از فعل "to be" (am/is/are).\n\n'
+      '📌 نکات مهم\n'
+      '۱. فعل to be بسته به فاعل تغییر می‌کنه: I am, You are, He/She/It is, We/You/They are.\n'
+      '۲. برای کوتاه‌کردن، معمولاً می‌نویسیم: I\'m, You\'re, He\'s, She\'s, We\'re, They\'re.\n'
+      '۳. "Hi" غیررسمی‌تر از "Hello" است — با دوستان از Hi استفاده کن.\n'
+      '۴. "Good morning/afternoon/evening" بسته به ساعت روز فرق می‌کنه؛ "Good night" فقط برای خداحافظی موقع خواب استفاده میشه.\n'
+      '۵. جواب "How are you?" معمولاً "I\'m fine, thank you. And you?" است — یعنی سوال رو برمی‌گردونی.\n'
+      '۶. برای پرسیدن اسم می‌گیم "What is your name?" و جواب می‌دیم "My name is..." یا فقط "I\'m...".',
+  formula: 'I → am (I\'m)\nYou/We/They → are (You\'re)\nHe/She/It → is (He\'s / She\'s)\n\nWhat is your name? → My name is ...\nHow are you? → I\'m fine, thank you.',
   words: const [
     Word('hello', 'سلام', 'heh-LOH', '👋'),
     Word('hi', 'سلام (غیررسمی)', 'HAI', '🙋'),
@@ -122,13 +126,16 @@ final lesson2 = Lesson(
   title: 'Family',
   subtitle: 'خانواده',
   explanation:
-      'برای صحبت درباره‌ی خانواده، از "have/has" (داشتن) استفاده می‌کنیم:\n'
-      'I have (من دارم) | He/She has (او دارد)\n\n'
-      'مثال: "I have two brothers." = من دو تا برادر دارم.\n'
-      '"She has one sister." = او یک خواهر دارد.\n\n'
-      'برای مالکیت از \'s استفاده می‌کنیم: "My father\'s name is Ali."\n'
-      'صفت‌های ملکی: my, your, his, her, our, their',
-  formula: 'I/You/We/They → have\nHe/She/It → has',
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور درباره‌ی اعضای خانواده‌ات صحبت کنی — با فعل "have/has" و صفت‌های ملکی مثل my و her.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای I/You/We/They از "have" استفاده می‌کنیم، برای He/She/It از "has".\n'
+      '۲. برای مالکیت اسم‌ها، حرف \'s رو به آخر اسم اضافه می‌کنیم: "My father\'s name is Ali."\n'
+      '۳. صفت‌های ملکی همیشه قبل از اسم می‌آن: my brother, her mother, their family.\n'
+      '۴. "Married" یعنی متاهل، "Single" یعنی مجرد — این دو صفت هستن، فعل نمی‌خوان جدا (مثلاً "She is married").\n'
+      '۵. برای پرسیدن تعداد فرزندان می‌گیم "How many children do you have?"\n'
+      '۶. کلمه "parents" همیشه جمعه (پدر و مادر با هم)، ولی "a parent" یعنی یکی از اون دو.',
+  formula: 'I/You/We/They → have\nHe/She/It → has\n\nPossessive: my, your, his, her, our, their\nOwnership: Name\'s + noun (My father\'s name)',
   words: const [
     Word('family', 'خانواده', 'FAM-uh-lee', '👨‍👩‍👧‍👦'),
     Word('father', 'پدر', 'FAH-ther', '👨'),
@@ -235,13 +242,16 @@ final lesson3 = Lesson(
   title: 'Numbers & Time',
   subtitle: 'اعداد و زمان',
   explanation:
-      'برای پرسیدن ساعت: "What time is it?" (ساعت چنده؟)\n'
-      'جواب: "It is 3 o\'clock." = ساعت ۳ است.\n'
-      '"It is half past 3." = ساعت ۳ و نیم است.\n'
-      '"It is a quarter to 4." = یک ربع به ۴ است.\n\n'
-      'اعداد ترتیبی: first, second, third, fourth...\n'
-      'برای سن: "How old are you?" → "I am 16 years old."',
-  formula: 'What time is it?\nIt is ___ o\'clock / half past ___ / quarter to ___',
+      '🎯 هدف درس\n'
+      'در این درس اعداد ۱ تا ۱۰۰ رو یاد می‌گیری و می‌آموزی چطور ساعت بپرسی و بگی، و سنت رو بیان کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای پرسیدن ساعت می‌گیم "What time is it?" و جواب با "It is..." شروع میشه.\n'
+      '۲. "half past" یعنی نیم، مثلاً "half past 3" = ساعت سه و نیم.\n'
+      '۳. "quarter to" یعنی ربع مونده به اون ساعت، "quarter past" یعنی ربع گذشته از اون ساعت.\n'
+      '۴. اعداد ترتیبی (first, second, third...) برای بیان ترتیب استفاده میشن، نه شمارش ساده.\n'
+      '۵. برای سن می‌گیم "How old are you?" و جواب "I am ... years old." — کلمه "years old" رو فراموش نکن.\n'
+      '۶. "today, tomorrow, yesterday" حرف اضافه نمی‌خوان: می‌گیم "Today is Monday." نه "In today".',
+  formula: 'What time is it? → It is ___ o\'clock.\nHalf past ___  |  Quarter to/past ___\n\nHow old are you? → I am ___ years old.',
   words: const [
     Word('one', 'یک', 'WUN', '1️⃣'),
     Word('two', 'دو', 'TOO', '2️⃣'),
@@ -333,12 +343,245 @@ final lesson3 = Lesson(
     Question('Complete: "There are ___ students." (12)', ['twelve', 'twenty', 'ten', 'eleven'], 'twelve'),
     Question('What does "minute" mean?', ['ساعت', 'دقیقه', 'ثانیه', 'زمان'], 'دقیقه'),
     Question('How do you say "سوم"?', ['First', 'Second', 'Third', 'Fourth'], 'Third'),
-    Question('What does "nine" mean?', ['هشت', 'نه', 'ده', 'هفت'], 'نه'),
-    Question('Complete: "___ was Sunday."', ['Yesterday', 'Tomorrow', 'Today', 'Now'], 'Yesterday'),
+     Question('Complete: "___ was Sunday."', ['Yesterday', 'Tomorrow', 'Today', 'Now'], 'Yesterday'),
     Question('What does "five" mean?', ['چهار', 'پنج', 'شش', 'سه'], 'پنج'),
     Question('How do you say "زمان/ساعت"?', ['Clock', 'Time', 'Hour', 'Minute'], 'Time'),
   ],
 );
 
-final lessons = [lesson1, lesson2, lesson3];
 
+
+// ==========================================================
+// LESSON 4: Colors & Shapes
+// ==========================================================
+final lesson4 = Lesson(
+  id: 4,
+  title: 'Colors & Shapes',
+  subtitle: 'رنگ‌ها و شکل‌ها',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس رنگ‌ها و شکل‌های اصلی رو یاد می‌گیری و می‌آموزی چطور یک شیء رو با رنگ و شکلش توصیف کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. صفت (رنگ یا شکل) همیشه قبل از اسم می‌آد: "a red apple" نه "an apple red".\n'
+      '۲. برای پرسیدن رنگ می‌گیم "What color is it?" و جواب کوتاه "It is + رنگ." است.\n'
+      '۳. وقتی صفت با حرف صدادار (a,e,i,o,u) شروع بشه از "an" استفاده می‌کنیم: "an orange ball".\n'
+      '۴. کلمات "light" و "dark" قبل از رنگ می‌آن تا روشنی/تیرگی رنگ رو نشون بدن: "light blue", "dark green".\n'
+      '۵. شکل‌های هندسی (circle, square, triangle) اسم هستن، نه صفت — می‌گیم "It is a circle." نه "It is circle".\n'
+      '۶. برای پرسیدن نظر یا سلیقه می‌گیم "What is your favorite color?"',
+  formula: 'What color is it? → It is + [color].\nIt is a + [shape].\n[color/shape] + noun → a red circle',
+  words: const [
+    Word('red', 'قرمز', 'RED', '🔴'),
+    Word('blue', 'آبی', 'BLOO', '🔵'),
+    Word('green', 'سبز', 'GREEN', '🟢'),
+    Word('yellow', 'زرد', 'YEL-oh', '🟡'),
+    Word('black', 'سیاه', 'BLAK', '⚫'),
+    Word('white', 'سفید', 'WAIT', '⚪'),
+    Word('orange', 'نارنجی', 'OR-inj', '🟠'),
+    Word('purple', 'بنفش', 'PUR-pul', '🟣'),
+    Word('pink', 'صورتی', 'PINK', '🩷'),
+    Word('brown', 'قهوه‌ای', 'BROWN', '🟤'),
+    Word('gray', 'خاکستری', 'GREY', '⬜'),
+    Word('gold', 'طلایی', 'GOHLD', '🟨'),
+    Word('circle', 'دایره', 'SUR-kul', '⚪'),
+    Word('square', 'مربع', 'SKWAIR', '🟥'),
+    Word('triangle', 'مثلث', 'TRAI-ang-gul', '🔺'),
+    Word('rectangle', 'مستطیل', 'REK-tang-gul', '▭'),
+    Word('star', 'ستاره', 'STAR', '⭐'),
+    Word('heart', 'قلب', 'HART', '❤️'),
+    Word('oval', 'بیضی', 'OH-vul', '🥚'),
+    Word('diamond', 'لوزی', 'DAI-mund', '💎'),
+    Word('shape', 'شکل', 'SHEYP', '🔷'),
+    Word('color', 'رنگ', 'KUL-er', '🎨'),
+    Word('big', 'بزرگ', 'BIG', '🐘'),
+    Word('small', 'کوچک', 'SMAWL', '🐜'),
+    Word('round', 'گرد', 'ROWND', '⚽'),
+    Word('flat', 'صاف/تخت', 'FLAT', '📄'),
+    Word('light', 'روشن (رنگ)', 'LAIT', '💡'),
+    Word('dark', 'تیره', 'DARK', '🌑'),
+    Word('bright', 'روشن/درخشان', 'BRAIT', '✨'),
+    Word('favorite', 'مورد علاقه', 'FEY-vuh-rit', '💖'),
+  ],
+  examples: const [
+    'What color is it? — رنگش چیه؟',
+    'It is red. — قرمز است.',
+    'The sky is blue. — آسمان آبی است.',
+    'Grass is green. — چمن سبز است.',
+    'The sun is yellow. — خورشید زرد است.',
+    'My cat is black. — گربه‌ی من سیاه است.',
+    'Snow is white. — برف سفید است.',
+    'I like orange juice. — من آب‌پرتقال دوست دارم.',
+    'She has a purple bag. — او یک کیف بنفش دارد.',
+    'My shirt is pink. — پیراهنم صورتی است.',
+    'The table is brown. — میز قهوه‌ای است.',
+    'This is a circle. — این یک دایره است.',
+    'That is a square. — آن یک مربع است.',
+    'A triangle has three sides. — مثلث سه ضلع دارد.',
+    'The box is a rectangle. — جعبه یک مستطیل است.',
+    'I see a star in the sky. — یک ستاره در آسمان می‌بینم.',
+    'This is a heart shape. — این یک شکل قلبی است.',
+    'The ball is round. — توپ گرد است.',
+    'What is your favorite color? — رنگ مورد علاقه‌ات چیه؟',
+    'My favorite color is blue. — رنگ مورد علاقه‌ام آبی است.',
+    'This box is big. — این جعبه بزرگ است.',
+    'That box is small. — آن جعبه کوچک است.',
+    'The paper is flat. — کاغذ صاف است.',
+    'This color is light. — این رنگ روشن است.',
+    'That color is dark. — آن رنگ تیره است.',
+    'The stars are bright. — ستاره‌ها درخشان هستند.',
+    'She has a diamond ring. — او یک انگشتر لوزی‌شکل دارد.',
+    'The mirror is oval. — آینه بیضی است.',
+    'What shape is this? — این چه شکلی است؟',
+    'I like this color a lot. — من این رنگ را خیلی دوست دارم.',
+  ],
+  questions: const [
+    Question('What does "red" mean?', ['قرمز', 'آبی', 'سبز', 'زرد'], 'قرمز'),
+    Question('How do you say "آبی"?', ['Red', 'Blue', 'Green', 'Black'], 'Blue'),
+    Question('What does "green" mean?', ['سبز', 'زرد', 'قرمز', 'سفید'], 'سبز'),
+    Question('Complete: "The sky is ___."', ['blue', 'square', 'big', 'flat'], 'blue'),
+    Question('What does "yellow" mean?', ['سیاه', 'زرد', 'سفید', 'آبی'], 'زرد'),
+    Question('How do you say "سیاه"?', ['White', 'Black', 'Gray', 'Brown'], 'Black'),
+    Question('What does "circle" mean?', ['مربع', 'دایره', 'مثلث', 'ستاره'], 'دایره'),
+    Question('Complete: "This is a ___."', ['circle', 'blue', 'big', 'dark'], 'circle'),
+    Question('What does "square" mean?', ['دایره', 'مربع', 'مثلث', 'قلب'], 'مربع'),
+    Question('How do you say "مثلث"?', ['Circle', 'Square', 'Triangle', 'Star'], 'Triangle'),
+    Question('What does "star" mean?', ['قلب', 'ستاره', 'دایره', 'لوزی'], 'ستاره'),
+    Question('Complete: "A triangle has three ___."', ['sides', 'colors', 'stars', 'shapes'], 'sides'),
+    Question('What does "big" mean?', ['کوچک', 'بزرگ', 'گرد', 'صاف'], 'بزرگ'),
+    Question('How do you say "کوچک"?', ['Big', 'Small', 'Round', 'Flat'], 'Small'),
+    Question('What does "round" mean?', ['گرد', 'صاف', 'تیره', 'روشن'], 'گرد'),
+    Question('Complete: "What ___ is it?" (asking color)', ['color', 'shape', 'size', 'name'], 'color'),
+    Question('What does "purple" mean?', ['بنفش', 'صورتی', 'نارنجی', 'قهوه‌ای'], 'بنفش'),
+    Question('How do you say "صورتی"?', ['Purple', 'Pink', 'Orange', 'Gray'], 'Pink'),
+    Question('What does "white" mean?', ['سیاه', 'سفید', 'خاکستری', 'طلایی'], 'سفید'),
+    Question('Complete: "My favorite ___ is blue."', ['color', 'shape', 'name', 'size'], 'color'),
+    Question('What does "heart" mean?', ['ستاره', 'قلب', 'لوزی', 'دایره'], 'قلب'),
+    Question('How do you say "روشن (رنگ)"?', ['Dark', 'Light', 'Bright', 'Flat'], 'Light'),
+    Question('What does "dark" mean?', ['روشن', 'تیره', 'درخشان', 'گرد'], 'تیره'),
+    Question('Complete: "The stars are ___."', ['bright', 'flat', 'square', 'small'], 'bright'),
+    Question('What does "diamond" mean?', ['لوزی', 'مربع', 'دایره', 'مثلث'], 'لوزی'),
+    Question('How do you say "بیضی"?', ['Circle', 'Oval', 'Star', 'Heart'], 'Oval'),
+    Question('What does "shape" mean?', ['رنگ', 'شکل', 'اندازه', 'نور'], 'شکل'),
+    Question('Complete: "This box is ___." (opposite of small)', ['big', 'flat', 'dark', 'round'], 'big'),
+    Question('What does "gray" mean?', ['خاکستری', 'طلایی', 'قهوه‌ای', 'سفید'], 'خاکستری'),
+    Question('How do you say "مورد علاقه"?', ['Color', 'Favorite', 'Shape', 'Bright'], 'Favorite'),
+  ],
+);
+
+// ==========================================================
+// LESSON 5: Days & Months
+// ==========================================================
+final lesson5 = Lesson(
+  id: 5,
+  title: 'Days & Months',
+  subtitle: 'روزهای هفته و ماه‌ها',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس روزهای هفته، ماه‌های سال و فصل‌ها رو یاد می‌گیری و می‌آموزی چطور درباره‌ی تاریخ و زمان صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. روزهای هفته و ماه‌ها همیشه با حرف بزرگ شروع می‌شن: Monday نه monday.\n'
+      '۲. برای روزها از حرف اضافه "on" استفاده می‌کنیم: "on Monday".\n'
+      '۳. برای ماه‌ها از حرف اضافه "in" استفاده می‌کنیم: "in June".\n'
+      '۴. برای سال‌ها هم "in" به کار می‌ره: "in 2026".\n'
+      '۵. کلمه "weekend" در انگلیسی به شنبه و یکشنبه اشاره داره، نه پنج‌شنبه و جمعه.\n'
+      '۶. برای پرسیدن تاریخ می‌گیم "What is the date today?" و جواب مثلاً "It is August 23rd."',
+  formula: 'What day is it? → It is + [day].\non + [day]   |   in + [month/year]\nWhat is the date? → It is + [month] + [day].',
+  words: const [
+    Word('monday', 'دوشنبه', 'MUN-dey', '📅'),
+    Word('tuesday', 'سه‌شنبه', 'TOOZ-dey', '📅'),
+    Word('wednesday', 'چهارشنبه', 'WENZ-dey', '📅'),
+    Word('thursday', 'پنج‌شنبه', 'THURZ-dey', '📅'),
+    Word('friday', 'جمعه', 'FRAI-dey', '📅'),
+    Word('saturday', 'شنبه', 'SAT-er-dey', '📅'),
+    Word('sunday', 'یکشنبه', 'SUN-dey', '📅'),
+    Word('week', 'هفته', 'WEEK', '🗓️'),
+    Word('weekend', 'آخر هفته', 'WEEK-end', '🎉'),
+    Word('january', 'ژانویه', 'JAN-yoo-air-ee', '❄️'),
+    Word('february', 'فوریه', 'FEB-roo-air-ee', '💝'),
+    Word('march', 'مارس', 'MARCH', '🌱'),
+    Word('april', 'آوریل', 'EY-prul', '🌷'),
+    Word('may', 'مه', 'MEY', '🌸'),
+    Word('june', 'ژوئن', 'JOON', '☀️'),
+    Word('july', 'جولای', 'juh-LAI', '🎆'),
+    Word('august', 'آگوست', 'AW-gust', '🏖️'),
+    Word('september', 'سپتامبر', 'sep-TEM-ber', '🍂'),
+    Word('october', 'اکتبر', 'ok-TOH-ber', '🎃'),
+    Word('november', 'نوامبر', 'noh-VEM-ber', '🍁'),
+    Word('december', 'دسامبر', 'dee-SEM-ber', '🎄'),
+    Word('month', 'ماه', 'MUNTH', '📆'),
+    Word('year', 'سال', 'YEER', '🗓️'),
+    Word('date', 'تاریخ', 'DEYT', '📅'),
+    Word('calendar', 'تقویم', 'KAL-en-der', '📆'),
+    Word('holiday', 'تعطیلات', 'HOL-uh-dey', '🏝️'),
+    Word('birthday', 'تولد', 'BURTH-dey', '🎂'),
+    Word('season', 'فصل', 'SEE-zun', '🍁'),
+    Word('spring', 'بهار', 'SPRING', '🌼'),
+    Word('winter', 'زمستان', 'WIN-ter', '⛄'),
+  ],
+  examples: const [
+    'What day is it today? — امروز چه روزیه؟',
+    'Today is Monday. — امروز دوشنبه است.',
+    'I have school on Tuesday. — سه‌شنبه مدرسه دارم.',
+    'Wednesday is the middle of the week. — چهارشنبه وسط هفته است.',
+    'I like Thursday. — من پنج‌شنبه را دوست دارم.',
+    'Friday is a busy day. — جمعه روز شلوغی است.',
+    'Saturday is a holiday. — شنبه تعطیل است.',
+    'Sunday is a family day. — یکشنبه روز خانواده است.',
+    'A week has seven days. — یک هفته هفت روز دارد.',
+    'I relax on the weekend. — آخر هفته استراحت می‌کنم.',
+    'My birthday is in January. — تولدم در ژانویه است.',
+    'February is a short month. — فوریه ماه کوتاهی است.',
+    'Spring starts in March. — بهار در مارس شروع می‌شود.',
+    'It rains a lot in April. — در آوریل خیلی باران می‌بارد.',
+    'Flowers grow in May. — گل‌ها در مه رشد می‌کنند.',
+    'School ends in June. — مدرسه در ژوئن تمام می‌شود.',
+    'We have a holiday in July. — در جولای تعطیلات داریم.',
+    'August is very hot. — آگوست خیلی گرم است.',
+    'School starts in September. — مدرسه در سپتامبر شروع می‌شود.',
+    'Leaves fall in October. — برگ‌ها در اکتبر می‌ریزند.',
+    'It gets cold in November. — در نوامبر هوا سرد می‌شود.',
+    'We celebrate in December. — در دسامبر جشن می‌گیریم.',
+    'What month is it? — الان چه ماهیه؟',
+    'This year is exciting. — امسال هیجان‌انگیز است.',
+    'What is the date today? — امروز چندمه؟',
+    'I look at the calendar every day. — هر روز به تقویم نگاه می‌کنم.',
+    'We have a holiday next week. — هفته‌ی آینده تعطیلات داریم.',
+    'My birthday is in May. — تولد من در ماه مه است.',
+    'There are four seasons. — چهار فصل وجود دارد.',
+    'Winter is very cold. — زمستان خیلی سرد است.',
+  ],
+  questions: const [
+    Question('What does "Monday" mean?', ['دوشنبه', 'سه‌شنبه', 'یکشنبه', 'جمعه'], 'دوشنبه'),
+    Question('How do you say "جمعه"?', ['Thursday', 'Friday', 'Saturday', 'Sunday'], 'Friday'),
+    Question('What does "week" mean?', ['ماه', 'هفته', 'سال', 'روز'], 'هفته'),
+    Question('Complete: "A week has seven ___."', ['days', 'months', 'years', 'weeks'], 'days'),
+    Question('What does "weekend" mean?', ['اول هفته', 'آخر هفته', 'وسط هفته', 'ماه'], 'آخر هفته'),
+    Question('How do you say "ژانویه"?', ['June', 'July', 'January', 'March'], 'January'),
+    Question('What does "birthday" mean?', ['تعطیلات', 'تولد', 'تاریخ', 'تقویم'], 'تولد'),
+    Question('Complete: "My birthday is ___ January."', ['in', 'on', 'at', 'for'], 'in'),
+    Question('What does "month" mean?', ['هفته', 'روز', 'ماه', 'سال'], 'ماه'),
+    Question('How do you say "سال"?', ['Month', 'Week', 'Year', 'Day'], 'Year'),
+    Question('What does "holiday" mean?', ['تولد', 'تعطیلات', 'تاریخ', 'تقویم'], 'تعطیلات'),
+    Question('Complete: "I have school ___ Tuesday."', ['on', 'in', 'at', 'for'], 'on'),
+    Question('What does "calendar" mean?', ['تقویم', 'تاریخ', 'فصل', 'هفته'], 'تقویم'),
+    Question('How do you say "بهار"?', ['Summer', 'Winter', 'Spring', 'Autumn'], 'Spring'),
+    Question('What does "winter" mean?', ['بهار', 'زمستان', 'تابستان', 'پاییز'], 'زمستان'),
+    Question('Complete: "What ___ is it today?" (asking day)', ['day', 'month', 'year', 'date'], 'day'),
+    Question('What does "date" mean?', ['روز', 'تاریخ', 'ماه', 'فصل'], 'تاریخ'),
+    Question('How do you say "دسامبر"?', ['October', 'November', 'December', 'September'], 'December'),
+    Question('What does "season" mean?', ['روز', 'ماه', 'فصل', 'هفته'], 'فصل'),
+    Question('Complete: "Today is ___." (Monday)', ['Monday', 'January', 'week', 'year'], 'Monday'),
+    Question('What does "Sunday" mean?', ['شنبه', 'یکشنبه', 'دوشنبه', 'جمعه'], 'یکشنبه'),
+    Question('How do you say "چهارشنبه"?', ['Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'Wednesday'),
+    Question('What does "Saturday" mean?', ['جمعه', 'شنبه', 'یکشنبه', 'دوشنبه'], 'شنبه'),
+    Question('Complete: "School starts ___ September."', ['in', 'on', 'at', 'for'], 'in'),
+    Question('What does "August" mean?', ['جولای', 'آگوست', 'سپتامبر', 'ژوئن'], 'آگوست'),
+    Question('How do you say "اکتبر"?', ['September', 'October', 'November', 'December'], 'October'),
+    Question('What does "June" mean?', ['مه', 'ژوئن', 'جولای', 'آگوست'], 'ژوئن'),
+    Question('Complete: "There are four ___."', ['seasons', 'weeks', 'months', 'years'], 'seasons'),
+    Question('What does "April" mean?', ['مارس', 'آوریل', 'مه', 'ژوئن'], 'آوریل'),
+    Question('How do you say "تاریخ"?', ['Calendar', 'Date', 'Day', 'Season'], 'Date'),
+  ],
+);
+
+
+final lessons = [lesson1, lesson2, lesson3, lesson4, lesson5];
