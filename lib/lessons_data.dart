@@ -1864,3 +1864,131 @@ final lesson9 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 10: Countable & Uncountable Nouns
+// ==========================================================
+final lesson10 = Lesson(
+  id: 10,
+  title: 'Countable & Uncountable Nouns',
+  subtitle: 'اسم‌های قابل شمارش و غیرقابل شمارش',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری کدام اسم‌ها را می‌توانیم بشماریم و کدام اسم‌ها را نمی‌توانیم به‌صورت مستقیم بشماریم.\n\n'
+      '📌 نکات مهم\n'
+      '۱. اسم‌های قابل شمارش (Countable) را می‌توانیم با عدد بشماریم: one apple, two apples.\n'
+      '۲. اسم‌های قابل شمارش مفرد می‌توانند با a/an بیایند: a book, an apple.\n'
+      '۳. اسم‌های غیرقابل شمارش (Uncountable) معمولاً به‌صورت مستقیم با عدد نمی‌آیند: water, milk, rice.\n'
+      '۴. برای مقدار دادن به اسم‌های غیرقابل شمارش از عباراتی مثل some, a little, a lot of استفاده می‌کنیم.\n'
+      '۵. برای پرسیدن مقدار اسم غیرقابل شمارش معمولاً از "How much" استفاده می‌کنیم.\n'
+      '۶. برای پرسیدن تعداد اسم‌های قابل شمارش از "How many" استفاده می‌کنیم.\n\n'
+      '💡 مثال\n'
+      'How many books do you have? → I have three books.\n'
+      'How much water do you drink? → I drink a lot of water.',
+  formula:
+      'Countable: a/an + singular noun\n'
+      'one book → two books\n\n'
+      'Uncountable: some/much/a little + noun\n'
+      'some water → much water\n\n'
+      'How many + plural countable noun?\n'
+      'How much + uncountable noun?',
+  words: const [
+    Word('apple', 'سیب', 'AP-ul', '🍎'),
+    Word('book', 'کتاب', 'BOOK', '📖'),
+    Word('pen', 'خودکار', 'PEN', '🖊️'),
+    Word('chair', 'صندلی', 'CHAIR', '🪑'),
+    Word('table', 'میز', 'TEY-bul', '🪵'),
+    Word('egg', 'تخم‌مرغ', 'EG', '🥚'),
+    Word('banana', 'موز', 'buh-NA-nuh', '🍌'),
+    Word('bottle', 'بطری', 'BOT-ul', '🍾'),
+    Word('water', 'آب', 'WAW-ter', '💧'),
+    Word('milk', 'شیر', 'MILK', '🥛'),
+    Word('rice', 'برنج', 'RAIS', '🍚'),
+    Word('sugar', 'شکر', 'SHOO-ger', '🍬'),
+    Word('salt', 'نمک', 'SAWLT', '🧂'),
+    Word('bread', 'نان', 'BRED', '🍞'),
+    Word('money', 'پول', 'MUN-ee', '💰'),
+    Word('food', 'غذا', 'FOOD', '🍽️'),
+    Word('coffee', 'قهوه', 'KAW-fee', '☕'),
+    Word('tea', 'چای', 'TEE', '🍵'),
+    Word('juice', 'آبمیوه', 'JOOS', '🧃'),
+    Word('cheese', 'پنیر', 'CHEEZ', '🧀'),
+    Word('some', 'مقداری/چندتا', 'SUM', '➕'),
+    Word('any', 'هیچ/هر', 'EN-ee', '❓'),
+    Word('many', 'زیاد/چندین', 'MEN-ee', '🔢'),
+    Word('much', 'زیاد', 'MUCH', '📏'),
+    Word('little', 'کم/مقدار کم', 'LIT-ul', '🤏'),
+    Word('few', 'تعداد کمی', 'FYOO', '🔢'),
+    Word('lot', 'مقدار زیاد', 'LOT', '📦'),
+    Word('count', 'شمردن', 'KOWNT', '🔢'),
+    Word('number', 'عدد', 'NUM-ber', '🔢'),
+  ],
+  examples: const [
+    'I have an apple. — من یک سیب دارم.',
+    'I have two apples. — من دو سیب دارم.',
+    'She has a book. — او یک کتاب دارد.',
+    'There are three books. — سه کتاب وجود دارد.',
+    'I have a pen. — من یک خودکار دارم.',
+    'There are four chairs. — چهار صندلی وجود دارد.',
+    'I eat an egg every morning. — من هر صبح یک تخم‌مرغ می‌خورم.',
+    'There are five bananas. — پنج موز وجود دارد.',
+    'I have a bottle of water. — من یک بطری آب دارم.',
+    'I drink water every day. — من هر روز آب می‌نوشم.',
+    'I drink some milk. — من مقداری شیر می‌نوشم.',
+    'We need some rice. — ما مقداری برنج لازم داریم.',
+    'Please add some sugar. — لطفاً مقداری شکر اضافه کن.',
+    'There is some salt on the table. — مقداری نمک روی میز است.',
+    'I eat bread every morning. — من هر صبح نان می‌خورم.',
+    'I do not have much money. — پول زیادی ندارم.',
+    'We have some food. — ما مقداری غذا داریم.',
+    'She drinks coffee every morning. — او هر صبح قهوه می‌نوشد.',
+    'I drink tea at night. — من شب چای می‌نوشم.',
+    'There is some juice in the fridge. — مقداری آبمیوه در یخچال است.',
+    'I eat a little cheese. — من کمی پنیر می‌خورم.',
+    'How many apples do you have? — چند سیب داری؟',
+    'I have three apples. — من سه سیب دارم.',
+    'How many books are there? — چند کتاب وجود دارد؟',
+    'There are ten books. — ده کتاب وجود دارد.',
+    'How much water do you drink? — چقدر آب می‌نوشی؟',
+    'I drink a lot of water. — من مقدار زیادی آب می‌نوشم.',
+    'How much milk is there? — چقدر شیر وجود دارد؟',
+    'There is a little milk. — کمی شیر وجود دارد.',
+    'There are a few eggs. — چند تخم‌مرغ وجود دارد.',
+  ],
+  questions: const [
+    Question('What does "apple" mean?', ['سیب', 'موز', 'نان', 'برنج'], 'سیب'),
+    Question('Which is countable?', ['Water', 'Rice', 'Apple', 'Milk'], 'Apple'),
+    Question('Complete: "I have ___ apple."', ['a', 'some', 'much', 'many'], 'a'),
+    Question('What does "water" mean?', ['شیر', 'آب', 'چای', 'قهوه'], 'آب'),
+    Question('Which is uncountable?', ['Book', 'Chair', 'Apple', 'Water'], 'Water'),
+    Question('Complete: "I have two ___."', ['book', 'books', 'water', 'rice'], 'books'),
+    Question('What does "bread" mean?', ['نان', 'پنیر', 'شکر', 'نمک'], 'نان'),
+    Question('How do you say "برنج"?', ['Rice', 'Bread', 'Sugar', 'Salt'], 'Rice'),
+    Question('Complete: "There is ___ milk."', ['some', 'many', 'few', 'a'], 'some'),
+    Question('What does "money" mean?', ['غذا', 'پول', 'عدد', 'بطری'], 'پول'),
+    Question('Which question asks about countable nouns?', ['How much?', 'How many?', 'How old?', 'What time?'], 'How many?'),
+    Question('Which question asks about uncountable nouns?', ['How many?', 'How much?', 'How old?', 'Who?'], 'How much?'),
+    Question('Complete: "How ___ books do you have?"', ['much', 'many', 'little', 'some'], 'many'),
+    Question('Complete: "How ___ water do you drink?"', ['many', 'much', 'few', 'a'], 'much'),
+    Question('What does "some" mean?', ['هیچ', 'مقداری/چندتا', 'کم', 'عدد'], 'مقداری/چندتا'),
+    Question('What does "many" mean?', ['زیاد/چندین', 'کم', 'مقدار کم', 'هیچ'], 'زیاد/چندین'),
+    Question('What does "much" mean?', ['زیاد', 'کم', 'چندتا', 'یکی'], 'زیاد'),
+    Question('Complete: "I have a ___ of water."', ['bottle', 'rice', 'money', 'bread'], 'bottle'),
+    Question('Which noun can be counted?', ['Milk', 'Sugar', 'Egg', 'Rice'], 'Egg'),
+    Question('Which noun is usually uncountable?', ['Banana', 'Pen', 'Money', 'Chair'], 'Money'),
+    Question('Complete: "There are ___ eggs."', ['a little', 'a few', 'much', 'some water'], 'a few'),
+    Question('What does "little" mean?', ['تعداد زیاد', 'مقدار کم', 'عدد', 'بطری'], 'مقدار کم'),
+    Question('Complete: "I drink ___ water."', ['many', 'a lot of', 'a few', 'an'], 'a lot of'),
+    Question('What does "cheese" mean?', ['پنیر', 'نان', 'برنج', 'شکر'], 'پنیر'),
+    Question('Complete: "She has ___ book."', ['an', 'a', 'some', 'much'], 'a'),
+    Question('What is the plural of "apple"?', ['apple', 'apples', 'appleses', 'applees'], 'apples'),
+    Question('What is the plural of "book"?', ['book', 'books', 'bookes', 'bookies'], 'books'),
+    Question('Complete: "We need ___ rice."', ['some', 'many', 'a few', 'an'], 'some'),
+    Question('What does "few" mean?', ['تعداد کمی', 'مقدار زیاد', 'آب', 'عدد'], 'تعداد کمی'),
+    Question('Which sentence is correct?', [
+      'I have two water.',
+      'I have two apples.',
+      'I have a milk.',
+      'I have many rice.'
+    ], 'I have two apples.'),
+  ],
+);
