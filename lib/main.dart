@@ -574,7 +574,7 @@ class _ProgressRow extends StatelessWidget {
 }
 
 // ⚠️ کلید API جمینای خودت (از Google AI Studio):
-const String geminiApiKey = 'AQ.Ab8RN6JmoSluI4hYlvf0K3YYFxZse0JdaVDn66jYBqtJaVh8WQ';
+const String geminiApiKey = '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';
 
 class ChatMessage {
   final String text;
