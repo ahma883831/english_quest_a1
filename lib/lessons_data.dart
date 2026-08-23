@@ -951,3 +951,175 @@ final lessons = [
   lesson4,
   lesson5,
 ];
+// ==========================================================
+// LESSON 6: A / An & Singular Nouns
+// ==========================================================
+final lesson6 = Lesson(
+  id: 6,
+  title: 'A / An & Singular Nouns',
+  subtitle: 'اسم‌های مفرد و a / an',
+
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چه زمانی از a و an قبل از اسم‌های مفرد استفاده کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. a و an فقط قبل از اسم مفرد و قابل شمارش استفاده می‌شوند.\n'
+      '۲. قبل از صدای صامت معمولاً از a استفاده می‌کنیم: a book, a car, a teacher.\n'
+      '۳. قبل از صدای مصوت از an استفاده می‌کنیم: an apple, an egg, an orange.\n'
+      '۴. انتخاب a یا an بر اساس صداست، نه فقط حرف اول کلمه.\n'
+      '۵. برای اسم جمع معمولاً a یا an نمی‌آوریم: books، cars، apples.\n'
+      '۶. وقتی درباره یک چیز مشخص و شناخته‌شده صحبت می‌کنیم، بعداً با the آشنا می‌شویم.\n\n'
+      '💡 مثال مهم\n'
+      'a book → یک کتاب\n'
+      'an apple → یک سیب\n'
+      'a student → یک دانش‌آموز\n'
+      'an orange → یک پرتقال',
+
+  formula:
+      'a + consonant sound → a book / a car\n'
+      'an + vowel sound → an apple / an egg\n\n'
+      'I have + a/an + singular noun.\n'
+      'This is + a/an + singular noun.',
+
+  words: const [
+    Word('book', 'کتاب', 'BOOK', '📚'),
+    Word('pen', 'خودکار', 'PEN', '🖊️'),
+    Word('pencil', 'مداد', 'PEN-sul', '✏️'),
+    Word('bag', 'کیف', 'BAG', '🎒'),
+    Word('car', 'ماشین', 'KAR', '🚗'),
+    Word('bus', 'اتوبوس', 'BUS', '🚌'),
+    Word('chair', 'صندلی', 'CHAIR', '🪑'),
+    Word('table', 'میز', 'TEY-bul', '🪵'),
+    Word('computer', 'کامپیوتر', 'kum-PYOO-ter', '💻'),
+    Word('phone', 'تلفن', 'FOHN', '📱'),
+    Word('apple', 'سیب', 'AP-ul', '🍎'),
+    Word('orange', 'پرتقال', 'OR-inj', '🍊'),
+    Word('egg', 'تخم‌مرغ', 'EG', '🥚'),
+    Word('elephant', 'فیل', 'EL-uh-funt', '🐘'),
+    Word('animal', 'حیوان', 'AN-uh-mul', '🐾'),
+    Word('umbrella', 'چتر', 'um-BREL-uh', '☂️'),
+    Word('idea', 'ایده', 'ai-DEE-uh', '💡'),
+    Word('artist', 'هنرمند', 'AR-tist', '🎨'),
+    Word('engineer', 'مهندس', 'en-juh-NEER', '👷'),
+    Word('doctor', 'دکتر', 'DOK-ter', '👨‍⚕️'),
+    Word('teacher', 'معلم', 'TEE-cher', '👨‍🏫'),
+    Word('student', 'دانش‌آموز', 'STOO-dent', '🎓'),
+    Word('house', 'خانه', 'HOWS', '🏠'),
+    Word('school', 'مدرسه', 'SKOOL', '🏫'),
+    Word('restaurant', 'رستوران', 'RES-tuh-rant', '🍽️'),
+    Word('hotel', 'هتل', 'hoh-TEL', '🏨'),
+    Word('office', 'دفتر/اداره', 'AW-fis', '🏢'),
+    Word('animal', 'حیوان', 'AN-uh-mul', '🐶'),
+    Word('island', 'جزیره', 'AI-land', '🏝️'),
+    Word('hour', 'ساعت', 'OW-er', '⏰'),
+  ],
+
+  examples: const [
+    'I have a book. — من یک کتاب دارم.',
+    'I have a pen. — من یک خودکار دارم.',
+    'She has a pencil. — او یک مداد دارد.',
+    'This is a bag. — این یک کیف است.',
+    'He has a car. — او یک ماشین دارد.',
+    'We have a bus. — ما یک اتوبوس داریم.',
+    'This is a chair. — این یک صندلی است.',
+    'That is a table. — آن یک میز است.',
+    'I have a computer. — من یک کامپیوتر دارم.',
+    'She has a phone. — او یک تلفن دارد.',
+    'I eat an apple. — من یک سیب می‌خورم.',
+    'He has an orange. — او یک پرتقال دارد.',
+    'I eat an egg. — من یک تخم‌مرغ می‌خورم.',
+    'We see an elephant. — ما یک فیل می‌بینیم.',
+    'A dog is an animal. — سگ یک حیوان است.',
+    'I need an umbrella. — من یک چتر لازم دارم.',
+    'I have an idea. — من یک ایده دارم.',
+    'She is an artist. — او یک هنرمند است.',
+    'He is an engineer. — او یک مهندس است.',
+    'She is a doctor. — او یک دکتر است.',
+    'He is a teacher. — او یک معلم است.',
+    'I am a student. — من یک دانش‌آموز هستم.',
+    'This is a house. — این یک خانه است.',
+    'That is a school. — آن یک مدرسه است.',
+    'This is a restaurant. — این یک رستوران است.',
+    'We stayed at a hotel. — ما در یک هتل ماندیم.',
+    'He works in an office. — او در یک اداره کار می‌کند.',
+    'An island is surrounded by water. — یک جزیره توسط آب احاطه شده است.',
+    'An hour has sixty minutes. — یک ساعت شصت دقیقه دارد.',
+    'I have a good idea. — من یک ایده خوب دارم.',
+  ],
+
+  questions: const [
+    Question(
+      'Choose the correct answer: "I have ___ book."',
+      ['a', 'an', 'am', 'are'],
+      'a',
+    ),
+    Question(
+      'Choose the correct answer: "She has ___ apple."',
+      ['a', 'an', 'is', 'are'],
+      'an',
+    ),
+    Question(
+      'What does "book" mean?',
+      ['کتاب', 'مداد', 'کیف', 'میز'],
+      'کتاب',
+    ),
+    Question(
+      'How do you say "خودکار"?',
+      ['Book', 'Pen', 'Bag', 'Chair'],
+      'Pen',
+    ),
+    Question(
+      'Complete: "This is ___ car."',
+      ['a', 'an', 'is', 'am'],
+      'a',
+    ),
+    Question(
+      'Complete: "I have ___ orange."',
+      ['a', 'an', 'the', 'am'],
+      'an',
+    ),
+    Question(
+      'What does "pencil" mean?',
+      ['مداد', 'خودکار', 'کتاب', 'کیف'],
+      'مداد',
+    ),
+    Question(
+      'How do you say "تخم‌مرغ"?',
+      ['Apple', 'Orange', 'Egg', 'Animal'],
+      'Egg',
+    ),
+    Question(
+      'Complete: "He is ___ engineer."',
+      ['a', 'an', 'is', 'are'],
+      'an',
+    ),
+    Question(
+      'What does "doctor" mean?',
+      ['معلم', 'دکتر', 'مهندس', 'هنرمند'],
+      'دکتر',
+    ),
+    Question(
+      'Complete: "She is ___ teacher."',
+      ['a', 'an', 'am', 'are'],
+      'a',
+    ),
+    Question(
+      'What does "artist" mean?',
+      ['هنرمند', 'مهندس', 'دکتر', 'دانش‌آموز'],
+      'هنرمند',
+    ),
+    Question(
+      'How do you say "مهندس"?',
+      ['Doctor', 'Artist', 'Engineer', 'Teacher'],
+      'Engineer',
+    ),
+    Question(
+      'Complete: "I need ___ umbrella."',
+      ['a', 'an', 'am', 'is'],
+      'an',
+    ),
+    Question(
+      'What does "umbrella" mean?',
+      ['چتر', 'جزیره', 'رستوران', 'خانه'],
+      'چتر',
+    ),
