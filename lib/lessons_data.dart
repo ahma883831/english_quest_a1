@@ -5401,3 +5401,251 @@ final lesson26 = Lesson(
     ], 'Mustn’t means prohibited; don’t have to means not necessary.'),
   ],
 );
+// ==========================================================
+// LESSON 27: Present Perfect
+// ==========================================================
+final lesson27 = Lesson(
+  id: 27,
+  title: 'Present Perfect',
+  subtitle: 'گذشته کامل',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره اتفاق‌هایی که در گذشته رخ داده‌اند اما به زمان حال ارتباط دارند صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. ساختار اصلی Present Perfect این است: have/has + past participle (شکل سوم فعل).\n'
+      '۲. برای I/You/We/They از have استفاده می‌کنیم: I have worked.\n'
+      '۳. برای He/She/It از has استفاده می‌کنیم: She has worked.\n'
+      '۴. برای منفی کردن، not را بعد از have/has می‌آوریم: I have not finished.\n'
+      '۵. برای سوالی کردن، have/has را به ابتدای جمله می‌بریم: Have you finished?\n'
+      '۶. از Present Perfect برای تجربه‌ها، اتفاق‌های تازه و اتفاق‌هایی که نتیجه‌شان در زمان حال مهم است استفاده می‌کنیم.\n'
+      '۷. زمان دقیق گذشته معمولاً با Present Perfect نمی‌آید. برای زمان مشخص گذشته معمولاً از Simple Past استفاده می‌کنیم.\n\n'
+      '💡 مثال مهم\n'
+      'I have visited Tehran. → من از تهران دیدن کرده‌ام.\n'
+      'She has finished her homework. → او تکالیفش را تمام کرده است.\n'
+      'Have you ever seen this movie? → آیا تا حالا این فیلم را دیده‌ای؟',
+  formula:
+      'Positive:\n'
+      'I/You/We/They + have + past participle\n'
+      'He/She/It + has + past participle\n\n'
+      'Negative:\n'
+      'Subject + have/has + not + past participle\n\n'
+      'Question:\n'
+      'Have/Has + subject + past participle?',
+  words: const [
+    Word('experience', 'تجربه', 'ik-SPEER-ee-ens', '🎯'),
+    Word('visit', 'بازدید کردن', 'VIZ-it', '🏙️'),
+    Word('travel', 'سفر کردن', 'TRAV-ul', '✈️'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '✅'),
+    Word('start', 'شروع کردن', 'START', '🚀'),
+    Word('lose', 'گم کردن/از دست دادن', 'LOOZ', '❌'),
+    Word('find', 'پیدا کردن', 'FAIND', '🔎'),
+    Word('break', 'شکستن', 'BREYK', '💥'),
+    Word('forget', 'فراموش کردن', 'fer-GET', '🧠'),
+    Word('remember', 'به یاد آوردن', 'ree-MEM-ber', '💡'),
+    Word('see', 'دیدن', 'SEE', '👀'),
+    Word('eat', 'خوردن', 'EET', '🍎'),
+    Word('drink', 'نوشیدن', 'DRINK', '🥤'),
+    Word('go', 'رفتن', 'GOH', '🚶'),
+    Word('come', 'آمدن', 'KUM', '➡️'),
+    Word('make', 'ساختن', 'MEYK', '🔨'),
+    Word('do', 'انجام دادن', 'DOO', '✔️'),
+    Word('write', 'نوشتن', 'RAIT', '✍️'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('learn', 'یاد گرفتن', 'LURN', '🎓'),
+    Word('try', 'تلاش کردن/امتحان کردن', 'TRAI', '💪'),
+    Word('meet', 'ملاقات کردن', 'MEET', '🤝'),
+    Word('buy', 'خریدن', 'BAI', '🛒'),
+    Word('take', 'گرفتن/بردن', 'TEYK', '✋'),
+    Word('give', 'دادن', 'GIV', '🎁'),
+    Word('know', 'دانستن', 'NOH', '🧠'),
+    Word('live', 'زندگی کردن', 'LIV', '🏠'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('change', 'تغییر دادن', 'CHEYNJ', '🔄'),
+    Word('become', 'شدن', 'bee-KUM', '⭐'),
+    Word('already', 'قبلاً/همین حالا', 'awl-RED-ee', '✅'),
+  ],
+  examples: const [
+    'I have finished my homework. — من تکالیفم را تمام کرده‌ام.',
+    'She has visited Tehran. — او از تهران دیدن کرده است.',
+    'We have learned English. — ما انگلیسی یاد گرفته‌ایم.',
+    'They have traveled to Turkey. — آن‌ها به ترکیه سفر کرده‌اند.',
+    'He has lost his phone. — او گوشی‌اش را گم کرده است.',
+    'I have found my keys. — کلیدهایم را پیدا کرده‌ام.',
+    'She has broken the glass. — او شیشه را شکسته است.',
+    'We have started the lesson. — ما درس را شروع کرده‌ایم.',
+    'I have eaten breakfast. — من صبحانه خورده‌ام.',
+    'He has drunk some water. — او مقداری آب نوشیده است.',
+    'They have gone home. — آن‌ها به خانه رفته‌اند.',
+    'She has come back. — او برگشته است.',
+    'I have written a letter. — من یک نامه نوشته‌ام.',
+    'He has read this book. — او این کتاب را خوانده است.',
+    'We have tried this food. — ما این غذا را امتحان کرده‌ایم.',
+    'Have you finished your work? — آیا کارت را تمام کرده‌ای؟',
+    'Has she arrived? — آیا او رسیده است؟',
+    'Have they visited Paris? — آیا آن‌ها از پاریس دیدن کرده‌اند؟',
+    'I have not finished yet. — من هنوز تمام نکرده‌ام.',
+    'He has not called me. — او به من زنگ نزده است.',
+    'She has not seen this movie. — او این فیلم را ندیده است.',
+    'We have already eaten. — ما قبلاً غذا خورده‌ایم.',
+    'I have already done my homework. — من قبلاً تکالیفم را انجام داده‌ام.',
+    'Have you ever traveled abroad? — آیا تا حالا به خارج از کشور سفر کرده‌ای؟',
+    'I have never been to London. — من هرگز به لندن نرفته‌ام.',
+    'She has changed a lot. — او خیلی تغییر کرده است.',
+    'He has become a good student. — او به یک دانش‌آموز خوب تبدیل شده است.',
+    'I have known him for two years. — من دو سال است که او را می‌شناسم.',
+    'They have lived here for five years. — آن‌ها پنج سال است که اینجا زندگی می‌کنند.',
+    'We have worked together. — ما با هم کار کرده‌ایم.',
+  ],
+  questions: const [
+    Question(
+      'Complete: "I ___ finished my homework."',
+      ['have', 'has', 'am', 'did'],
+      'have',
+    ),
+    Question(
+      'Complete: "She ___ visited Tehran."',
+      ['have', 'has', 'is', 'did'],
+      'has',
+    ),
+    Question(
+      'What is the structure of Present Perfect?',
+      ['have/has + past participle', 'did + verb', 'am/is/are + verb', 'will + verb'],
+      'have/has + past participle',
+    ),
+    Question(
+      'What does "experience" mean?',
+      ['تجربه', 'تاریخ', 'مسافرت', 'درس'],
+      'تجربه',
+    ),
+    Question(
+      'What is the past participle of "go"?',
+      ['gone', 'goed', 'went', 'going'],
+      'gone',
+    ),
+    Question(
+      'What is the past participle of "eat"?',
+      ['eaten', 'ate', 'eated', 'eating'],
+      'eaten',
+    ),
+    Question(
+      'Complete: "They ___ traveled to Turkey."',
+      ['have', 'has', 'are', 'did'],
+      'have',
+    ),
+    Question(
+      'Complete: "He ___ lost his phone."',
+      ['have', 'has', 'is', 'did'],
+      'has',
+    ),
+    Question(
+      'What does "finish" mean?',
+      ['شروع کردن', 'تمام کردن', 'فراموش کردن', 'پیدا کردن'],
+      'تمام کردن',
+    ),
+    Question(
+      'How do you say "تجربه" in English?',
+      ['Experience', 'Example', 'Exercise', 'Event'],
+      'Experience',
+    ),
+    Question(
+      'Complete: "Have you ___ this movie?"',
+      ['seen', 'see', 'saw', 'seeing'],
+      'seen',
+    ),
+    Question(
+      'What is the past participle of "write"?',
+      ['written', 'wrote', 'writed', 'writing'],
+      'written',
+    ),
+    Question(
+      'Complete: "She has ___ her homework."',
+      ['finished', 'finish', 'finishing', 'finishes'],
+      'finished',
+    ),
+    Question(
+      'How do you make a Present Perfect question?',
+      ['Have/Has + subject + past participle?', 'Did + subject + verb?', 'Subject + will?', 'Am + subject?'],
+      'Have/Has + subject + past participle?',
+    ),
+    Question(
+      'Complete: "I have ___ my keys."',
+      ['found', 'find', 'finding', 'finds'],
+      'found',
+    ),
+    Question(
+      'What does "lost" mean?',
+      ['پیدا کرده', 'گم کرده', 'ساخته', 'نوشته'],
+      'گم کرده',
+    ),
+    Question(
+      'Complete: "He has ___ the book."',
+      ['read', 'reads', 'reading', 'readed'],
+      'read',
+    ),
+    Question(
+      'What is the past participle of "break"?',
+      ['broken', 'broke', 'breaked', 'breaking'],
+      'broken',
+    ),
+    Question(
+      'Complete: "We have ___ English."',
+      ['learned', 'learn', 'learning', 'learns'],
+      'learned',
+    ),
+    Question(
+      'What does "already" mean?',
+      ['هنوز', 'هرگز', 'قبلاً', 'فردا'],
+      'قبلاً',
+    ),
+    Question(
+      'Complete: "I have not ___ yet."',
+      ['finished', 'finish', 'finishing', 'finishes'],
+      'finished',
+    ),
+    Question(
+      'Which sentence is correct?',
+      ['She has gone home.', 'She have gone home.', 'She has go home.', 'She gone home.'],
+      'She has gone home.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      ['I have eaten breakfast.', 'I has eaten breakfast.', 'I have ate breakfast.', 'I eaten breakfast.'],
+      'I have eaten breakfast.',
+    ),
+    Question(
+      'Complete: "Has he ___ the letter?"',
+      ['written', 'write', 'wrote', 'writing'],
+      'written',
+    ),
+    Question(
+      'What is the past participle of "see"?',
+      ['seen', 'saw', 'see', 'seeing'],
+      'seen',
+    ),
+    Question(
+      'What does "become" mean?',
+      ['شدن', 'رفتن', 'دیدن', 'نوشتن'],
+      'شدن',
+    ),
+    Question(
+      'Complete: "They have ___ here for five years."',
+      ['lived', 'live', 'living', 'lives'],
+      'lived',
+    ),
+    Question(
+      'Which is negative?',
+      ['I have not finished.', 'I have finished.', 'Have I finished?', 'I finish.'],
+      'I have not finished.',
+    ),
+    Question(
+      'Complete: "She has ___ a lot."',
+      ['changed', 'change', 'changing', 'changes'],
+      'changed',
+    ),
+    Question(
+      'What does "travel" mean?',
+      ['سفر کردن', 'نوشتن', 'خوردن', 'ساختن'],
+      'سفر کردن',
+    ),
+  ],
+);
