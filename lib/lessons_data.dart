@@ -473,3 +473,151 @@ final lesson3 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 4: Colors & Shapes
+// ==========================================================
+final lesson4 = Lesson(
+  id: 4,
+  title: 'Colors & Shapes',
+  subtitle: 'رنگ‌ها و شکل‌ها',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس رنگ‌ها و شکل‌های اصلی رو یاد می‌گیری و می‌آموزی چطور یک شیء رو با رنگ و شکلش توصیف کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. صفت (رنگ یا شکل) همیشه قبل از اسم می‌آد: "a red apple" نه "an apple red".\n'
+      '۲. برای پرسیدن رنگ می‌گیم "What color is it?" و جواب کوتاه "It is + رنگ." است.\n'
+      '۳. وقتی صفت با حرف صدادار شروع بشه از "an" استفاده می‌کنیم: "an orange ball".\n'
+      '۴. کلمات "light" و "dark" قبل از رنگ می‌آیند تا روشنی/تیرگی رنگ رو نشون بدن: "light blue", "dark green".\n'
+      '۵. شکل‌های هندسی (circle, square, triangle) اسم هستن، نه صفت — می‌گیم "It is a circle." نه "It is circle".\n'
+      '۶. برای پرسیدن نظر یا سلیقه می‌گیم "What is your favorite color?"',
+  formula:
+      'What color is it? → It is + [color].\n'
+      'It is a + [shape].\n'
+      '[color/shape] + noun → a red circle',
+
+  words: const [
+    Word('red', 'قرمز', 'RED', '🔴'),
+    Word('blue', 'آبی', 'BLOO', '🔵'),
+    Word('green', 'سبز', 'GREEN', '🟢'),
+    Word('yellow', 'زرد', 'YEL-oh', '🟡'),
+    Word('black', 'سیاه', 'BLAK', '⚫'),
+    Word('white', 'سفید', 'WAIT', '⚪'),
+    Word('orange', 'نارنجی', 'OR-inj', '🟠'),
+    Word('purple', 'بنفش', 'PUR-pul', '🟣'),
+    Word('pink', 'صورتی', 'PINK', '🩷'),
+    Word('brown', 'قهوه‌ای', 'BROWN', '🟤'),
+    Word('gray', 'خاکستری', 'GREY', '⬜'),
+    Word('gold', 'طلایی', 'GOHLD', '🟨'),
+    Word('circle', 'دایره', 'SUR-kul', '⚪'),
+    Word('square', 'مربع', 'SKWAIR', '🟥'),
+    Word('triangle', 'مثلث', 'TRAI-ang-gul', '🔺'),
+    Word('rectangle', 'مستطیل', 'REK-tang-gul', '▭'),
+    Word('star', 'ستاره', 'STAR', '⭐'),
+    Word('heart', 'قلب', 'HART', '❤️'),
+    Word('oval', 'بیضی', 'OH-vul', '🥚'),
+    Word('diamond', 'لوزی', 'DAI-mund', '💎'),
+    Word('shape', 'شکل', 'SHEYP', '🔷'),
+    Word('color', 'رنگ', 'KUL-er', '🎨'),
+    Word('big', 'بزرگ', 'BIG', '🐘'),
+    Word('small', 'کوچک', 'SMAWL', '🐜'),
+    Word('round', 'گرد', 'ROWND', '⚽'),
+    Word('flat', 'صاف/تخت', 'FLAT', '📄'),
+    Word('light', 'روشن (رنگ)', 'LAIT', '💡'),
+    Word('dark', 'تیره', 'DARK', '🌑'),
+    Word('bright', 'روشن/درخشان', 'BRAIT', '✨'),
+    Word('favorite', 'مورد علاقه', 'FEY-vuh-rit', '💖'),
+  ],
+
+  examples: const [
+    'What color is it? — رنگش چیه؟',
+    'It is red. — قرمز است.',
+    'The sky is blue. — آسمان آبی است.',
+    'Grass is green. — چمن سبز است.',
+    'The sun is yellow. — خورشید زرد است.',
+    'My cat is black. — گربه‌ی من سیاه است.',
+    'Snow is white. — برف سفید است.',
+    'I like orange juice. — من آب‌پرتقال دوست دارم.',
+    'She has a purple bag. — او یک کیف بنفش دارد.',
+    'My shirt is pink. — پیراهنم صورتی است.',
+    'The table is brown. — میز قهوه‌ای است.',
+    'This is a circle. — این یک دایره است.',
+    'That is a square. — آن یک مربع است.',
+    'A triangle has three sides. — مثلث سه ضلع دارد.',
+    'The box is a rectangle. — جعبه یک مستطیل است.',
+    'I see a star in the sky. — یک ستاره در آسمان می‌بینم.',
+    'This is a heart shape. — این یک شکل قلبی است.',
+    'The ball is round. — توپ گرد است.',
+    'What is your favorite color? — رنگ مورد علاقه‌ات چیه؟',
+    'My favorite color is blue. — رنگ مورد علاقه‌ام آبی است.',
+    'This box is big. — این جعبه بزرگ است.',
+    'That box is small. — آن جعبه کوچک است.',
+    'The paper is flat. — کاغذ صاف است.',
+    'This color is light. — این رنگ روشن است.',
+    'That color is dark. — آن رنگ تیره است.',
+    'The stars are bright. — ستاره‌ها درخشان هستند.',
+    'She has a diamond ring. — او یک انگشتر لوزی‌شکل دارد.',
+    'The mirror is oval. — آینه بیضی است.',
+    'What shape is this? — این چه شکلی است؟',
+    'I like this color a lot. — من این رنگ را خیلی دوست دارم.',
+  ],
+
+  questions: const [
+    Question('What does "red" mean?', ['قرمز', 'آبی', 'سبز', 'زرد'], 'قرمز'),
+    Question('How do you say "آبی"?', ['Red', 'Blue', 'Green', 'Black'], 'Blue'),
+    Question('What does "green" mean?', ['سبز', 'زرد', 'قرمز', 'سفید'], 'سبز'),
+    Question(
+      'Complete: "The sky is ___."',
+      ['blue', 'square', 'big', 'flat'],
+      'blue',
+    ),
+    Question('What does "yellow" mean?', ['سیاه', 'زرد', 'سفید', 'آبی'], 'زرد'),
+    Question(
+      'How do you say "سیاه"?',
+      ['White', 'Black', 'Gray', 'Brown'],
+      'Black',
+    ),
+    Question(
+      'What does "circle" mean?',
+      ['مربع', 'دایره', 'مثلث', 'ستاره'],
+      'دایره',
+    ),
+    Question(
+      'Complete: "This is a ___."',
+      ['circle', 'blue', 'big', 'dark'],
+      'circle',
+    ),
+    Question(
+      'What does "square" mean?',
+      ['دایره', 'مربع', 'مثلث', 'قلب'],
+      'مربع',
+    ),
+    Question(
+      'How do you say "مثلث"?',
+      ['Circle', 'Square', 'Triangle', 'Star'],
+      'Triangle',
+    ),
+    Question(
+      'What does "star" mean?',
+      ['قلب', 'ستاره', 'دایره', 'لوزی'],
+      'ستاره',
+    ),
+    Question(
+      'Complete: "A triangle has three ___."',
+      ['sides', 'colors', 'stars', 'shapes'],
+      'sides',
+    ),
+    Question(
+      'What does "big" mean?',
+      ['کوچک', 'بزرگ', 'گرد', 'صاف'],
+      'بزرگ',
+    ),
+    Question(
+      'How do you say "کوچک"?',
+      ['Big', 'Small', 'Round', 'Flat'],
+      'Small',
+    ),
+    Question(
+      'What does "round" mean?',
+      ['گرد', 'صاف', 'تیره', 'روشن'],
+      'گرد',
+    ),
