@@ -1123,3 +1123,246 @@ final lesson6 = Lesson(
       ['چتر', 'جزیره', 'رستوران', 'خانه'],
       'چتر',
     ),
+    // ==========================================================
+// LESSON 7: Daily Routine
+// ==========================================================
+final lesson7 = Lesson(
+  id: 7,
+  title: 'Daily Routine',
+  subtitle: 'کارهای روزمره',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره کارهایی که هر روز انجام می‌دهی صحبت کنی و از زمان حال ساده (Present Simple) استفاده کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای I/You/We/They از شکل ساده فعل استفاده می‌کنیم: I work, You study.\n'
+      '۲. برای He/She/It معمولاً به فعل s یا es اضافه می‌کنیم: He works, She watches.\n'
+      '۳. برای کارهای روزمره از کلماتی مثل every day, usually, always و sometimes استفاده می‌کنیم.\n'
+      '۴. برای ساعت انجام کار معمولاً از at استفاده می‌کنیم: I wake up at 7.\n'
+      '۵. برای ساختن جمله منفی با I/You/We/They از don’t و با He/She/It از doesn’t استفاده می‌کنیم.\n'
+      '۶. برای سؤال در زمان حال ساده از Do یا Does استفاده می‌کنیم.',
+  formula:
+      'I/You/We/They → verb\n'
+      'He/She/It → verb + s/es\n\n'
+      'Negative:\n'
+      'I/You/We/They → don’t + verb\n'
+      'He/She/It → doesn’t + verb\n\n'
+      'Question:\n'
+      'Do + I/you/we/they + verb?\n'
+      'Does + he/she/it + verb?',
+  words: const [
+    Word('wake', 'بیدار شدن', 'WEYK', '⏰'),
+    Word('wake up', 'از خواب بیدار شدن', 'WEYK UP', '🌅'),
+    Word('get', 'گرفتن/شدن', 'GET', '🙌'),
+    Word('get up', 'از جا بلند شدن', 'GET UP', '🛏️'),
+    Word('wash', 'شستن', 'WOSH', '🧼'),
+    Word('face', 'صورت', 'FEYS', '🙂'),
+    Word('brush', 'مسواک زدن', 'BRUSH', '🪥'),
+    Word('teeth', 'دندان‌ها', 'TEETH', '🦷'),
+    Word('shower', 'دوش گرفتن', 'SHOW-er', '🚿'),
+    Word('dress', 'لباس پوشیدن', 'DRES', '👕'),
+    Word('breakfast', 'صبحانه', 'BREK-fust', '🍳'),
+    Word('lunch', 'ناهار', 'LUNCH', '🍱'),
+    Word('dinner', 'شام', 'DIN-er', '🍽️'),
+    Word('go', 'رفتن', 'GOH', '🚶'),
+    Word('come', 'آمدن', 'KUM', '🏃'),
+    Word('school', 'مدرسه', 'SKOOL', '🏫'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('study', 'درس خواندن', 'STUH-dee', '📚'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('write', 'نوشتن', 'RAIT', '✍️'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('sleep', 'خوابیدن', 'SLEEP', '😴'),
+    Word('rest', 'استراحت کردن', 'REST', '🛋️'),
+    Word('home', 'خانه', 'HOHM', '🏠'),
+    Word('usually', 'معمولاً', 'YOO-zhoo-uh-lee', '🔄'),
+    Word('always', 'همیشه', 'AWL-weyz', '♾️'),
+    Word('sometimes', 'گاهی اوقات', 'SUM-taimz', '🔀'),
+    Word('never', 'هرگز', 'NEV-er', '🚫'),
+    Word('every', 'هر', 'EV-ree', '📅'),
+  ],
+  examples: const [
+    'I wake up at seven. — من ساعت هفت بیدار می‌شوم.',
+    'I get up early. — من زود از خواب بلند می‌شوم.',
+    'I wash my face. — من صورتم را می‌شویم.',
+    'I brush my teeth. — من دندان‌هایم را مسواک می‌زنم.',
+    'I take a shower. — من دوش می‌گیرم.',
+    'I get dressed. — من لباس می‌پوشم.',
+    'I eat breakfast at eight. — من ساعت هشت صبحانه می‌خورم.',
+    'I go to school every day. — من هر روز به مدرسه می‌روم.',
+    'I study English. — من انگلیسی می‌خوانم.',
+    'I read a book. — من یک کتاب می‌خوانم.',
+    'I write in my notebook. — من در دفترم می‌نویسم.',
+    'I have lunch at noon. — من ظهر ناهار می‌خورم.',
+    'I come home in the afternoon. — من بعدازظهر به خانه می‌آیم.',
+    'I do my homework. — من تکالیفم را انجام می‌دهم.',
+    'I watch TV in the evening. — من عصر تلویزیون تماشا می‌کنم.',
+    'I play games sometimes. — من گاهی بازی می‌کنم.',
+    'I have dinner with my family. — من با خانواده‌ام شام می‌خورم.',
+    'I rest after work. — من بعد از کار استراحت می‌کنم.',
+    'I usually read at night. — من معمولاً شب مطالعه می‌کنم.',
+    'I go to bed at eleven. — من ساعت یازده به رختخواب می‌روم.',
+    'He wakes up early. — او زود بیدار می‌شود.',
+    'She studies English every day. — او هر روز انگلیسی می‌خواند.',
+    'He watches TV at night. — او شب تلویزیون تماشا می‌کند.',
+    'She goes to school by bus. — او با اتوبوس به مدرسه می‌رود.',
+    'I do not sleep late. — من دیر نمی‌خوابم.',
+    'I don’t watch TV every day. — من هر روز تلویزیون تماشا نمی‌کنم.',
+    'He doesn’t play football. — او فوتبال بازی نمی‌کند.',
+    'Do you study English? — آیا انگلیسی می‌خوانی؟',
+    'Does she work every day? — آیا او هر روز کار می‌کند؟',
+    'What time do you wake up? — ساعت چند بیدار می‌شوی؟',
+  ],
+  questions: const [
+    Question(
+      'What does "wake up" mean?',
+      ['خوابیدن', 'بیدار شدن', 'غذا خوردن', 'رفتن'],
+      'بیدار شدن',
+    ),
+    Question(
+      'How do you say "صبحانه"?',
+      ['Lunch', 'Dinner', 'Breakfast', 'School'],
+      'Breakfast',
+    ),
+    Question(
+      'Complete: "I ___ up at seven."',
+      ['wake', 'wakes', 'waking', 'woken'],
+      'wake',
+    ),
+    Question(
+      'What does "brush" mean?',
+      ['شستن', 'مسواک زدن', 'خوابیدن', 'خواندن'],
+      'مسواک زدن',
+    ),
+    Question(
+      'How do you say "دندان‌ها"?',
+      ['Face', 'Teeth', 'Hands', 'Eyes'],
+      'Teeth',
+    ),
+    Question(
+      'Complete: "She ___ English every day."',
+      ['study', 'studies', 'studying', 'studied'],
+      'studies',
+    ),
+    Question(
+      'What does "lunch" mean?',
+      ['صبحانه', 'ناهار', 'شام', 'میان‌وعده'],
+      'ناهار',
+    ),
+    Question(
+      'How do you say "شام"?',
+      ['Breakfast', 'Lunch', 'Dinner', 'Morning'],
+      'Dinner',
+    ),
+    Question(
+      'Complete: "He ___ TV at night."',
+      ['watch', 'watches', 'watching', 'watched'],
+      'watches',
+    ),
+    Question(
+      'What does "study" mean?',
+      ['کار کردن', 'درس خواندن', 'بازی کردن', 'خوابیدن'],
+      'درس خواندن',
+    ),
+    Question(
+      'How do you say "خواندن"?',
+      ['Write', 'Read', 'Play', 'Sleep'],
+      'Read',
+    ),
+    Question(
+      'What does "write" mean?',
+      ['خواندن', 'نوشتن', 'رفتن', 'آمدن'],
+      'نوشتن',
+    ),
+    Question(
+      'Complete: "I ___ to school every day."',
+      ['go', 'goes', 'going', 'gone'],
+      'go',
+    ),
+    Question(
+      'What does "usually" mean?',
+      ['هرگز', 'معمولاً', 'همیشه', 'گاهی'],
+      'معمولاً',
+    ),
+    Question(
+      'How do you say "همیشه"?',
+      ['Never', 'Sometimes', 'Always', 'Usually'],
+      'Always',
+    ),
+    Question(
+      'What does "sometimes" mean?',
+      ['همیشه', 'هرگز', 'گاهی اوقات', 'معمولاً'],
+      'گاهی اوقات',
+    ),
+    Question(
+      'Complete: "I ___ watch TV every day."',
+      ['don’t', 'doesn’t', 'isn’t', 'aren’t'],
+      'don’t',
+    ),
+    Question(
+      'Complete: "He ___ play football."',
+      ['don’t', 'doesn’t', 'isn’t', 'aren’t'],
+      'doesn’t',
+    ),
+    Question(
+      'What does "sleep" mean?',
+      ['خوابیدن', 'بیدار شدن', 'رفتن', 'نوشتن'],
+      'خوابیدن',
+    ),
+    Question(
+      'How do you say "استراحت کردن"?',
+      ['Work', 'Rest', 'Read', 'Get'],
+      'Rest',
+    ),
+    Question(
+      'Complete: "___ you study English?"',
+      ['Do', 'Does', 'Is', 'Are'],
+      'Do',
+    ),
+    Question(
+      'Complete: "___ he work every day?"',
+      ['Do', 'Does', 'Is', 'Are'],
+      'Does',
+    ),
+    Question(
+      'What does "every day" mean?',
+      ['هر روز', 'هر هفته', 'هر ماه', 'هر شب'],
+      'هر روز',
+    ),
+    Question(
+      'How do you say "خانه"?',
+      ['School', 'Home', 'Work', 'Room'],
+      'Home',
+    ),
+    Question(
+      'Complete: "She ___ to school."',
+      ['go', 'goes', 'going', 'gone'],
+      'goes',
+    ),
+    Question(
+      'What does "never" mean?',
+      ['همیشه', 'گاهی', 'معمولاً', 'هرگز'],
+      'هرگز',
+    ),
+    Question(
+      'Complete: "I ___ breakfast at eight."',
+      ['eat', 'eats', 'eating', 'ate'],
+      'eat',
+    ),
+    Question(
+      'What does "dinner" mean?',
+      ['صبحانه', 'ناهار', 'شام', 'مدرسه'],
+      'شام',
+    ),
+    Question(
+      'How do you say "کار کردن"?',
+      ['Study', 'Work', 'Sleep', 'Play'],
+      'Work',
+    ),
+    Question(
+      'Complete: "What time ___ you wake up?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+  ],
+);
