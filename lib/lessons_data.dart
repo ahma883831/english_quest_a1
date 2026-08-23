@@ -4877,3 +4877,130 @@ final lesson21 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 23: Superlative Adjectives
+// ==========================================================
+final lesson23 = Lesson(
+  id: 23,
+  title: 'Superlative Adjectives',
+  subtitle: 'صفت‌های عالی',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور وقتی یک چیز را با همه‌ی اعضای یک گروه مقایسه می‌کنی، بگویی آن چیز "بزرگ‌ترین"، "سریع‌ترین"، "بهترین" و... است.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای صفت‌های کوتاه معمولاً از the + adjective + est استفاده می‌کنیم: '
+      'big → the biggest.\n'
+      '۲. اگر صفت به e ختم شود، فقط st اضافه می‌کنیم: nice → the nicest.\n'
+      '۳. اگر صفت کوتاه به یک صامت + صدادار + صامت ختم شود، حرف آخر دو برابر می‌شود: '
+      'big → the biggest, hot → the hottest.\n'
+      '۴. برای صفت‌های بلند معمولاً از the most استفاده می‌کنیم: '
+      'beautiful → the most beautiful.\n'
+      '۵. بعضی صفت‌ها بی‌قاعده هستند: good → the best, bad → the worst.\n'
+      '۶. قبل از صفت عالی معمولاً از "the" استفاده می‌کنیم: '
+      'He is the tallest student in the class.',
+  formula:
+      'Short adjective → the + adjective-est\n'
+      'big → the biggest\n'
+      'fast → the fastest\n\n'
+      'Long adjective → the most + adjective\n'
+      'beautiful → the most beautiful\n\n'
+      'Irregular:\n'
+      'good → the best\n'
+      'bad → the worst',
+  words: const [
+    Word('biggest', 'بزرگ‌ترین', 'BIG-ist', '🐘'),
+    Word('smallest', 'کوچک‌ترین', 'SMAWL-ist', '🐜'),
+    Word('tallest', 'بلندقدترین', 'TAWL-ist', '🧍'),
+    Word('shortest', 'کوتاه‌ترین', 'SHORT-ist', '📏'),
+    Word('fastest', 'سریع‌ترین', 'FAST-ist', '🏎️'),
+    Word('slowest', 'کندترین', 'SLOH-ist', '🐢'),
+    Word('oldest', 'قدیمی‌ترین/مسن‌ترین', 'OHL-dist', '👴'),
+    Word('youngest', 'جوان‌ترین', 'YUNG-ist', '🧒'),
+    Word('longest', 'طولانی‌ترین', 'LONG-ist', '📏'),
+    Word('shortest', 'کوتاه‌ترین', 'SHORT-ist', '📐'),
+    Word('highest', 'بالاترین', 'HAI-ist', '⬆️'),
+    Word('lowest', 'پایین‌ترین', 'LOH-ist', '⬇️'),
+    Word('strongest', 'قوی‌ترین', 'STRONG-ist', '💪'),
+    Word('weakest', 'ضعیف‌ترین', 'WEEK-ist', '🫥'),
+    Word('easiest', 'آسان‌ترین', 'EE-zee-ist', '😊'),
+    Word('hardest', 'سخت‌ترین', 'HARD-ist', '🧠'),
+    Word('best', 'بهترین', 'BEST', '🏆'),
+    Word('worst', 'بدترین', 'WURST', '👎'),
+    Word('most', 'بیشترین', 'MOHST', '🔝'),
+    Word('beautiful', 'زیبا', 'BYOO-tuh-ful', '🌸'),
+    Word('interesting', 'جالب', 'IN-ter-es-ting', '🤔'),
+    Word('important', 'مهم', 'im-POR-tunt', '⭐'),
+    Word('expensive', 'گران', 'ik-SPEN-siv', '💰'),
+    Word('difficult', 'سخت', 'DIF-i-kult', '🧩'),
+    Word('popular', 'محبوب', 'POP-yuh-ler', '❤️'),
+    Word('dangerous', 'خطرناک', 'DEYN-jer-us', '⚠️'),
+    Word('famous', 'مشهور', 'FEY-mus', '🌟'),
+    Word('clean', 'تمیز', 'KLEEN', '🧼'),
+    Word('cheap', 'ارزان', 'CHEEP', '💵'),
+    Word('easy', 'آسان', 'EE-zee', '😊'),
+  ],
+  examples: const [
+    'Ahmad is the tallest student in the class. — احمد بلندقدترین دانش‌آموز کلاس است.',
+    'This is the biggest house in the street. — این بزرگ‌ترین خانه در خیابان است.',
+    'This is the smallest room. — این کوچک‌ترین اتاق است.',
+    'Ali is the fastest runner in our team. — علی سریع‌ترین دونده‌ی تیم ماست.',
+    'This is the slowest car. — این کندترین ماشین است.',
+    'My grandfather is the oldest person in my family. — پدربزرگم مسن‌ترین فرد خانواده‌ام است.',
+    'She is the youngest student here. — او جوان‌ترین دانش‌آموز اینجاست.',
+    'This is the longest road in the city. — این طولانی‌ترین جاده‌ی شهر است.',
+    'This is the highest mountain in the country. — این بلندترین کوه کشور است.',
+    'This is the lowest price. — این پایین‌ترین قیمت است.',
+    'He is the strongest player on the team. — او قوی‌ترین بازیکن تیم است.',
+    'This is the easiest question. — این آسان‌ترین سؤال است.',
+    'This is the hardest lesson. — این سخت‌ترین درس است.',
+    'Today is the best day of my life. — امروز بهترین روز زندگی من است.',
+    'That was the worst movie I watched. — آن بدترین فیلمی بود که دیدم.',
+    'She is the most beautiful girl in the story. — او زیباترین دختر داستان است.',
+    'This is the most interesting book. — این جالب‌ترین کتاب است.',
+    'English is one of the most important languages. — انگلیسی یکی از مهم‌ترین زبان‌هاست.',
+    'This is the most expensive phone. — این گران‌ترین گوشی است.',
+    'This is the most difficult question. — این سخت‌ترین سؤال است.',
+    'He is the most famous person in the city. — او مشهورترین فرد شهر است.',
+    'This is the cheapest restaurant here. — این ارزان‌ترین رستوران اینجاست.',
+    'That is the cleanest room in the house. — آن تمیزترین اتاق خانه است.',
+    'This is the fastest way to learn. — این سریع‌ترین راه برای یادگیری است.',
+    'Who is the tallest student? — بلندقدترین دانش‌آموز کیست؟',
+    'What is the best choice? — بهترین انتخاب چیست؟',
+    'Which is the most expensive car? — کدام گران‌ترین ماشین است؟',
+    'This is the easiest way. — این آسان‌ترین راه است.',
+    'He is the strongest person here. — او قوی‌ترین فرد اینجاست.',
+    'This is the most popular game. — این محبوب‌ترین بازی است.',
+  ],
+  questions: const [
+    Question('What does "biggest" mean?', ['بزرگ‌ترین', 'کوچک‌ترین', 'سریع‌ترین', 'بلندترین'], 'بزرگ‌ترین'),
+    Question('How do you say "کوچک‌ترین"?', ['Biggest', 'Smallest', 'Fastest', 'Highest'], 'Smallest'),
+    Question('Complete: "He is the ___ student."', ['tallest', 'tall', 'taller', 'height'], 'tallest'),
+    Question('What does "fastest" mean?', ['کندترین', 'سریع‌ترین', 'قوی‌ترین', 'سخت‌ترین'], 'سریع‌ترین'),
+    Question('How do you say "قدیمی‌ترین/مسن‌ترین"?', ['Youngest', 'Oldest', 'Strongest', 'Lowest'], 'Oldest'),
+    Question('Complete: "She is the ___ person in the family."', ['youngest', 'young', 'younger', 'youngly'], 'youngest'),
+    Question('What does "highest" mean?', ['بالاترین', 'پایین‌ترین', 'بلندترین', 'کوتاه‌ترین'], 'بالاترین'),
+    Question('How do you say "قوی‌ترین"?', ['Weakest', 'Strongest', 'Fastest', 'Lowest'], 'Strongest'),
+    Question('Complete: "This is the ___ question."', ['easiest', 'easy', 'easier', 'easily'], 'easiest'),
+    Question('What does "hardest" mean?', ['آسان‌ترین', 'سخت‌ترین', 'بزرگ‌ترین', 'بهترین'], 'سخت‌ترین'),
+    Question('How do you say "بهترین"?', ['Worst', 'Best', 'Most', 'Good'], 'Best'),
+    Question('Complete: "Today is the ___ day."', ['best', 'good', 'better', 'well'], 'best'),
+    Question('What does "worst" mean?', ['بهترین', 'بدترین', 'بزرگ‌ترین', 'سریع‌ترین'], 'بدترین'),
+    Question('Complete: "This is the ___ movie."', ['worst', 'bad', 'worse', 'badly'], 'worst'),
+    Question('Which is correct?', ['the beautifulest', 'the most beautiful', 'most beautifulest', 'beautiful more'], 'the most beautiful'),
+    Question('Complete: "This is the ___ book."', ['most interesting', 'interestingest', 'more interesting', 'interest'], 'most interesting'),
+    Question('What does "expensive" mean?', ['ارزان', 'گران', 'سریع', 'سخت'], 'گران'),
+    Question('How do you say "مشهورترین"?', ['The most famous', 'The famousest', 'The more famous', 'Most fame'], 'The most famous'),
+    Question('Complete: "This is the ___ phone."', ['most expensive', 'expensiveest', 'more expensive', 'expensive'], 'most expensive'),
+    Question('What does "popular" mean?', ['محبوب', 'خطرناک', 'سخت', 'زیبا'], 'محبوب'),
+    Question('Complete: "This is the ___ game."', ['most popular', 'popularest', 'more popular', 'popular'], 'most popular'),
+    Question('Which is correct?', ['the biggest', 'biggest the', 'the big', 'big the'], 'the biggest'),
+    Question('Complete: "He is ___ strongest player."', ['the', 'a', 'an', 'no word'], 'the'),
+    Question('What is the superlative of "good"?', ['goodest', 'better', 'the best', 'the good'], 'the best'),
+    Question('What is the superlative of "bad"?', ['badest', 'worse', 'the worst', 'the bad'], 'the worst'),
+    Question('What is the superlative of "fast"?', ['the faster', 'the fastest', 'fastest the', 'most fast'], 'the fastest'),
+    Question('What is the superlative of "beautiful"?', ['the beautifulest', 'the most beautiful', 'the beautiful', 'most beautifulest'], 'the most beautiful'),
+    Question('Complete: "This is the ___ way."', ['easiest', 'easy', 'easier', 'most easy'], 'easiest'),
+    Question('What does "difficult" mean?', ['آسان', 'سخت', 'محبوب', 'ارزان'], 'سخت'),
+    Question('Complete: "English is one of the ___ important languages."', ['most', 'more', 'much', 'many'], 'most'),
+  ],
+);
