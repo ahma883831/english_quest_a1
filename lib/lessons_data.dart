@@ -2270,3 +2270,259 @@ final lesson11 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 12: Prepositions
+// ==========================================================
+final lesson12 = Lesson(
+  id: 12,
+  title: 'Prepositions',
+  subtitle: 'حروف اضافه مکان و زمان',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور جای اشیا و افراد را توصیف کنی و از حروف اضافه مهم انگلیسی استفاده کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. in یعنی داخل یک مکان: The book is in the bag.\n'
+      '۲. on یعنی روی یک سطح: The phone is on the table.\n'
+      '۳. under یعنی زیر چیزی: The shoes are under the bed.\n'
+      '۴. next to یعنی کنار چیزی.\n'
+      '۵. behind یعنی پشت چیزی و in front of یعنی جلوی چیزی.\n'
+      '۶. between یعنی بین دو چیز.\n'
+      '۷. near یعنی نزدیک و far from یعنی دور از.\n'
+      '۸. برای روزها معمولاً از on و برای ماه‌ها و سال‌ها از in استفاده می‌کنیم.\n\n'
+      '💡 مثال\n'
+      'The phone is on the table. → گوشی روی میز است.\n'
+      'The cat is under the chair. → گربه زیر صندلی است.\n'
+      'I live in Iran. → من در ایران زندگی می‌کنم.',
+  formula:
+      'in + place → in the room\n'
+      'on + surface → on the table\n'
+      'under + noun → under the bed\n'
+      'next to + noun → next to the door\n'
+      'behind + noun → behind the house\n'
+      'in front of + noun → in front of the school\n'
+      'between A and B → between the chairs\n'
+      'near + noun → near the park\n'
+      'on + day → on Monday\n'
+      'in + month/year → in June / in 2026',
+  words: const [
+    Word('in', 'داخل / در', 'IN', '📦'),
+    Word('on', 'روی', 'ON', '⬆️'),
+    Word('under', 'زیر', 'UN-der', '⬇️'),
+    Word('above', 'بالای', 'uh-BUV', '⬆️'),
+    Word('below', 'پایین / زیر', 'bih-LOH', '⬇️'),
+    Word('next', 'بعدی / کنار', 'NEKST', '➡️'),
+    Word('behind', 'پشت', 'bih-HAIND', '🔙'),
+    Word('front', 'جلو', 'FRUNT', '🔜'),
+    Word('between', 'بین', 'bih-TWEEN', '↔️'),
+    Word('near', 'نزدیک', 'NEER', '📍'),
+    Word('far', 'دور', 'FAR', '🌎'),
+    Word('beside', 'کنار', 'bih-SAID', '↔️'),
+    Word('inside', 'داخل', 'in-SAID', '📥'),
+    Word('outside', 'بیرون', 'out-SAID', '📤'),
+    Word('around', 'اطراف', 'uh-ROWND', '🔄'),
+    Word('opposite', 'مقابل', 'OP-uh-zit', '↔️'),
+    Word('place', 'مکان', 'PLEYS', '📍'),
+    Word('surface', 'سطح', 'SUR-fis', '⬜'),
+    Word('corner', 'گوشه', 'KOR-ner', '📐'),
+    Word('side', 'طرف / سمت', 'SAID', '↔️'),
+    Word('left', 'چپ', 'LEFT', '⬅️'),
+    Word('right', 'راست', 'RAIT', '➡️'),
+    Word('middle', 'وسط', 'MID-ul', '🎯'),
+    Word('top', 'بالا', 'TOP', '⬆️'),
+    Word('bottom', 'پایین', 'BOT-um', '⬇️'),
+    Word('wall', 'دیوار', 'WAWL', '🧱'),
+    Word('floor', 'کف', 'FLOR', '🏠'),
+    Word('ceiling', 'سقف', 'SEE-ling', '🏠'),
+    Word('street', 'خیابان', 'STREET', '🛣️'),
+    Word('building', 'ساختمان', 'BIL-ding', '🏢'),
+  ],
+  examples: const [
+    'The book is in the bag. — کتاب داخل کیف است.',
+    'My phone is on the table. — گوشی من روی میز است.',
+    'The shoes are under the bed. — کفش‌ها زیر تخت هستند.',
+    'The lamp is above the table. — چراغ بالای میز است.',
+    'The chair is below the window. — صندلی زیر پنجره است.',
+    'The school is next to the park. — مدرسه کنار پارک است.',
+    'The car is behind the house. — ماشین پشت خانه است.',
+    'I am in front of the school. — من جلوی مدرسه هستم.',
+    'The shop is between the bank and the school. — فروشگاه بین بانک و مدرسه است.',
+    'My house is near the park. — خانه من نزدیک پارک است.',
+    'The village is far from the city. — روستا از شهر دور است.',
+    'The chair is beside the table. — صندلی کنار میز است.',
+    'The children are inside the classroom. — بچه‌ها داخل کلاس هستند.',
+    'The students are outside the classroom. — دانش‌آموزان بیرون کلاس هستند.',
+    'There are trees around the house. — درخت‌هایی اطراف خانه هستند.',
+    'The bank is opposite the school. — بانک روبه‌روی مدرسه است.',
+    'The book is on the left side. — کتاب در سمت چپ است.',
+    'The door is on the right. — در سمت راست است.',
+    'The teacher is in the middle of the classroom. — معلم وسط کلاس است.',
+    'The clock is at the top of the wall. — ساعت بالای دیوار است.',
+    'The shoes are at the bottom of the stairs. — کفش‌ها پایین پله‌ها هستند.',
+    'There is a picture on the wall. — یک عکس روی دیوار است.',
+    'The bag is on the floor. — کیف روی زمین است.',
+    'The lamp is on the ceiling. — چراغ روی سقف است.',
+    'I live in Iran. — من در ایران زندگی می‌کنم.',
+    'I go to school on Monday. — دوشنبه به مدرسه می‌روم.',
+    'My birthday is in May. — تولدم در ماه مه است.',
+    'I was born in 2010. — من در سال ۲۰۱۰ به دنیا آمدم.',
+    'The store is near the street. — فروشگاه نزدیک خیابان است.',
+    'The building is behind the school. — ساختمان پشت مدرسه است.',
+  ],
+  questions: const [
+    Question(
+      'Complete: "The book is ___ the bag."',
+      ['in', 'on', 'under', 'behind'],
+      'in',
+    ),
+    Question(
+      'Complete: "The phone is ___ the table."',
+      ['on', 'in', 'between', 'far'],
+      'on',
+    ),
+    Question(
+      'What does "under" mean?',
+      ['روی', 'زیر', 'داخل', 'پشت'],
+      'زیر',
+    ),
+    Question(
+      'How do you say "پشت"?',
+      ['Behind', 'Between', 'Above', 'Near'],
+      'Behind',
+    ),
+    Question(
+      'Complete: "The cat is ___ the chair."',
+      ['under', 'on', 'far', 'between'],
+      'under',
+    ),
+    Question(
+      'What does "next to" mean?',
+      ['کنار', 'پشت', 'بالای', 'دور'],
+      'کنار',
+    ),
+    Question(
+      'Complete: "The school is ___ to the park."',
+      ['next', 'far', 'above', 'between'],
+      'next',
+    ),
+    Question(
+      'What does "between" mean?',
+      ['داخل', 'بین', 'روی', 'پشت'],
+      'بین',
+    ),
+    Question(
+      'Complete: "The shop is ___ the bank and the school."',
+      ['between', 'under', 'on', 'in'],
+      'between',
+    ),
+    Question(
+      'What does "near" mean?',
+      ['دور', 'نزدیک', 'پشت', 'بالا'],
+      'نزدیک',
+    ),
+    Question(
+      'What is the opposite of "near"?',
+      ['Far', 'On', 'In', 'Beside'],
+      'Far',
+    ),
+    Question(
+      'Complete: "The car is ___ the house."',
+      ['behind', 'in', 'on', 'between'],
+      'behind',
+    ),
+    Question(
+      'What does "in front of" mean?',
+      ['پشت', 'جلوی', 'داخل', 'زیر'],
+      'جلوی',
+    ),
+    Question(
+      'Complete: "I am ___ front of the school."',
+      ['in', 'on', 'at', 'under'],
+      'in',
+    ),
+    Question(
+      'What does "above" mean?',
+      ['بالای', 'پایین', 'داخل', 'کنار'],
+      'بالای',
+    ),
+    Question(
+      'What does "below" mean?',
+      ['بالا', 'پایین / زیر', 'پشت', 'بین'],
+      'پایین / زیر',
+    ),
+    Question(
+      'How do you say "چپ"?',
+      ['Right', 'Left', 'Middle', 'Top'],
+      'Left',
+    ),
+    Question(
+      'How do you say "راست"?',
+      ['Left', 'Right', 'Bottom', 'Front'],
+      'Right',
+    ),
+    Question(
+      'What does "middle" mean?',
+      ['وسط', 'بالا', 'پایین', 'گوشه'],
+      'وسط',
+    ),
+    Question(
+      'Complete: "The teacher is in the ___ of the classroom."',
+      ['middle', 'left', 'bottom', 'street'],
+      'middle',
+    ),
+    Question(
+      'What does "opposite" mean?',
+      ['مقابل', 'داخل', 'زیر', 'کنار'],
+      'مقابل',
+    ),
+    Question(
+      'Complete: "The bank is ___ the school."',
+      ['opposite', 'inside', 'under', 'above'],
+      'opposite',
+    ),
+    Question(
+      'Which preposition is used with days?',
+      ['in', 'on', 'under', 'between'],
+      'on',
+    ),
+    Question(
+      'Complete: "I go to school ___ Monday."',
+      ['on', 'in', 'at', 'under'],
+      'on',
+    ),
+    Question(
+      'Which preposition is usually used with months?',
+      ['on', 'in', 'under', 'behind'],
+      'in',
+    ),
+    Question(
+      'Complete: "My birthday is ___ May."',
+      ['in', 'on', 'at', 'between'],
+      'in',
+    ),
+    Question(
+      'Complete: "I was born ___ 2010."',
+      ['in', 'on', 'under', 'near'],
+      'in',
+    ),
+    Question(
+      'What does "outside" mean?',
+      ['داخل', 'بیرون', 'بالا', 'بین'],
+      'بیرون',
+    ),
+    Question(
+      'What does "ceiling" mean?',
+      ['کف', 'دیوار', 'سقف', 'پنجره'],
+      'سقف',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'The book is in the bag.',
+        'The book is in bag the.',
+        'The book are in the bag.',
+        'The book is on the bag.'
+      ],
+      'The book is in the bag.',
+    ),
+  ],
+);
