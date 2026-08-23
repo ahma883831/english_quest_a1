@@ -3797,3 +3797,269 @@ final lesson17 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 18: Simple Past - Negative & Questions
+// ==========================================================
+final lesson18 = Lesson(
+  id: 18,
+  title: 'Simple Past - Negative & Questions',
+  subtitle: 'گذشته ساده — منفی و سوالی',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری جمله‌های گذشته ساده را منفی و سوالی کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای منفی کردن گذشته ساده از did not یا شکل کوتاه didn’t استفاده می‌کنیم.\n'
+      '۲. بعد از didn’t همیشه فعل به شکل ساده می‌آید: I didn’t play.\n'
+      '۳. برای سوالی کردن از Did در ابتدای جمله استفاده می‌کنیم.\n'
+      '۴. بعد از Did هم فعل به شکل ساده می‌آید: Did you watch?\n'
+      '۵. جواب کوتاه مثبت: Yes, I did.\n'
+      '۶. جواب کوتاه منفی: No, I didn’t.\n'
+      '۷. برای همه فاعل‌ها در گذشته ساده از did استفاده می‌کنیم.',
+  formula:
+      'Positive:\n'
+      'I played football.\n\n'
+      'Negative:\n'
+      'I did not play football.\n'
+      'I didn’t play football.\n\n'
+      'Question:\n'
+      'Did you play football?\n\n'
+      'Short answers:\n'
+      'Yes, I did.\n'
+      'No, I didn’t.',
+  words: const [
+    Word('did', 'انجام داد/فعل کمکی گذشته', 'DID', '🔧'),
+    Word('didn’t', 'نکرد/انجام نداد', 'DID-unt', '❌'),
+    Word('yesterday', 'دیروز', 'YES-ter-dey', '📅'),
+    Word('last', 'گذشته/قبلی', 'LAST', '⏮️'),
+    Word('ago', 'پیش', 'uh-GOH', '⏳'),
+    Word('ask', 'پرسیدن', 'ASK', '❓'),
+    Word('answer', 'جواب دادن', 'AN-ser', '💬'),
+    Word('visit', 'دیدن/بازدید کردن', 'VIZ-it', '🏠'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('study', 'مطالعه کردن', 'STUH-dee', '📚'),
+    Word('work', 'کار کردن', 'WERK', '💼'),
+    Word('walk', 'راه رفتن', 'WAWK', '🚶'),
+    Word('call', 'تماس گرفتن', 'KAWL', '📞'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('clean', 'تمیز کردن', 'KLEEN', '🧹'),
+    Word('open', 'باز کردن', 'OH-pun', '🚪'),
+    Word('close', 'بستن', 'KLOHZ', '🚪'),
+    Word('start', 'شروع کردن', 'START', '▶️'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '🏁'),
+    Word('remember', 'به یاد آوردن', 'ree-MEM-ber', '🧠'),
+    Word('forget', 'فراموش کردن', 'fer-GET', '🤔'),
+    Word('understand', 'متوجه شدن', 'un-der-STAND', '💡'),
+    Word('need', 'نیاز داشتن', 'NEED', '📌'),
+    Word('want', 'خواستن', 'WONT', '⭐'),
+    Word('like', 'دوست داشتن', 'LAIK', '❤️'),
+    Word('love', 'دوست داشتن', 'LUV', '❤️'),
+    Word('stay', 'ماندن', 'STEY', '🏠'),
+    Word('arrive', 'رسیدن', 'uh-RAIV', '📍'),
+    Word('travel', 'سفر کردن', 'TRAV-ul', '✈️'),
+  ],
+  examples: const [
+    'I didn’t play football yesterday. — من دیروز فوتبال بازی نکردم.',
+    'She didn’t watch TV last night. — او دیشب تلویزیون تماشا نکرد.',
+    'We didn’t study yesterday. — ما دیروز درس نخواندیم.',
+    'He didn’t work on Friday. — او جمعه کار نکرد.',
+    'They didn’t walk to school. — آن‌ها پیاده به مدرسه نرفتند.',
+    'I didn’t call my friend. — من به دوستم زنگ نزدم.',
+    'She didn’t help me. — او به من کمک نکرد.',
+    'He didn’t clean his room. — او اتاقش را تمیز نکرد.',
+    'We didn’t open the door. — ما در را باز نکردیم.',
+    'They didn’t close the window. — آن‌ها پنجره را نبستند.',
+    'I didn’t start the lesson. — من درس را شروع نکردم.',
+    'She didn’t finish her homework. — او تکالیفش را تمام نکرد.',
+    'I didn’t remember his name. — من اسم او را به یاد نیاوردم.',
+    'He didn’t forget the answer. — او جواب را فراموش نکرد.',
+    'I didn’t understand the question. — من سؤال را متوجه نشدم.',
+    'Did you play football? — آیا فوتبال بازی کردی؟',
+    'Did she watch the movie? — آیا او فیلم را تماشا کرد؟',
+    'Did they study English? — آیا آن‌ها انگلیسی مطالعه کردند؟',
+    'Did he work yesterday? — آیا او دیروز کار کرد؟',
+    'Did you call your friend? — آیا به دوستت زنگ زدی؟',
+    'Did she help her mother? — آیا او به مادرش کمک کرد؟',
+    'Did he clean his room? — آیا او اتاقش را تمیز کرد؟',
+    'Did you open the door? — آیا در را باز کردی؟',
+    'Did they arrive on time? — آیا آن‌ها به‌موقع رسیدند؟',
+    'Did you travel last summer? — آیا تابستان گذشته سفر کردی؟',
+    'Yes, I did. — بله.',
+    'No, I didn’t. — نه.',
+    'Yes, she did. — بله، او انجام داد.',
+    'No, she didn’t. — نه، او انجام نداد.',
+    'Did you understand? — متوجه شدی؟',
+  ],
+  questions: const [
+    Question(
+      'Which word makes a past sentence negative?',
+      ['do', 'didn’t', 'does', 'will'],
+      'didn’t',
+    ),
+    Question(
+      'Complete: "I ___ play yesterday."',
+      ['didn’t', 'don’t', 'doesn’t', 'am not'],
+      'didn’t',
+    ),
+    Question(
+      'Complete: "She didn’t ___ TV."',
+      ['watch', 'watched', 'watches', 'watching'],
+      'watch',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I didn’t play.',
+        'I didn’t played.',
+        'I don’t played.',
+        'I not played.'
+      ],
+      'I didn’t play.',
+    ),
+    Question(
+      'How do you make a past question?',
+      ['Did + subject + verb', 'Do + subject + verb', 'Does + subject + verb', 'Will + subject + verb'],
+      'Did + subject + verb',
+    ),
+    Question(
+      'Complete: "___ you watch the movie?"',
+      ['Did', 'Do', 'Does', 'Are'],
+      'Did',
+    ),
+    Question(
+      'Complete: "Did you ___ English?"',
+      ['study', 'studied', 'studies', 'studying'],
+      'study',
+    ),
+    Question(
+      'What is the short form of "did not"?',
+      ['doesn’t', 'don’t', 'didn’t', 'isn’t'],
+      'didn’t',
+    ),
+    Question(
+      'What does "remember" mean?',
+      ['فراموش کردن', 'به یاد آوردن', 'پرسیدن', 'جواب دادن'],
+      'به یاد آوردن',
+    ),
+    Question(
+      'How do you say "فراموش کردن"?',
+      ['Remember', 'Forget', 'Understand', 'Answer'],
+      'Forget',
+    ),
+    Question(
+      'Complete: "I didn’t ___ the question."',
+      ['understand', 'understood', 'understands', 'understanding'],
+      'understand',
+    ),
+    Question(
+      'What does "need" mean?',
+      ['خواستن', 'نیاز داشتن', 'دوست داشتن', 'ماندن'],
+      'نیاز داشتن',
+    ),
+    Question(
+      'Complete: "Did she ___ her mother?"',
+      ['help', 'helped', 'helps', 'helping'],
+      'help',
+    ),
+    Question(
+      'Choose the correct answer: "Did you play?"',
+      ['Yes, I did.', 'Yes, I played.', 'Yes, I do.', 'Yes, I am.'],
+      'Yes, I did.',
+    ),
+    Question(
+      'Choose the correct negative answer:',
+      ['No, I didn’t.', 'No, I don’t.', 'No, I wasn’t.', 'No, I not.'],
+      'No, I didn’t.',
+    ),
+    Question(
+      'Complete: "They ___ arrive yesterday."',
+      ['didn’t', 'don’t', 'doesn’t', 'aren’t'],
+      'didn’t',
+    ),
+    Question(
+      'What does "arrive" mean?',
+      ['رسیدن', 'ماندن', 'سفر کردن', 'کار کردن'],
+      'رسیدن',
+    ),
+    Question(
+      'Complete: "Did he ___ yesterday?"',
+      ['work', 'worked', 'works', 'working'],
+      'work',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'Did she watch TV?',
+        'Did she watched TV?',
+        'Does she watched TV?',
+        'She did watched TV?'
+      ],
+      'Did she watch TV?',
+    ),
+    Question(
+      'Complete: "We didn’t ___ last summer."',
+      ['travel', 'traveled', 'travels', 'traveling'],
+      'travel',
+    ),
+    Question(
+      'What does "stay" mean?',
+      ['ماندن', 'رسیدن', 'باز کردن', 'بستن'],
+      'ماندن',
+    ),
+    Question(
+      'Complete: "I didn’t ___ his name."',
+      ['remember', 'remembered', 'remembers', 'remembering'],
+      'remember',
+    ),
+    Question(
+      'What does "answer" mean?',
+      ['سؤال پرسیدن', 'جواب دادن', 'فراموش کردن', 'سفر کردن'],
+      'جواب دادن',
+    ),
+    Question(
+      'Complete: "Did you ___ the question?"',
+      ['answer', 'answered', 'answers', 'answering'],
+      'answer',
+    ),
+    Question(
+      'Which is the correct negative sentence?',
+      [
+        'She didn’t study.',
+        'She didn’t studied.',
+        'She doesn’t studied.',
+        'She not studied.'
+      ],
+      'She didn’t study.',
+    ),
+    Question(
+      'Which is the correct question?',
+      [
+        'Did they arrive?',
+        'Did they arrived?',
+        'Do they arrived?',
+        'They did arrive?'
+      ],
+      'Did they arrive?',
+    ),
+    Question(
+      'What does "last" mean in "last week"?',
+      ['آینده', 'گذشته/قبلی', 'امروز', 'هر روز'],
+      'گذشته/قبلی',
+    ),
+    Question(
+      'Complete: "I didn’t ___ the movie."',
+      ['like', 'liked', 'likes', 'liking'],
+      'like',
+    ),
+    Question(
+      'Complete: "Did she ___ the lesson?"',
+      ['finish', 'finished', 'finishes', 'finishing'],
+      'finish',
+    ),
+    Question(
+      'After "didn’t", which form of the verb do we use?',
+      ['Base form', 'Past form', 'Past participle', '- ing form'],
+      'Base form',
+    ),
+  ],
+);
