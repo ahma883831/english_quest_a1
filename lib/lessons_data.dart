@@ -5252,3 +5252,152 @@ final lesson25 = Lesson(
     Question('What does "responsible" mean?', ['مسئول', 'ممنوع', 'خطرناک', 'آرام'], 'مسئول'),
   ],
 );
+// ==========================================================
+// LESSON 26: Have to / Don't have to
+// ==========================================================
+final lesson26 = Lesson(
+  id: 26,
+  title: 'Have to / Don’t have to',
+  subtitle: 'مجبور بودن و لازم نبودن',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره‌ی کارهایی که به دلیل قانون، شرایط یا وظیفه مجبور به انجامشان هستی صحبت کنی و همچنین بگویی انجام کاری لازم نیست.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای I/You/We/They از have to استفاده می‌کنیم: I have to study.\n'
+      '۲. برای He/She/It از has to استفاده می‌کنیم: She has to work.\n'
+      '۳. برای گفتن اینکه کاری لازم نیست، از don’t have to / doesn’t have to استفاده می‌کنیم.\n'
+      '۴. don’t have to یعنی "لازم نیست"، نه "نباید".\n'
+      '۵. در سؤال از Do/Does استفاده می‌کنیم: Do you have to go?\n'
+      '۶. بعد از have to و has to، فعل به شکل ساده می‌آید.',
+  formula:
+      'Positive:\n'
+      'I/You/We/They + have to + verb\n'
+      'He/She/It + has to + verb\n\n'
+      'Negative:\n'
+      'I/You/We/They + don’t have to + verb\n'
+      'He/She/It + doesn’t have to + verb\n\n'
+      'Question:\n'
+      'Do/Does + subject + have to + verb?',
+  words: const [
+    Word('have to', 'باید / مجبور بودن', 'HAV-too', '📌'),
+    Word('has to', 'باید / مجبور است', 'HAZ-too', '📌'),
+    Word('don’t have to', 'لازم نیست', 'DOHNT-hav-too', '👌'),
+    Word('doesn’t have to', 'لازم نیست', 'DUZ-ent-hav-too', '👌'),
+    Word('need', 'نیاز داشتن', 'NEED', '🧩'),
+    Word('necessary', 'ضروری', 'NES-uh-ser-ee', '❗'),
+    Word('optional', 'اختیاری', 'OP-shuh-nul', '🔀'),
+    Word('required', 'الزامی', 'ree-KWAI-erd', '📋'),
+    Word('homework', 'تکلیف خانه', 'HOHM-wurk', '📚'),
+    Word('exam', 'امتحان', 'ig-ZAM', '📝'),
+    Word('class', 'کلاس', 'KLAS', '🏫'),
+    Word('job', 'شغل/کار', 'JOB', '💼'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '🏁'),
+    Word('start', 'شروع کردن', 'START', '▶️'),
+    Word('arrive', 'رسیدن', 'uh-RAIV', '🚶'),
+    Word('leave', 'ترک کردن', 'LEEV', '🚪'),
+    Word('bring', 'آوردن', 'BRING', '🎒'),
+    Word('take', 'برداشتن/بردن', 'TEYK', '✋'),
+    Word('pay', 'پرداخت کردن', 'PEY', '💳'),
+    Word('buy', 'خریدن', 'BAI', '🛒'),
+    Word('clean', 'تمیز کردن', 'KLEEN', '🧹'),
+    Word('practice', 'تمرین کردن', 'PRAK-tis', '🏋️'),
+    Word('prepare', 'آماده شدن/کردن', 'pri-PAIR', '🎯'),
+    Word('attend', 'شرکت کردن/حاضر شدن', 'uh-TEND', '🏫'),
+    Word('permission', 'اجازه', 'per-MISH-un', '📝'),
+    Word('free', 'آزاد/رایگان', 'FREE', '🕊️'),
+    Word('busy', 'مشغول', 'BIZ-ee', '⏰'),
+    Word('early', 'زود', 'ER-lee', '🌅'),
+    Word('late', 'دیر', 'LEYT', '🌙'),
+    Word('every day', 'هر روز', 'EV-ree dey', '📅'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '➡️'),
+  ],
+  examples: const [
+    'I have to study tonight. — من باید امشب درس بخوانم.',
+    'You have to wear a uniform. — تو باید لباس فرم بپوشی.',
+    'We have to finish our homework. — ما باید تکالیفمان را تمام کنیم.',
+    'They have to arrive early. — آن‌ها باید زود برسند.',
+    'He has to work today. — او باید امروز کار کند.',
+    'She has to clean her room. — او باید اتاقش را تمیز کند.',
+    'My brother has to go to school. — برادرم باید به مدرسه برود.',
+    'The student has to take an exam. — دانش‌آموز باید امتحان بدهد.',
+    'I don’t have to work tomorrow. — من لازم نیست فردا کار کنم.',
+    'You don’t have to come early. — لازم نیست زود بیایی.',
+    'We don’t have to pay today. — لازم نیست امروز پول پرداخت کنیم.',
+    'They don’t have to bring books. — لازم نیست آن‌ها کتاب بیاورند.',
+    'He doesn’t have to work on Friday. — او لازم نیست جمعه کار کند.',
+    'She doesn’t have to cook tonight. — او لازم نیست امشب آشپزی کند.',
+    'You don’t have to buy a new phone. — لازم نیست گوشی جدید بخری.',
+    'Do you have to study today? — آیا باید امروز درس بخوانی؟',
+    'Do they have to leave now? — آیا آن‌ها باید الان بروند؟',
+    'Does he have to work tomorrow? — آیا او باید فردا کار کند؟',
+    'Does she have to attend the class? — آیا او باید در کلاس شرکت کند؟',
+    'Yes, I do. — بله، باید.',
+    'No, I don’t. — نه، لازم نیست.',
+    'Yes, he does. — بله، باید.',
+    'No, she doesn’t. — نه، لازم نیست.',
+    'You have to practice English every day. — باید هر روز انگلیسی تمرین کنی.',
+    'I have to prepare for the exam. — باید برای امتحان آماده شوم.',
+    'He has to arrive before eight. — او باید قبل از هشت برسد.',
+    'We don’t have to stay here. — لازم نیست اینجا بمانیم.',
+    'She doesn’t have to bring anything. — او لازم نیست چیزی بیاورد.',
+    'Do you have to wear a uniform? — آیا باید لباس فرم بپوشی؟',
+    'Does your brother have to study tonight? — آیا برادرت باید امشب درس بخواند؟',
+  ],
+  questions: const [
+    Question('What does "have to" mean?', ['باید/مجبور بودن', 'نباید', 'لازم نیست', 'توانستن'], 'باید/مجبور بودن'),
+    Question('Complete: "I ___ to study."', ['have', 'has', 'having', 'had'], 'have'),
+    Question('Complete: "She ___ to work."', ['have', 'has', 'having', 'had'], 'has'),
+    Question('What does "don’t have to" mean?', ['باید', 'نباید', 'لازم نیست', 'نمی‌تواند'], 'لازم نیست'),
+    Question('Complete: "They ___ have to come."', ['don’t', 'doesn’t', 'not', 'aren’t'], 'don’t'),
+    Question('Complete: "He ___ have to work today."', ['doesn’t', 'don’t', 'isn’t', 'hasn’t'], 'doesn’t'),
+    Question('Which is correct?', ['She have to study.', 'She has to study.', 'She has to studies.', 'She having to study.'], 'She has to study.'),
+    Question('Which is correct?', ['I has to go.', 'I have to go.', 'I have to goes.', 'I having to go.'], 'I have to go.'),
+    Question('Complete: "We ___ to finish our homework."', ['have', 'has', 'does', 'are'], 'have'),
+    Question('What does "required" mean?', ['اختیاری', 'الزامی', 'رایگان', 'آزاد'], 'الزامی'),
+    Question('What does "optional" mean?', ['الزامی', 'اختیاری', 'ضروری', 'مشغول'], 'اختیاری'),
+    Question('Complete: "You ___ have to pay."', ['don’t', 'doesn’t', 'aren’t', 'isn’t'], 'don’t'),
+    Question('Complete: "She ___ have to come."', ['doesn’t', 'don’t', 'isn’t', 'hasn’t'], 'doesn’t'),
+    Question('Which question is correct?', ['Do you have to go?', 'Do you has to go?', 'Does you have to go?', 'Do you have go?'], 'Do you have to go?'),
+    Question('Which question is correct?', ['Does he have to work?', 'Does he has to work?', 'Do he have to work?', 'Does he have work?'], 'Does he have to work?'),
+    Question('Complete: "Does she ___ to study?"', ['have', 'has', 'having', 'had'], 'have'),
+    Question('Complete: "Do they ___ to leave?"', ['have', 'has', 'having', 'had'], 'have'),
+    Question('What does "homework" mean?', ['امتحان', 'تکلیف خانه', 'کلاس', 'شغل'], 'تکلیف خانه'),
+    Question('How do you say "امتحان"?', ['Class', 'Exam', 'Job', 'Homework'], 'Exam'),
+    Question('Complete: "I have to ___ for the exam."', ['prepare', 'prepares', 'preparing', 'prepared'], 'prepare'),
+    Question('What does "attend" mean?', ['شرکت کردن/حاضر شدن', 'ترک کردن', 'خریدن', 'پرداخت کردن'], 'شرکت کردن/حاضر شدن'),
+    Question('Complete: "She has to ___ the class."', ['attend', 'attends', 'attending', 'attended'], 'attend'),
+    Question('What does "arrive" mean?', ['رسیدن', 'رفتن', 'خریدن', 'پرداخت کردن'], 'رسیدن'),
+    Question('Complete: "They have to ___ early."', ['arrive', 'arrives', 'arriving', 'arrived'], 'arrive'),
+    Question('What does "necessary" mean?', ['ضروری', 'اختیاری', 'رایگان', 'دیر'], 'ضروری'),
+    Question('Which sentence means "لازم نیست فردا کار کنم"?', [
+      'I have to work tomorrow.',
+      'I don’t have to work tomorrow.',
+      'I must work tomorrow.',
+      'I have work tomorrow.',
+    ], 'I don’t have to work tomorrow.'),
+    Question('Which sentence means "او باید کار کند"?', [
+      'He doesn’t have to work.',
+      'He has to work.',
+      'He have to work.',
+      'He has work to.',
+    ], 'He has to work.'),
+    Question('Which sentence means "او لازم نیست بیاید"?', [
+      'She has to come.',
+      'She doesn’t have to come.',
+      'She don’t have to come.',
+      'She must come.',
+    ], 'She doesn’t have to come.'),
+    Question('After "has to", which form of the verb do we use?', [
+      'Base form',
+      'Verb + s',
+      'Verb + ing',
+      'Past form',
+    ], 'Base form'),
+    Question('What is the difference between "mustn’t" and "don’t have to"?', [
+      'They always mean the same thing.',
+      'Mustn’t means prohibited; don’t have to means not necessary.',
+      'Don’t have to means prohibited.',
+      'Mustn’t means optional.',
+    ], 'Mustn’t means prohibited; don’t have to means not necessary.'),
+  ],
+);
