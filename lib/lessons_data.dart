@@ -2526,3 +2526,247 @@ final lesson12 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 13: Can & Can't
+// ==========================================================
+final lesson13 = Lesson(
+  id: 13,
+  title: 'Can & Can\'t',
+  subtitle: 'توانایی و ناتوانی',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور درباره توانایی‌ها و ناتوانی‌های خودت و دیگران صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. از can برای بیان توانایی استفاده می‌کنیم: I can swim. یعنی من می‌توانم شنا کنم.\n'
+      '۲. از can\'t برای بیان ناتوانی استفاده می‌کنیم: I can\'t swim. یعنی من نمی‌توانم شنا کنم.\n'
+      '۳. بعد از can و can\'t همیشه شکل ساده فعل می‌آید: can play, can speak, can run.\n'
+      '۴. برای سوالی کردن، can را به ابتدای جمله می‌بریم: Can you swim?\n'
+      '۵. جواب کوتاه مثبت: Yes, I can. جواب کوتاه منفی: No, I can\'t.\n'
+      '۶. برای he, she و they هم خود can تغییر نمی‌کند: He can run. / She can sing. / They can dance.\n\n'
+      '⚠️ نکته مهم\n'
+      'بعد از can از to استفاده نمی‌کنیم. درست: I can swim. نادرست: I can to swim.',
+  formula:
+      'Positive: Subject + can + verb\n'
+      'Negative: Subject + can\'t + verb\n'
+      'Question: Can + subject + verb?\n\n'
+      'I can swim.\n'
+      'I can\'t swim.\n'
+      'Can you swim?\n'
+      'Yes, I can. / No, I can\'t.',
+  words: const [
+    Word('can', 'توانستن', 'KAN', '💪'),
+    Word('cannot', 'نتوانستن', 'KAN-not', '🚫'),
+    Word('swim', 'شنا کردن', 'SWIM', '🏊'),
+    Word('run', 'دویدن', 'RUN', '🏃'),
+    Word('walk', 'راه رفتن', 'WAWK', '🚶'),
+    Word('jump', 'پریدن', 'JUMP', '🤸'),
+    Word('dance', 'رقصیدن', 'DANS', '💃'),
+    Word('sing', 'آواز خواندن', 'SING', '🎤'),
+    Word('speak', 'صحبت کردن', 'SPEEK', '🗣️'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('write', 'نوشتن', 'RAIT', '✍️'),
+    Word('cook', 'آشپزی کردن', 'KOOK', '🍳'),
+    Word('drive', 'رانندگی کردن', 'DRAIV', '🚗'),
+    Word('ride', 'سوار شدن', 'RAID', '🚲'),
+    Word('draw', 'نقاشی کشیدن', 'DRAW', '🎨'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('use', 'استفاده کردن', 'YOOZ', '🔧'),
+    Word('understand', 'متوجه شدن', 'un-der-STAND', '🧠'),
+    Word('remember', 'به یاد آوردن', 'ree-MEM-ber', '🧠'),
+    Word('learn', 'یاد گرفتن', 'LURN', '📚'),
+    Word('make', 'ساختن', 'MEYK', '🛠️'),
+    Word('fix', 'تعمیر کردن', 'FIKS', '🔨'),
+    Word('open', 'باز کردن', 'OH-pen', '🔓'),
+    Word('close', 'بستن', 'KLOHZ', '🔒'),
+    Word('fast', 'سریع', 'FAST', '⚡'),
+    Word('slow', 'آهسته', 'SLOH', '🐢'),
+    Word('well', 'به خوبی', 'WEL', '👍'),
+    Word('together', 'با هم', 'tuh-GETH-er', '🤝'),
+  ],
+  examples: const [
+    'I can swim. — من می‌توانم شنا کنم.',
+    'I can run fast. — من می‌توانم سریع بدوم.',
+    'She can dance. — او می‌تواند برقصد.',
+    'He can sing very well. — او می‌تواند خیلی خوب آواز بخواند.',
+    'They can speak English. — آن‌ها می‌توانند انگلیسی صحبت کنند.',
+    'We can play football. — ما می‌توانیم فوتبال بازی کنیم.',
+    'I can read English. — من می‌توانم انگلیسی بخوانم.',
+    'My sister can cook. — خواهرم می‌تواند آشپزی کند.',
+    'He can drive a car. — او می‌تواند ماشین براند.',
+    'I can ride a bike. — من می‌توانم دوچرخه‌سواری کنم.',
+    'She can draw very well. — او می‌تواند خیلی خوب نقاشی بکشد.',
+    'I can help you. — من می‌توانم به تو کمک کنم.',
+    'I can understand English. — من می‌توانم انگلیسی را متوجه شوم.',
+    'I can learn quickly. — من می‌توانم سریع یاد بگیرم.',
+    'I can make a cake. — من می‌توانم کیک درست کنم.',
+    'He can fix the computer. — او می‌تواند کامپیوتر را تعمیر کند.',
+    'I can open the door. — من می‌توانم در را باز کنم.',
+    'I can\'t swim. — من نمی‌توانم شنا کنم.',
+    'He can\'t drive. — او نمی‌تواند رانندگی کند.',
+    'She can\'t speak English. — او نمی‌تواند انگلیسی صحبت کند.',
+    'I can\'t remember his name. — نمی‌توانم اسم او را به یاد بیاورم.',
+    'Can you swim? — می‌توانی شنا کنی؟',
+    'Can you speak English? — می‌توانی انگلیسی صحبت کنی؟',
+    'Can he drive? — آیا او می‌تواند رانندگی کند؟',
+    'Can she cook? — آیا او می‌تواند آشپزی کند؟',
+    'Can they play football? — آیا آن‌ها می‌توانند فوتبال بازی کنند؟',
+    'Yes, I can. — بله، می‌توانم.',
+    'No, I can\'t. — نه، نمی‌توانم.',
+    'Yes, she can. — بله، او می‌تواند.',
+    'No, he can\'t. — نه، او نمی‌تواند.',
+  ],
+  questions: const [
+    Question(
+      'What does "can" mean?',
+      ['توانستن', 'دویدن', 'خواندن', 'ساختن'],
+      'توانستن',
+    ),
+    Question(
+      'What does "swim" mean?',
+      ['شنا کردن', 'دویدن', 'رقصیدن', 'خواندن'],
+      'شنا کردن',
+    ),
+    Question(
+      'Complete: "I ___ swim."',
+      ['can', 'am', 'is', 'are'],
+      'can',
+    ),
+    Question(
+      'Complete: "I ___ swim." (I am not able)',
+      ['can\'t', 'can', 'am', 'is'],
+      'can\'t',
+    ),
+    Question(
+      'What does "run" mean?',
+      ['دویدن', 'راه رفتن', 'پریدن', 'شنا کردن'],
+      'دویدن',
+    ),
+    Question(
+      'How do you say "رقصیدن"?',
+      ['Sing', 'Dance', 'Run', 'Walk'],
+      'Dance',
+    ),
+    Question(
+      'Complete: "She ___ sing."',
+      ['can', 'can\'t', 'is', 'does'],
+      'can',
+    ),
+    Question(
+      'What does "speak" mean?',
+      ['صحبت کردن', 'نوشتن', 'خواندن', 'کمک کردن'],
+      'صحبت کردن',
+    ),
+    Question(
+      'Complete: "They can ___ English."',
+      ['speak', 'speaks', 'speaking', 'spoke'],
+      'speak',
+    ),
+    Question(
+      'How do you say "خواندن"?',
+      ['Write', 'Read', 'Cook', 'Draw'],
+      'Read',
+    ),
+    Question(
+      'What does "write" mean?',
+      ['نوشتن', 'خواندن', 'ساختن', 'تعمیر کردن'],
+      'نوشتن',
+    ),
+    Question(
+      'Complete: "Can you ___?"',
+      ['swim', 'swims', 'swimming', 'swam'],
+      'swim',
+    ),
+    Question(
+      'How do you make a question with "can"?',
+      ['Can + subject + verb', 'Subject + can + verb',
+       'Do + can + verb', 'Can + verb + subject + to'],
+      'Can + subject + verb',
+    ),
+    Question(
+      'What is the correct answer to "Can you swim?"',
+      ['Yes, I can.', 'Yes, I am.', 'Yes, I do.', 'Yes, I have.'],
+      'Yes, I can.',
+    ),
+    Question(
+      'What is the negative short answer?',
+      ['No, I can\'t.', 'No, I don\'t.', 'No, I am not.', 'No, I haven\'t.'],
+      'No, I can\'t.',
+    ),
+    Question(
+      'Complete: "He ___ drive a car."',
+      ['can', 'cans', 'can to', 'is can'],
+      'can',
+    ),
+    Question(
+      'What does "cook" mean?',
+      ['آشپزی کردن', 'رانندگی کردن', 'خواندن', 'پریدن'],
+      'آشپزی کردن',
+    ),
+    Question(
+      'How do you say "رانندگی کردن"?',
+      ['Ride', 'Drive', 'Walk', 'Run'],
+      'Drive',
+    ),
+    Question(
+      'Complete: "She can ___ very well."',
+      ['dance', 'dances', 'dancing', 'to dance'],
+      'dance',
+    ),
+    Question(
+      'What does "draw" mean?',
+      ['نقاشی کشیدن', 'نوشتن', 'ساختن', 'بستن'],
+      'نقاشی کشیدن',
+    ),
+    Question(
+      'Complete: "I can ___ a bike."',
+      ['ride', 'rides', 'riding', 'to ride'],
+      'ride',
+    ),
+    Question(
+      'What does "help" mean?',
+      ['کمک کردن', 'یاد گرفتن', 'استفاده کردن', 'ساختن'],
+      'کمک کردن',
+    ),
+    Question(
+      'Complete: "I can ___ you."',
+      ['help', 'helps', 'helping', 'to help'],
+      'help',
+    ),
+    Question(
+      'What does "understand" mean?',
+      ['متوجه شدن', 'به یاد آوردن', 'آشپزی کردن', 'صحبت کردن'],
+      'متوجه شدن',
+    ),
+    Question(
+      'Complete: "I can ___ English."',
+      ['understand', 'understands', 'understanding', 'to understand'],
+      'understand',
+    ),
+    Question(
+      'What does "remember" mean?',
+      ['به یاد آوردن', 'فراموش کردن', 'یاد گرفتن', 'ساختن'],
+      'به یاد آوردن',
+    ),
+    Question(
+      'Complete: "He can ___ the computer."',
+      ['fix', 'fixes', 'fixing', 'to fix'],
+      'fix',
+    ),
+    Question(
+      'What does "fast" mean?',
+      ['سریع', 'آهسته', 'خوب', 'ضعیف'],
+      'سریع',
+    ),
+    Question(
+      'What does "slow" mean?',
+      ['سریع', 'آهسته', 'قوی', 'بلند'],
+      'آهسته',
+    ),
+    Question(
+      'Complete: "Can she cook?"',
+      ['Yes, she can.', 'Yes, she is.', 'Yes, she does.', 'Yes, she has.'],
+      'Yes, she can.',
+    ),
+  ],
+);
