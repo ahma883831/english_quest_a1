@@ -4063,3 +4063,257 @@ final lesson18 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 19: Be Going To - Future Plans
+// ==========================================================
+final lesson19 = Lesson(
+  id: 19,
+  title: 'Be Going To - Future Plans',
+  subtitle: 'آینده و برنامه‌ها با Going to',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره‌ی برنامه‌ها و کارهایی که قصد داری در آینده انجام بدهی صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای برنامه یا قصد آینده از be going to استفاده می‌کنیم.\n'
+      '۲. بعد از going to همیشه شکل ساده فعل می‌آید: I am going to study.\n'
+      '۳. فعل be با فاعل تغییر می‌کند: I am، You/We/They are، He/She/It is.\n'
+      '۴. برای منفی کردن، not را بعد از am/is/are می‌آوریم: I am not going to go.\n'
+      '۵. برای سوالی کردن، am/is/are را به ابتدای جمله می‌بریم: Are you going to study?\n'
+      '۶. going to برای برنامه‌ها و تصمیم‌هایی که از قبل قصد انجامشان را داریم بسیار رایج است.',
+  formula:
+      'Positive:\n'
+      'Subject + am/is/are + going to + verb\n'
+      'I am going to study.\n\n'
+      'Negative:\n'
+      'Subject + am/is/are + not + going to + verb\n'
+      'I am not going to study.\n\n'
+      'Question:\n'
+      'Am/Is/Are + subject + going to + verb?\n'
+      'Are you going to study?',
+  words: const [
+    Word('future', 'آینده', 'FYOO-cher', '🔮'),
+    Word('plan', 'برنامه', 'PLAN', '📝'),
+    Word('tonight', 'امشب', 'tuh-NAIT', '🌙'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '📅'),
+    Word('next', 'بعدی/آینده', 'NEKST', '➡️'),
+    Word('week', 'هفته', 'WEEK', '🗓️'),
+    Word('weekend', 'آخر هفته', 'WEEK-end', '🎉'),
+    Word('holiday', 'تعطیلات', 'HOL-uh-dey', '🏖️'),
+    Word('decide', 'تصمیم گرفتن', 'di-SAID', '🤔'),
+    Word('hope', 'امیدوار بودن', 'HOHP', '🌟'),
+    Word('learn', 'یاد گرفتن', 'LURN', '📚'),
+    Word('study', 'مطالعه کردن', 'STUH-dee', '📖'),
+    Word('work', 'کار کردن', 'WERK', '💼'),
+    Word('travel', 'سفر کردن', 'TRAV-ul', '✈️'),
+    Word('visit', 'دیدن/بازدید کردن', 'VIZ-it', '🏠'),
+    Word('meet', 'ملاقات کردن', 'MEET', '🤝'),
+    Word('buy', 'خریدن', 'BAI', '🛒'),
+    Word('make', 'ساختن/درست کردن', 'MEYK', '🛠️'),
+    Word('build', 'ساختن', 'BILD', '🏗️'),
+    Word('start', 'شروع کردن', 'START', '▶️'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '🏁'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('cook', 'آشپزی کردن', 'KOOK', '🍳'),
+    Word('clean', 'تمیز کردن', 'KLEEN', '🧹'),
+    Word('call', 'تماس گرفتن', 'KAWL', '📞'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('read', 'خواندن', 'REED', '📚'),
+    Word('practice', 'تمرین کردن', 'PRAK-tis', '✍️'),
+    Word('tomorrowPlan', 'فردا', 'tuh-MOR-oh', '🔜'),
+  ],
+  examples: const [
+    'I am going to study tonight. — من قصد دارم امشب مطالعه کنم.',
+    'I am going to learn English. — من قصد دارم انگلیسی یاد بگیرم.',
+    'She is going to visit her grandmother. — او قصد دارد مادربزرگش را ببیند.',
+    'He is going to play football tomorrow. — او قصد دارد فردا فوتبال بازی کند.',
+    'We are going to travel next week. — ما قصد داریم هفته آینده سفر کنیم.',
+    'They are going to watch a movie. — آن‌ها قصد دارند یک فیلم تماشا کنند.',
+    'I am going to buy a new book. — من قصد دارم یک کتاب جدید بخرم.',
+    'She is going to cook dinner. — او قصد دارد شام درست کند.',
+    'He is going to clean his room. — او قصد دارد اتاقش را تمیز کند.',
+    'We are going to meet our friends. — ما قصد داریم دوستانمان را ملاقات کنیم.',
+    'I am going to practice English. — من قصد دارم انگلیسی تمرین کنم.',
+    'They are going to start a new project. — آن‌ها قصد دارند یک پروژه جدید شروع کنند.',
+    'I am not going to work tomorrow. — من قصد ندارم فردا کار کنم.',
+    'She is not going to travel this weekend. — او قصد ندارد این آخر هفته سفر کند.',
+    'They are not going to play today. — آن‌ها قصد ندارند امروز بازی کنند.',
+    'Are you going to study tonight? — آیا قصد داری امشب مطالعه کنی؟',
+    'Is he going to work tomorrow? — آیا او قصد دارد فردا کار کند؟',
+    'Is she going to visit her aunt? — آیا او قصد دارد عمه‌اش را ببیند؟',
+    'Are they going to travel next month? — آیا آن‌ها قصد دارند ماه آینده سفر کنند؟',
+    'Are you going to learn English? — آیا قصد داری انگلیسی یاد بگیری؟',
+    'Yes, I am. — بله.',
+    'No, I am not. — نه.',
+    'Yes, she is. — بله.',
+    'No, she isn’t. — نه.',
+    'Yes, they are. — بله.',
+    'No, they aren’t. — نه.',
+    'What are you going to do tomorrow? — فردا قصد داری چه کار کنی؟',
+    'I am going to study English. — من قصد دارم انگلیسی مطالعه کنم.',
+    'Where are you going to go? — قصد داری کجا بروی؟',
+    'I am going to visit my friend. — قصد دارم دوستم را ببینم.',
+  ],
+  questions: const [
+    Question(
+      'What does "future" mean?',
+      ['گذشته', 'آینده', 'امروز', 'دیروز'],
+      'آینده',
+    ),
+    Question(
+      'What does "plan" mean?',
+      ['برنامه', 'تعطیلات', 'تصمیم', 'سفر'],
+      'برنامه',
+    ),
+    Question(
+      'Complete: "I ___ going to study."',
+      ['am', 'is', 'are', 'be'],
+      'am',
+    ),
+    Question(
+      'Complete: "She ___ going to travel."',
+      ['am', 'is', 'are', 'be'],
+      'is',
+    ),
+    Question(
+      'Complete: "They ___ going to play."',
+      ['am', 'is', 'are', 'be'],
+      'are',
+    ),
+    Question(
+      'What comes after "going to"?',
+      ['Base verb', 'Past verb', 'Noun only', 'Adjective'],
+      'Base verb',
+    ),
+    Question(
+      'Complete: "I am going to ___ English."',
+      ['learn', 'learned', 'learning', 'learns'],
+      'learn',
+    ),
+    Question(
+      'What does "tomorrow" mean?',
+      ['دیروز', 'امروز', 'فردا', 'هفته گذشته'],
+      'فردا',
+    ),
+    Question(
+      'Complete: "We are going to ___ next week."',
+      ['travel', 'traveled', 'travels', 'traveling'],
+      'travel',
+    ),
+    Question(
+      'What does "visit" mean?',
+      ['ساختن', 'دیدن/بازدید کردن', 'خریدن', 'شروع کردن'],
+      'دیدن/بازدید کردن',
+    ),
+    Question(
+      'Complete: "She is going to ___ her grandmother."',
+      ['visit', 'visited', 'visits', 'visiting'],
+      'visit',
+    ),
+    Question(
+      'What does "buy" mean?',
+      ['فروختن', 'خریدن', 'ساختن', 'کمک کردن'],
+      'خریدن',
+    ),
+    Question(
+      'Complete: "I am going to ___ a book."',
+      ['buy', 'bought', 'buys', 'buying'],
+      'buy',
+    ),
+    Question(
+      'What does "make" mean?',
+      ['ساختن/درست کردن', 'دیدن', 'خواندن', 'سفر کردن'],
+      'ساختن/درست کردن',
+    ),
+    Question(
+      'What does "build" mean?',
+      ['ساختن', 'خریدن', 'خواندن', 'تماشا کردن'],
+      'ساختن',
+    ),
+    Question(
+      'Complete: "They are going to ___ a house."',
+      ['build', 'built', 'building', 'builds'],
+      'build',
+    ),
+    Question(
+      'Which sentence is negative?',
+      [
+        'I am going to study.',
+        'I am not going to study.',
+        'Am I going to study?',
+        'I study every day.'
+      ],
+      'I am not going to study.',
+    ),
+    Question(
+      'Complete: "She ___ not going to work."',
+      ['is', 'am', 'are', 'be'],
+      'is',
+    ),
+    Question(
+      'Choose the correct question:',
+      [
+        'Are you going to study?',
+        'Do you going to study?',
+        'Are you go to study?',
+        'You are going to study?'
+      ],
+      'Are you going to study?',
+    ),
+    Question(
+      'Complete: "___ they going to travel?"',
+      ['Are', 'Is', 'Am', 'Do'],
+      'Are',
+    ),
+    Question(
+      'Complete: "___ he going to play?"',
+      ['Is', 'Are', 'Am', 'Does'],
+      'Is',
+    ),
+    Question(
+      'What does "tonight" mean?',
+      ['امشب', 'فردا', 'دیشب', 'صبح'],
+      'امشب',
+    ),
+    Question(
+      'Complete: "I am going to study ___."',
+      ['tonight', 'yesterday', 'last week', 'ago'],
+      'tonight',
+    ),
+    Question(
+      'What does "next week" mean?',
+      ['هفته گذشته', 'این هفته', 'هفته آینده', 'هر هفته'],
+      'هفته آینده',
+    ),
+    Question(
+      'Complete: "We are going to meet our friends ___."',
+      ['tomorrow', 'yesterday', 'last year', 'ago'],
+      'tomorrow',
+    ),
+    Question(
+      'What does "decide" mean?',
+      ['تصمیم گرفتن', 'امیدوار بودن', 'یاد گرفتن', 'تماشا کردن'],
+      'تصمیم گرفتن',
+    ),
+    Question(
+      'Complete: "I am going to ___ English."',
+      ['practice', 'practiced', 'practices', 'practicing'],
+      'practice',
+    ),
+    Question(
+      'Choose the correct answer: "Are you going to study?"',
+      ['Yes, I am.', 'Yes, I do.', 'Yes, I did.', 'Yes, I study.'],
+      'Yes, I am.',
+    ),
+    Question(
+      'Choose the correct negative answer:',
+      ['No, I am not.', 'No, I don’t.', 'No, I didn’t.', 'No, I not.'],
+      'No, I am not.',
+    ),
+    Question(
+      'Complete: "What ___ you going to do?"',
+      ['are', 'is', 'am', 'do'],
+      'are',
+    ),
+  ],
+);
