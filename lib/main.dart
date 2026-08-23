@@ -567,19 +567,22 @@ class _ProgressRow extends StatelessWidget {
         decoration: BoxDecoration(color: Colors.white.withOpacity(.035), borderRadius: BorderRadius.circular(18)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(children: [Expanded(child: Text(label, style: const TextStyle(fontWeight: FontWeight.bold))), Text('${(value * 100).round()}%')]),
-          const SizedBox(height: 8),
-          ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: value, minHeight: 8)),
+                    const SizedBox(height: 8),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: LinearProgressIndicator(
+              value: value,
+              minHeight: 8,
+            ),
+          ),
         ]),
-            );
-    }
+      );
   }
+}
 
 const String geminiApiKey = 'AQ.Ab8RN6JmoSluI4hYlvf0K3YYFxZse0JdaVDn66jYBqtJaVh8WQ';
 
-class ChatMessage {
-  final String text;
-  final bool isUser;
-  ChatMessage(this.text, this.isUser);
+class ChatMessage(this.text, this.isUser);
 }
 
 class TutorPage extends StatefulWidget {
