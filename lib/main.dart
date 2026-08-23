@@ -582,10 +582,19 @@ class _ProgressRow extends StatelessWidget {
 
 const String geminiApiKey = 'AQ.Ab8RN6JmoSluI4hYlvf0K3YYFxZse0JdaVDn66jYBqtJaVh8WQ';
 
-class ChatMessage(this.text, this.isUser);
+class ChatMessage {
+  final String text;
+  final bool isUser;
+
+  ChatMessage(this.text, this.isUser);
 }
 
 class TutorPage extends StatefulWidget {
+  const TutorPage({super.key});
+
+  @override
+  State<TutorPage> createState() => _TutorPageState();
+}
   const TutorPage({super.key});
   @override
   State<TutorPage> createState() => _TutorPageState();
