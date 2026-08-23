@@ -5127,3 +5127,128 @@ final lesson24 = Lesson(
     Question('Which word is an adverb?', ['quick', 'quickly', 'quickness', 'quicker'], 'quickly'),
   ],
 );
+// ==========================================================
+// LESSON 25: Must / Mustn't
+// ==========================================================
+final lesson25 = Lesson(
+  id: 25,
+  title: 'Must / Mustn’t',
+  subtitle: 'باید و نباید',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور درباره‌ی اجبار، قوانین و کارهایی که نباید انجام شوند صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای بیان اجبار از must + فعل ساده استفاده می‌کنیم: You must study.\n'
+      '۲. بعد از must همیشه شکل ساده‌ی فعل می‌آید و به فعل s اضافه نمی‌کنیم.\n'
+      '۳. برای بیان ممنوعیت از mustn’t استفاده می‌کنیم: You mustn’t smoke.\n'
+      '۴. mustn’t یعنی "نباید / ممنوع است" و با don’t have to فرق دارد.\n'
+      '۵. must برای همه‌ی فاعل‌ها یکسان است: I must, He must, They must.\n'
+      '۶. برای سؤال می‌توانیم بگوییم: Must I go? — آیا باید بروم؟',
+  formula:
+      'Positive:\n'
+      'Subject + must + base verb\n'
+      'You must study.\n\n'
+      'Negative:\n'
+      'Subject + mustn’t + base verb\n'
+      'You mustn’t run.\n\n'
+      'Question:\n'
+      'Must + subject + base verb?\n'
+      'Must I go?',
+  words: const [
+    Word('must', 'باید', 'MUST', '✅'),
+    Word('mustn’t', 'نباید/ممنوع است', 'MUS-ent', '🚫'),
+    Word('rule', 'قانون', 'ROOL', '📜'),
+    Word('important', 'مهم', 'im-POR-tunt', '⭐'),
+    Word('necessary', 'ضروری', 'NES-uh-ser-ee', '❗'),
+    Word('allowed', 'مجاز', 'uh-LOWD', '✅'),
+    Word('forbidden', 'ممنوع', 'fer-BID-un', '🚫'),
+    Word('safe', 'امن', 'SEYF', '🛡️'),
+    Word('dangerous', 'خطرناک', 'DEYN-jer-us', '⚠️'),
+    Word('careful', 'مراقب/دقیق', 'KAIR-ful', '👀'),
+    Word('wear', 'پوشیدن', 'WAIR', '👕'),
+    Word('follow', 'دنبال کردن/رعایت کردن', 'FAH-loh', '📋'),
+    Word('obey', 'اطاعت کردن', 'oh-BEY', '🫡'),
+    Word('stop', 'متوقف شدن', 'STOP', '🛑'),
+    Word('wait', 'صبر کردن', 'WEYT', '⏳'),
+    Word('listen', 'گوش دادن', 'LIS-un', '👂'),
+    Word('study', 'مطالعه کردن', 'STUD-ee', '📚'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('clean', 'تمیز کردن', 'KLEEN', '🧹'),
+    Word('respect', 'احترام گذاشتن', 'ree-SPEKT', '🙏'),
+    Word('remember', 'به یاد داشتن', 'ree-MEM-ber', '🧠'),
+    Word('forget', 'فراموش کردن', 'fer-GET', '🤦'),
+    Word('enter', 'وارد شدن', 'EN-ter', '🚪'),
+    Word('leave', 'ترک کردن', 'LEEV', '🚶'),
+    Word('touch', 'دست زدن', 'TUCH', '☝️'),
+    Word('smoke', 'سیگار کشیدن', 'SMOHK', '🚭'),
+    Word('drive', 'رانندگی کردن', 'DRAIV', '🚗'),
+    Word('seatbelt', 'کمربند ایمنی', 'SEET-belt', '🚘'),
+    Word('permission', 'اجازه', 'per-MISH-un', '📝'),
+    Word('responsible', 'مسئول', 'ree-SPON-suh-bul', '🎯'),
+  ],
+  examples: const [
+    'I must study today. — من باید امروز درس بخوانم.',
+    'You must listen to the teacher. — تو باید به معلم گوش بدهی.',
+    'We must follow the rules. — ما باید قوانین را رعایت کنیم.',
+    'You must be careful. — باید مراقب باشی.',
+    'He must work hard. — او باید سخت کار کند.',
+    'She must finish her homework. — او باید تکالیفش را تمام کند.',
+    'They must wait here. — آن‌ها باید اینجا صبر کنند.',
+    'You must wear a seatbelt. — باید کمربند ایمنی ببندی.',
+    'We must respect other people. — ما باید به دیگران احترام بگذاریم.',
+    'I must remember this rule. — من باید این قانون را به یاد داشته باشم.',
+    'You mustn’t run here. — نباید اینجا بدوی.',
+    'You mustn’t touch this. — نباید به این دست بزنی.',
+    'We mustn’t be late. — ما نباید دیر کنیم.',
+    'You mustn’t smoke here. — نباید اینجا سیگار بکشی.',
+    'He mustn’t drive too fast. — او نباید خیلی سریع رانندگی کند.',
+    'Students mustn’t use phones in class. — دانش‌آموزان نباید در کلاس از گوشی استفاده کنند.',
+    'You mustn’t forget your homework. — نباید تکالیفت را فراموش کنی.',
+    'We mustn’t enter this room. — ما نباید وارد این اتاق شویم.',
+    'Must I finish this today? — آیا باید این را امروز تمام کنم؟',
+    'Must we wait here? — آیا باید اینجا صبر کنیم؟',
+    'Must he come with us? — آیا او باید با ما بیاید؟',
+    'Yes, you must. — بله، باید.',
+    'No, you mustn’t. — نه، نباید.',
+    'You must be careful because it is dangerous. — باید مراقب باشی چون خطرناک است.',
+    'Everyone must follow the rules. — همه باید قوانین را رعایت کنند.',
+    'You must have permission to enter. — برای ورود باید اجازه داشته باشی.',
+    'We must keep the room clean. — ما باید اتاق را تمیز نگه داریم.',
+    'You must stop here. — باید اینجا توقف کنی.',
+    'You must listen carefully. — باید با دقت گوش بدهی.',
+    'Students must study for the exam. — دانش‌آموزان باید برای امتحان درس بخوانند.',
+  ],
+  questions: const [
+    Question('What does "must" mean?', ['باید', 'نباید', 'ممنوع', 'اجازه'], 'باید'),
+    Question('What does "mustn’t" mean?', ['باید', 'نباید', 'می‌تواند', 'لازم نیست'], 'نباید'),
+    Question('Complete: "You ___ study."', ['must', 'mustn’t', 'are', 'have'], 'must'),
+    Question('Complete: "You ___ run here."', ['must', 'mustn’t', 'must to', 'are'], 'mustn’t'),
+    Question('What does "rule" mean?', ['قانون', 'اجازه', 'خطر', 'کار'], 'قانون'),
+    Question('How do you say "ممنوع"?', ['Allowed', 'Forbidden', 'Safe', 'Important'], 'Forbidden'),
+    Question('Complete: "You must ___ careful."', ['be', 'are', 'is', 'being'], 'be'),
+    Question('Which is correct?', ['He must studies.', 'He must study.', 'He must studying.', 'He must to study.'], 'He must study.'),
+    Question('Complete: "We must ___ the rules."', ['follow', 'follows', 'following', 'to follow'], 'follow'),
+    Question('What does "safe" mean?', ['خطرناک', 'امن', 'ممنوع', 'مهم'], 'امن'),
+    Question('How do you say "خطرناک"?', ['Safe', 'Dangerous', 'Allowed', 'Careful'], 'Dangerous'),
+    Question('Complete: "You mustn’t ___ this."', ['touch', 'touches', 'touching', 'to touch'], 'touch'),
+    Question('What does "wear" mean?', ['پوشیدن', 'خوردن', 'دویدن', 'شنیدن'], 'پوشیدن'),
+    Question('Complete: "You must ___ a seatbelt."', ['wear', 'wears', 'wearing', 'to wearing'], 'wear'),
+    Question('What does "permission" mean?', ['قانون', 'اجازه', 'خطر', 'مسئولیت'], 'اجازه'),
+    Question('Complete: "Must I ___ now?"', ['go', 'goes', 'going', 'to go'], 'go'),
+    Question('Which sentence is correct?', ['You mustn’t smoke here.', 'You mustn’t smokes here.', 'You mustn’t to smoke here.', 'You mustn’t smoking here.'], 'You mustn’t smoke here.'),
+    Question('What does "respect" mean?', ['احترام گذاشتن', 'فراموش کردن', 'ترک کردن', 'وارد شدن'], 'احترام گذاشتن'),
+    Question('Complete: "We must ___ other people."', ['respect', 'respects', 'respecting', 'to respects'], 'respect'),
+    Question('What does "obey" mean?', ['اطاعت کردن', 'صبر کردن', 'کمک کردن', 'تمیز کردن'], 'اطاعت کردن'),
+    Question('Complete: "You must ___ the rules."', ['obey', 'obeys', 'obeying', 'to obeying'], 'obey'),
+    Question('What does "forget" mean?', ['به یاد داشتن', 'فراموش کردن', 'گوش دادن', 'پوشیدن'], 'فراموش کردن'),
+    Question('Complete: "You mustn’t ___ your homework."', ['forget', 'forgets', 'forgetting', 'to forgetting'], 'forget'),
+    Question('Which word means "ضروری"?', ['Necessary', 'Dangerous', 'Forbidden', 'Allowed'], 'Necessary'),
+    Question('Complete: "Students ___ listen to the teacher."', ['must', 'mustn’t', 'is', 'has'], 'must'),
+    Question('Which sentence means "نباید اینجا وارد شوی"?', ['You must enter here.', 'You mustn’t enter here.', 'You must entering here.', 'You must to enter here.'], 'You mustn’t enter here.'),
+    Question('Complete: "You ___ stop here."', ['must', 'mustn’t', 'are', 'has'], 'must'),
+    Question('Can we use "must" with "he"?', ['Yes', 'No', 'Only in questions', 'Only in negatives'], 'Yes'),
+    Question('Which is correct?', ['They must work.', 'They must works.', 'They must working.', 'They must to work.'], 'They must work.'),
+    Question('What does "responsible" mean?', ['مسئول', 'ممنوع', 'خطرناک', 'آرام'], 'مسئول'),
+  ],
+);
