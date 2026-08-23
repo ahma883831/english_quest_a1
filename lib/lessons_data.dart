@@ -263,7 +263,7 @@ final lesson3 = Lesson(
       '۵. برای سن می‌گیم "How old are you?" و جواب "I am ... years old." — کلمه "years old" رو فراموش نکن.\n'
       '۶. "today, tomorrow, yesterday" حرف اضافه نمی‌خوان: می‌گیم "Today is Monday." نه "In today".',
   formula:
-      'What time is it? → It is ___ o\\'clock.\n'
+      'What time is it? → It is ___ o\'clock.\n'
       'Half past ___  |  Quarter to/past ___\n\n'
       'How old are you? → I am ___ years old.',
   words: const [
@@ -1112,7 +1112,84 @@ final lesson6 = Lesson(
       ['چتر', 'جزیره', 'رستوران', 'خانه'],
       'چتر',
     ),
-    // ==========================================================
+    Question(
+      'Complete: "This is ___ bag."',
+      ['a', 'an', 'is', 'am'],
+      'a',
+    ),
+    Question(
+      'What does "bus" mean?',
+      ['ماشین', 'اتوبوس', 'دوچرخه', 'قطار'],
+      'اتوبوس',
+    ),
+    Question(
+      'How do you say "صندلی"?',
+      ['Table', 'Chair', 'Bag', 'Car'],
+      'Chair',
+    ),
+    Question(
+      'What does "computer" mean?',
+      ['تلفن', 'کامپیوتر', 'میز', 'صندلی'],
+      'کامپیوتر',
+    ),
+    Question(
+      'Complete: "She has ___ phone."',
+      ['a', 'an', 'is', 'are'],
+      'a',
+    ),
+    Question(
+      'What does "idea" mean?',
+      ['ایده', 'هنر', 'کار', 'مدرسه'],
+      'ایده',
+    ),
+    Question(
+      'Complete: "I have ___ idea."',
+      ['a', 'an', 'is', 'am'],
+      'an',
+    ),
+    Question(
+      'What does "house" mean?',
+      ['مدرسه', 'خانه', 'هتل', 'اداره'],
+      'خانه',
+    ),
+    Question(
+      'How do you say "مدرسه"?',
+      ['House', 'School', 'Hotel', 'Office'],
+      'School',
+    ),
+    Question(
+      'What does "restaurant" mean?',
+      ['هتل', 'رستوران', 'خانه', 'اداره'],
+      'رستوران',
+    ),
+    Question(
+      'Complete: "We stayed at ___ hotel."',
+      ['a', 'an', 'is', 'are'],
+      'a',
+    ),
+    Question(
+      'What does "office" mean?',
+      ['خانه', 'دفتر/اداره', 'مدرسه', 'رستوران'],
+      'دفتر/اداره',
+    ),
+    Question(
+      'Complete: "He works in ___ office."',
+      ['a', 'an', 'is', 'am'],
+      'an',
+    ),
+    Question(
+      'What does "island" mean?',
+      ['کوه', 'جزیره', 'دریا', 'رودخانه'],
+      'جزیره',
+    ),
+    Question(
+      'What does "hour" mean?',
+      ['دقیقه', 'ساعت', 'روز', 'هفته'],
+      'ساعت',
+    ),
+  ],
+);
+// ==========================================================
 // LESSON 7: Daily Routine
 // ==========================================================
 final lesson7 = Lesson(
@@ -4864,6 +4941,121 @@ final lesson21 = Lesson(
       ],
       'I will study tomorrow.',
     ),
+  ],
+);
+// ==========================================================
+// LESSON 22: Comparative Adjectives
+// ==========================================================
+final lesson22 = Lesson(
+  id: 22,
+  title: 'Comparative Adjectives',
+  subtitle: 'صفت‌های تفضیلی (مقایسه‌ای)',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور دو چیز رو با هم مقایسه کنی و بگی کدوم "بزرگ‌تر"، "سریع‌تر" یا "بهتر" است.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای صفت‌های کوتاه (یک یا دو هجا) به آخرش -er اضافه می‌کنیم: tall → taller.\n'
+      '۲. اگر صفت به e ختم بشه، فقط -r اضافه می‌کنیم: nice → nicer.\n'
+      '۳. اگر صفت کوتاه به صامت+صدادار+صامت ختم بشه، حرف آخر دوبل میشه: big → bigger, hot → hotter.\n'
+      '۴. برای صفت‌های بلند (سه هجا یا بیشتر) از more قبل از صفت استفاده می‌کنیم: beautiful → more beautiful.\n'
+      '۵. بعضی صفت‌ها بی‌قاعده‌ان: good → better, bad → worse.\n'
+      '۶. بعد از صفت مقایسه‌ای، کلمه‌ی "than" میاد: "He is taller than me."',
+  formula: 'صفت کوتاه → صفت + er + than\ntall → taller than\n\nصفت بلند → more + صفت + than\nbeautiful → more beautiful than\n\nبی‌قاعده: good → better, bad → worse',
+  words: const [
+    Word('tall', 'بلند قد', 'TAWL', '📏'),
+    Word('short', 'کوتاه قد', 'SHORT', '📏'),
+    Word('big', 'بزرگ', 'BIG', '🐘'),
+    Word('small', 'کوچک', 'SMAWL', '🐜'),
+    Word('fast', 'سریع', 'FAST', '🏃'),
+    Word('slow', 'کند', 'SLOH', '🐢'),
+    Word('strong', 'قوی', 'STRONG', '💪'),
+    Word('weak', 'ضعیف', 'WEEK', '🥀'),
+    Word('young', 'جوان', 'YUNG', '🧑'),
+    Word('oldComp', 'مسن/قدیمی', 'OHLD', '👴'),
+    Word('hot', 'گرم', 'HOT', '🔥'),
+    Word('cold', 'سرد', 'KOHLD', '❄️'),
+    Word('cheap', 'ارزان', 'CHEEP', '💵'),
+    Word('expensive', 'گران', 'ik-SPEN-siv', '💰'),
+    Word('heavy', 'سنگین', 'HEV-ee', '🏋️'),
+    Word('light', 'سبک', 'LAIT', '🪶'),
+    Word('easy', 'آسان', 'EE-zee', '✅'),
+    Word('difficult', 'سخت', 'DIF-i-kult', '🧩'),
+    Word('beautiful', 'زیبا', 'BYOO-tuh-ful', '🌸'),
+    Word('nice', 'خوب/دلپذیر', 'NAIS', '😊'),
+    Word('good', 'خوب', 'GOOD', '👍'),
+    Word('bad', 'بد', 'BAD', '👎'),
+    Word('far', 'دور', 'FAR', '🛣️'),
+    Word('near', 'نزدیک', 'NEER', '📍'),
+    Word('long', 'بلند (طول)', 'LAWNG', '📏'),
+    Word('short2', 'کوتاه (طول)', 'SHORT', '📏'),
+    Word('clever', 'باهوش', 'KLEV-er', '🧠'),
+    Word('busy', 'مشغول', 'BIZ-ee', '⏰'),
+    Word('important', 'مهم', 'im-POR-tunt', '❗'),
+    Word('than', 'نسبت به', 'THAN', '⚖️'),
+  ],
+  examples: const [
+    'My brother is taller than me. — برادرم از من بلندتر است.',
+    'She is shorter than her sister. — او از خواهرش کوتاه‌تر است.',
+    'An elephant is bigger than a dog. — فیل از سگ بزرگ‌تر است.',
+    'A mouse is smaller than a cat. — موش از گربه کوچک‌تر است.',
+    'A car is faster than a bike. — ماشین از دوچرخه سریع‌تر است.',
+    'A turtle is slower than a rabbit. — لاک‌پشت از خرگوش کندتر است.',
+    'A lion is stronger than a cat. — شیر از گربه قوی‌تر است.',
+    'This box is weaker than that one. — این جعبه از آن یکی ضعیف‌تر است.',
+    'My sister is younger than me. — خواهرم از من جوان‌تر است.',
+    'My grandfather is older than my father. — پدربزرگم از پدرم مسن‌تر است.',
+    'Today is hotter than yesterday. — امروز از دیروز گرم‌تر است.',
+    'This winter is colder than last winter. — این زمستان از زمستان پارسال سردتر است.',
+    'This shirt is cheaper than that one. — این پیراهن از آن یکی ارزان‌تر است.',
+    'That car is more expensive than mine. — آن ماشین از مال من گران‌تر است.',
+    'This bag is heavier than that one. — این کیف از آن یکی سنگین‌تر است.',
+    'A feather is lighter than a rock. — پر از سنگ سبک‌تر است.',
+    'This exam is easier than the last one. — این امتحان از دفعه‌ی قبل آسان‌تر است.',
+    'Math is more difficult than English for me. — ریاضی برای من از انگلیسی سخت‌تر است.',
+    'This flower is more beautiful than that one. — این گل از آن یکی زیباتر است.',
+    'He is nicer than his brother. — او از برادرش مهربان‌تر است.',
+    'This book is better than that movie. — این کتاب از آن فیلم بهتر است.',
+    'The weather today is worse than yesterday. — هوای امروز از دیروز بدتر است.',
+    'My school is farther than yours. — مدرسه‌ی من از مال تو دورتر است.',
+    'The park is nearer than the mall. — پارک از پاساژ نزدیک‌تر است.',
+    'This road is longer than that one. — این جاده از آن یکی طولانی‌تر است.',
+    'This pencil is shorter than that one. — این مداد از آن یکی کوتاه‌تر است.',
+    'She is cleverer than me. — او از من باهوش‌تر است.',
+    'My mother is busier than my father today. — مادرم امروز از پدرم مشغول‌تر است.',
+    'Health is more important than money. — سلامتی از پول مهم‌تر است.',
+    'He runs faster than his friend. — او از دوستش سریع‌تر می‌دود.',
+  ],
+  questions: const [
+    Question('What is the comparative of "tall"?', ['more tall', 'taller', 'tallest', 'tallier'], 'taller'),
+    Question('What is the comparative of "big"?', ['bigger', 'more big', 'biggest', 'bigger than'], 'bigger'),
+    Question('What is the comparative of "nice"?', ['nicer', 'more nice', 'nicest', 'nicier'], 'nicer'),
+    Question('What is the comparative of "beautiful"?', ['beautifuler', 'more beautiful', 'beautifulest', 'beautiful'], 'more beautiful'),
+    Question('What is the comparative of "good"?', ['gooder', 'more good', 'better', 'best'], 'better'),
+    Question('What is the comparative of "bad"?', ['badder', 'more bad', 'worse', 'worst'], 'worse'),
+    Question('Complete: "My brother is taller ___ me."', ['than', 'then', 'that', 'as'], 'than'),
+    Question('What does "fast" mean?', ['سریع', 'کند', 'قوی', 'ضعیف'], 'سریع'),
+    Question('How do you say "کند"?', ['Fast', 'Slow', 'Strong', 'Weak'], 'Slow'),
+    Question('What does "strong" mean?', ['ضعیف', 'قوی', 'سنگین', 'سبک'], 'قوی'),
+    Question('Complete: "A lion is stronger ___ a cat."', ['than', 'then', 'as', 'so'], 'than'),
+    Question('What does "young" mean?', ['مسن', 'جوان', 'بلند', 'کوتاه'], 'جوان'),
+    Question('What is the comparative of "old"?', ['older', 'more old', 'oldest', 'oldier'], 'older'),
+    Question('What does "hot" mean?', ['سرد', 'گرم', 'خیس', 'خشک'], 'گرم'),
+    Question('How do you say "سرد"?', ['Hot', 'Cold', 'Warm', 'Cool'], 'Cold'),
+    Question('What does "cheap" mean?', ['گران', 'ارزان', 'سنگین', 'سبک'], 'ارزان'),
+    Question('What is the comparative of "expensive"?', ['expensiver', 'more expensive', 'expensivest', 'expensive'], 'more expensive'),
+    Question('What does "heavy" mean?', ['سبک', 'سنگین', 'بزرگ', 'کوچک'], 'سنگین'),
+    Question('How do you say "سبک"?', ['Heavy', 'Light', 'Big', 'Small'], 'Light'),
+    Question('What does "easy" mean?', ['سخت', 'آسان', 'مهم', 'ساده‌تر'], 'آسان'),
+    Question('What is the comparative of "difficult"?', ['difficulter', 'more difficult', 'difficultest', 'difficult'], 'more difficult'),
+    Question('Complete: "This exam is easier ___ the last one."', ['than', 'then', 'as', 'so'], 'than'),
+    Question('What does "far" mean?', ['نزدیک', 'دور', 'کوتاه', 'بلند'], 'دور'),
+    Question('How do you say "نزدیک"?', ['Far', 'Near', 'Long', 'Short'], 'Near'),
+    Question('What does "important" mean?', ['بی‌اهمیت', 'مهم', 'سخت', 'آسان'], 'مهم'),
+    Question('What is the comparative of "important"?', ['importanter', 'more important', 'importantest', 'important'], 'more important'),
+    Question('What does "clever" mean?', ['تنبل', 'باهوش', 'خسته', 'مشغول'], 'باهوش'),
+    Question('What is the comparative of "busy"?', ['busier', 'more busy', 'busiest', 'busyer'], 'busier'),
+    Question('What does "weak" mean?', ['قوی', 'ضعیف', 'سریع', 'کند'], 'ضعیف'),
+    Question('Complete: "Health is more important ___ money."', ['than', 'then', 'as', 'so'], 'than'),
   ],
 );
 // ==========================================================
