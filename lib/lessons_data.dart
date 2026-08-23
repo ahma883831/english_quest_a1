@@ -786,3 +786,168 @@ final lesson5 = Lesson(
     'There are four seasons. — چهار فصل وجود دارد.',
     'Winter is very cold. — زمستان خیلی سرد است.',
   ],
+  questions: const [
+    Question(
+      'What does "Monday" mean?',
+      ['دوشنبه', 'سه‌شنبه', 'یکشنبه', 'جمعه'],
+      'دوشنبه',
+    ),
+    Question(
+      'How do you say "جمعه"?',
+      ['Thursday', 'Friday', 'Saturday', 'Sunday'],
+      'Friday',
+    ),
+    Question(
+      'What does "week" mean?',
+      ['ماه', 'هفته', 'سال', 'روز'],
+      'هفته',
+    ),
+    Question(
+      'Complete: "A week has seven ___."',
+      ['days', 'months', 'years', 'weeks'],
+      'days',
+    ),
+    Question(
+      'What does "weekend" mean?',
+      ['اول هفته', 'آخر هفته', 'وسط هفته', 'ماه'],
+      'آخر هفته',
+    ),
+    Question(
+      'How do you say "ژانویه"?',
+      ['June', 'July', 'January', 'March'],
+      'January',
+    ),
+    Question(
+      'What does "birthday" mean?',
+      ['تعطیلات', 'تولد', 'تاریخ', 'تقویم'],
+      'تولد',
+    ),
+    Question(
+      'Complete: "My birthday is ___ January."',
+      ['in', 'on', 'at', 'for'],
+      'in',
+    ),
+    Question(
+      'What does "month" mean?',
+      ['هفته', 'روز', 'ماه', 'سال'],
+      'ماه',
+    ),
+    Question(
+      'How do you say "سال"?',
+      ['Month', 'Week', 'Year', 'Day'],
+      'Year',
+    ),
+    Question(
+      'What does "holiday" mean?',
+      ['تولد', 'تعطیلات', 'تاریخ', 'تقویم'],
+      'تعطیلات',
+    ),
+    Question(
+      'Complete: "I have school ___ Tuesday."',
+      ['on', 'in', 'at', 'for'],
+      'on',
+    ),
+    Question(
+      'What does "calendar" mean?',
+      ['تقویم', 'تاریخ', 'فصل', 'هفته'],
+      'تقویم',
+    ),
+    Question(
+      'How do you say "بهار"?',
+      ['Summer', 'Winter', 'Spring', 'Autumn'],
+      'Spring',
+    ),
+    Question(
+      'What does "winter" mean?',
+      ['بهار', 'زمستان', 'تابستان', 'پاییز'],
+      'زمستان',
+    ),
+    Question(
+      'Complete: "What ___ is it today?" (asking day)',
+      ['day', 'month', 'year', 'date'],
+      'day',
+    ),
+    Question(
+      'What does "date" mean?',
+      ['روز', 'تاریخ', 'ماه', 'فصل'],
+      'تاریخ',
+    ),
+    Question(
+      'How do you say "دسامبر"?',
+      ['October', 'November', 'December', 'September'],
+      'December',
+    ),
+    Question(
+      'What does "season" mean?',
+      ['روز', 'ماه', 'فصل', 'هفته'],
+      'فصل',
+    ),
+    Question(
+      'Complete: "Today is ___." (Monday)',
+      ['Monday', 'January', 'week', 'year'],
+      'Monday',
+    ),
+    Question(
+      'What does "Sunday" mean?',
+      ['شنبه', 'یکشنبه', 'دوشنبه', 'جمعه'],
+      'یکشنبه',
+    ),
+    Question(
+      'How do you say "چهارشنبه"?',
+      ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'Wednesday',
+    ),
+    Question(
+      'What does "Saturday" mean?',
+      ['جمعه', 'شنبه', 'یکشنبه', 'دوشنبه'],
+      'شنبه',
+    ),
+    Question(
+      'Complete: "School starts ___ September."',
+      ['in', 'on', 'at', 'for'],
+      'in',
+    ),
+    Question(
+      'What does "August" mean?',
+      ['جولای', 'آگوست', 'سپتامبر', 'ژوئن'],
+      'آگوست',
+    ),
+    Question(
+      'How do you say "اکتبر"?',
+      ['September', 'October', 'November', 'December'],
+      'October',
+    ),
+    Question(
+      'What does "June" mean?',
+      ['مه', 'ژوئن', 'جولای', 'آگوست'],
+      'ژوئن',
+    ),
+    Question(
+      'Complete: "There are four ___."',
+      ['seasons', 'weeks', 'months', 'years'],
+      'seasons',
+    ),
+    Question(
+      'What does "April" mean?',
+      ['مارس', 'آوریل', 'مه', 'ژوئن'],
+      'آوریل',
+    ),
+    Question(
+      'How do you say "تاریخ"?',
+      ['Calendar', 'Date', 'Day', 'Season'],
+      'Date',
+    ),
+  ],
+);
+
+// ==========================================================
+// ALL LESSONS
+// ==========================================================
+
+final lessons = [
+  lesson1,
+  lesson2,
+  lesson3,
+  lesson4,
+  lesson5,
+];
