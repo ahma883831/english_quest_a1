@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class AIChatScreen extends StatefulWidget {
   const AIChatScreen({super.key});
@@ -11,20 +13,24 @@ class _AIChatScreenState extends State<AIChatScreen> {
   final TextEditingController _controller = TextEditingController();
   final ScrollController _scrollController = ScrollController();
 
+  // فقط برای تست.
+  // این مقدار را در GitHub عمومی قرار نده.
+  static const String apiKey = 'YOUR_GEMINI_API_KEY';
+
   final List<ChatMessage> _messages = [
     ChatMessage(
       text:
-          'Hello! 👋\nI am your English teacher.\n\nYou can practice English with me here!',
+          'Hello! 👋\nI am your AI English teacher.\n\nYou can practice English with me!',
       isUser: false,
     ),
   ];
 
   bool _isTyping = false;
 
-  void _sendMessage() {
+  Future<void> _sendMessage() async {
     final text = _controller.text.trim();
 
-    if (text.isEmpty) return;
+    if (text.isEmpty || _isTyping) return;
 
     setState(() {
       _messages.add(
@@ -40,9 +46,72 @@ class _AIChatScreenState extends State<AIChatScreen> {
 
     _scrollToBottom();
 
-    // فعلاً پاسخ آزمایشی است.
-    // در مرحله بعد این قسمت را به هوش مصنوعی واقعی وصل می‌کنیم.
-    Future.delayed(const Duration(milliseconds: 800), () {
+    try {
+      final response = await http.post(
+        Uri.parse(
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent',
+        ),
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': apiKey,
+        },
+        body: jsonEncode({
+          'systemInstruction': {
+            'parts': [
+              {
+                'text': '''
+You are the AI English teacher inside an app called English Quest A1.
+
+The student is a beginner English learner.
+
+Rules:
+- Teach at A1 level.
+- Use simple English.
+- If something is difficult, explain it in Persian.
+- Correct English mistakes politely.
+- Give short examples.
+- Help with grammar, vocabulary, pronunciation and conversation.
+- Do not make explanations unnecessarily difficult.
+'''
+              }
+            ]
+          },
+          'contents': [
+            {
+              'role': 'user',
+              'parts': [
+                {'text': text}
+              ]
+            }
+          ],
+        }),
+      );
+
+      if (response.statusCode != 200) {
+        throw Exception(
+          'Gemini error: ${response.statusCode}',
+        );
+      }
+
+      final data = jsonDecode(response.body);
+
+      final answer =
+          data['candidates']?[0]?['content']?['parts']?[0]?['text'];
+
+      if (!mounted) return;
+
+      setState(() {
+        _isTyping = false;
+
+        _messages.add(
+          ChatMessage(
+            text: answer?.toString() ??
+                'Sorry, I could not understand the response.',
+            isUser: false,
+          ),
+        );
+      });
+    } catch (e) {
       if (!mounted) return;
 
       setState(() {
@@ -51,18 +120,18 @@ class _AIChatScreenState extends State<AIChatScreen> {
         _messages.add(
           ChatMessage(
             text:
-                'Nice! 👍\n\nYour message was received.\n\nSoon I will be connected to the AI teacher.',
+                'Sorry 😕\nI could not connect to the AI.\n\nPlease check your internet connection and API key.',
             isUser: false,
           ),
         );
       });
+    }
 
-      _scrollToBottom();
-    });
+    _scrollToBottom();
   }
 
   void _scrollToBottom() {
-    Future.delayed(const Duration(milliseconds: 100), () {
+    Future.delayed(const Duration(milliseconds: 150), () {
       if (!_scrollController.hasClients) return;
 
       _scrollController.animateTo(
@@ -128,10 +197,8 @@ class _AIChatScreenState extends State<AIChatScreen> {
               padding: const EdgeInsets.all(16),
               itemCount: _messages.length,
               itemBuilder: (context, index) {
-                final message = _messages[index];
-
                 return _MessageBubble(
-                  message: message,
+                  message: _messages[index],
                 );
               },
             ),
@@ -181,7 +248,8 @@ class _AIChatScreenState extends State<AIChatScreen> {
                           borderRadius: BorderRadius.circular(24),
                           borderSide: BorderSide.none,
                         ),
-                        contentPadding: const EdgeInsets.symmetric(
+                        contentPadding:
+                            const EdgeInsets.symmetric(
                           horizontal: 18,
                           vertical: 13,
                         ),
@@ -232,8 +300,9 @@ class _MessageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment:
-          message.isUser ? Alignment.centerRight : Alignment.centerLeft,
+      alignment: message.isUser
+          ? Alignment.centerRight
+          : Alignment.centerLeft,
       child: Container(
         constraints: const BoxConstraints(
           maxWidth: 320,
@@ -252,7 +321,9 @@ class _MessageBubble extends StatelessWidget {
         child: Text(
           message.text,
           style: TextStyle(
-            color: message.isUser ? Colors.black : Colors.white,
+            color: message.isUser
+                ? Colors.black
+                : Colors.white,
             fontSize: 15,
             height: 1.4,
           ),
