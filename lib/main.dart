@@ -1,3 +1,4 @@
+import 'ai_tutor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'models.dart';
@@ -60,7 +61,7 @@ class _AppShellState extends State<AppShell> {
         onReward: reward,
       ),
       ProgressPage(xp: xp),
-      const TutorPage(),
+      const AiTutorPage(),
       ProfilePage(xp: xp),
     ];
 
