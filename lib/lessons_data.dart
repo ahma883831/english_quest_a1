@@ -1366,3 +1366,247 @@ final lesson7 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 8: Food & Drinks
+// ==========================================================
+final lesson8 = Lesson(
+  id: 8,
+  title: 'Food & Drinks',
+  subtitle: 'غذاها و نوشیدنی‌ها',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره غذاها و نوشیدنی‌های معمولی صحبت کنی، چیزی سفارش بدهی و درباره علاقه‌ات به غذاها حرف بزنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای گفتن چیزی که دوست داریم از like استفاده می‌کنیم: I like pizza.\n'
+      '۲. بعد از like می‌توانیم اسم یا فعل با ing بیاوریم: I like coffee. / I like cooking.\n'
+      '۳. برای گفتن چیزی که دوست نداریم از don’t like استفاده می‌کنیم: I don’t like milk.\n'
+      '۴. برای He/She از likes و doesn’t like استفاده می‌کنیم.\n'
+      '۵. برای درخواست مؤدبانه می‌توانیم از I would like استفاده کنیم: I would like some water.\n'
+      '۶. برای غذاها و نوشیدنی‌های غیرقابل‌شمارش معمولاً از some استفاده می‌کنیم: some rice, some water.\n'
+      '۷. برای پرسیدن قیمت می‌گوییم: How much is it?',
+  formula:
+      'I/You/We/They → like\n'
+      'He/She/It → likes\n\n'
+      'Negative:\n'
+      'I/You/We/They → don’t like\n'
+      'He/She/It → doesn’t like\n\n'
+      'Polite request:\n'
+      'I would like + noun\n'
+      'I would like some water.',
+  words: const [
+    Word('food', 'غذا', 'FOOD', '🍽️'),
+    Word('drink', 'نوشیدنی', 'DRINK', '🥤'),
+    Word('water', 'آب', 'WAW-ter', '💧'),
+    Word('milk', 'شیر', 'MILK', '🥛'),
+    Word('tea', 'چای', 'TEE', '🍵'),
+    Word('coffee', 'قهوه', 'KAW-fee', '☕'),
+    Word('juice', 'آبمیوه', 'JOOS', '🧃'),
+    Word('bread', 'نان', 'BRED', '🍞'),
+    Word('rice', 'برنج', 'RAIS', '🍚'),
+    Word('meat', 'گوشت', 'MEET', '🥩'),
+    Word('chicken', 'مرغ', 'CHIK-en', '🍗'),
+    Word('fish', 'ماهی', 'FISH', '🐟'),
+    Word('egg', 'تخم‌مرغ', 'EG', '🥚'),
+    Word('cheese', 'پنیر', 'CHEEZ', '🧀'),
+    Word('pizza', 'پیتزا', 'PEET-suh', '🍕'),
+    Word('sandwich', 'ساندویچ', 'SAN-wich', '🥪'),
+    Word('apple', 'سیب', 'AP-ul', '🍎'),
+    Word('banana', 'موز', 'buh-NA-nuh', '🍌'),
+    Word('orange', 'پرتقال', 'OR-inj', '🍊'),
+    Word('grape', 'انگور', 'GREYP', '🍇'),
+    Word('potato', 'سیب‌زمینی', 'puh-TEY-toh', '🥔'),
+    Word('tomato', 'گوجه‌فرنگی', 'tuh-MEY-toh', '🍅'),
+    Word('sugar', 'شکر', 'SHOO-ger', '🍬'),
+    Word('salt', 'نمک', 'SAWLT', '🧂'),
+    Word('sweet', 'شیرین', 'SWEET', '🍯'),
+    Word('hot', 'داغ', 'HOT', '🔥'),
+    Word('cold', 'سرد', 'KOHLD', '❄️'),
+    Word('hungry', 'گرسنه', 'HUNG-gree', '😋'),
+    Word('thirsty', 'تشنه', 'THUR-stee', '💧'),
+    Word('delicious', 'خوشمزه', 'di-LISH-us', '🤤'),
+  ],
+  examples: const [
+    'I like pizza. — من پیتزا دوست دارم.',
+    'I like rice. — من برنج دوست دارم.',
+    'I like chicken. — من مرغ دوست دارم.',
+    'I like apples. — من سیب دوست دارم.',
+    'I don’t like fish. — من ماهی دوست ندارم.',
+    'I don’t like coffee. — من قهوه دوست ندارم.',
+    'She likes tea. — او چای دوست دارد.',
+    'He likes chicken. — او مرغ دوست دارد.',
+    'She doesn’t like milk. — او شیر دوست ندارد.',
+    'He doesn’t like fish. — او ماهی دوست ندارد.',
+    'I drink water every day. — من هر روز آب می‌نوشم.',
+    'I drink tea in the morning. — من صبح چای می‌نوشم.',
+    'My father drinks coffee. — پدرم قهوه می‌نوشد.',
+    'We eat breakfast at eight. — ما ساعت هشت صبحانه می‌خوریم.',
+    'I eat bread and cheese. — من نان و پنیر می‌خورم.',
+    'I am hungry. — من گرسنه‌ام.',
+    'I am thirsty. — من تشنه‌ام.',
+    'The food is delicious. — غذا خوشمزه است.',
+    'The water is cold. — آب سرد است.',
+    'The tea is hot. — چای داغ است.',
+    'I would like some water. — من کمی آب می‌خواهم.',
+    'I would like some tea. — من کمی چای می‌خواهم.',
+    'Can I have some juice? — می‌توانم کمی آبمیوه داشته باشم؟',
+    'Can I have a sandwich? — می‌توانم یک ساندویچ داشته باشم؟',
+    'How much is it? — قیمتش چقدر است؟',
+    'What would you like? — چه چیزی می‌خواهی؟',
+    'I would like a pizza. — من یک پیتزا می‌خواهم.',
+    'Do you like coffee? — قهوه دوست داری؟',
+    'Does she like tea? — آیا او چای دوست دارد؟',
+    'What is your favorite food? — غذای مورد علاقه‌ات چیست؟',
+  ],
+  questions: const [
+    Question(
+      'What does "food" mean?',
+      ['نوشیدنی', 'غذا', 'آب', 'نان'],
+      'غذا',
+    ),
+    Question(
+      'How do you say "آب"?',
+      ['Milk', 'Water', 'Juice', 'Tea'],
+      'Water',
+    ),
+    Question(
+      'What does "milk" mean?',
+      ['شیر', 'چای', 'قهوه', 'آب'],
+      'شیر',
+    ),
+    Question(
+      'Complete: "I ___ pizza."',
+      ['like', 'likes', 'liking', 'liked'],
+      'like',
+    ),
+    Question(
+      'What does "bread" mean?',
+      ['برنج', 'نان', 'پنیر', 'گوشت'],
+      'نان',
+    ),
+    Question(
+      'How do you say "برنج"?',
+      ['Bread', 'Rice', 'Meat', 'Fish'],
+      'Rice',
+    ),
+    Question(
+      'What does "chicken" mean?',
+      ['ماهی', 'مرغ', 'گوشت', 'تخم‌مرغ'],
+      'مرغ',
+    ),
+    Question(
+      'Complete: "She ___ tea."',
+      ['like', 'likes', 'liking', 'do like'],
+      'likes',
+    ),
+    Question(
+      'What does "fish" mean?',
+      ['مرغ', 'ماهی', 'گوشت', 'پنیر'],
+      'ماهی',
+    ),
+    Question(
+      'How do you say "تخم‌مرغ"?',
+      ['Egg', 'Bread', 'Cheese', 'Rice'],
+      'Egg',
+    ),
+    Question(
+      'What does "cheese" mean?',
+      ['پنیر', 'شکر', 'نمک', 'نان'],
+      'پنیر',
+    ),
+    Question(
+      'Complete: "I don’t ___ coffee."',
+      ['like', 'likes', 'liking', 'liked'],
+      'like',
+    ),
+    Question(
+      'What does "apple" mean?',
+      ['موز', 'پرتقال', 'سیب', 'انگور'],
+      'سیب',
+    ),
+    Question(
+      'How do you say "موز"?',
+      ['Apple', 'Orange', 'Banana', 'Grape'],
+      'Banana',
+    ),
+    Question(
+      'What does "grape" mean?',
+      ['انگور', 'پرتقال', 'موز', 'سیب'],
+      'انگور',
+    ),
+    Question(
+      'Complete: "He doesn’t ___ fish."',
+      ['like', 'likes', 'liking', 'liked'],
+      'like',
+    ),
+    Question(
+      'What does "sugar" mean?',
+      ['نمک', 'شکر', 'فلفل', 'پنیر'],
+      'شکر',
+    ),
+    Question(
+      'How do you say "نمک"?',
+      ['Sugar', 'Salt', 'Sweet', 'Hot'],
+      'Salt',
+    ),
+    Question(
+      'What does "sweet" mean?',
+      ['شور', 'شیرین', 'سرد', 'داغ'],
+      'شیرین',
+    ),
+    Question(
+      'Complete: "I am ___."',
+      ['hungry', 'food', 'rice', 'eat'],
+      'hungry',
+    ),
+    Question(
+      'What does "thirsty" mean?',
+      ['گرسنه', 'تشنه', 'خسته', 'خواب‌آلود'],
+      'تشنه',
+    ),
+    Question(
+      'How do you say "خوشمزه"?',
+      ['Hungry', 'Thirsty', 'Delicious', 'Cold'],
+      'Delicious',
+    ),
+    Question(
+      'Complete: "I would ___ some water."',
+      ['like', 'likes', 'liking', 'liked'],
+      'like',
+    ),
+    Question(
+      'What does "hot" mean?',
+      ['سرد', 'داغ', 'شیرین', 'گرسنه'],
+      'داغ',
+    ),
+    Question(
+      'How do you say "سرد"?',
+      ['Hot', 'Cold', 'Sweet', 'Hungry'],
+      'Cold',
+    ),
+    Question(
+      'Complete: "Can I have ___ juice?"',
+      ['some', 'a', 'an', 'many'],
+      'some',
+    ),
+    Question(
+      'What does "drink" mean?',
+      ['غذا', 'نوشیدنی', 'خوردن', 'آشپزی'],
+      'نوشیدنی',
+    ),
+    Question(
+      'How do you say "قهوه"?',
+      ['Tea', 'Coffee', 'Juice', 'Milk'],
+      'Coffee',
+    ),
+    Question(
+      'Complete: "What ___ you like?"',
+      ['would', 'are', 'is', 'do'],
+      'would',
+    ),
+    Question(
+      'What does "How much is it?" mean?',
+      ['چی دوست داری؟', 'قیمتش چقدر است؟', 'چی می‌خوری؟', 'کجاست؟'],
+      'قیمتش چقدر است؟',
+    ),
+  ],
+);
