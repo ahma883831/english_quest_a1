@@ -3024,3 +3024,274 @@ final lesson14 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 15: Adverbs of Frequency
+// ==========================================================
+final lesson15 = Lesson(
+  id: 15,
+  title: 'Adverbs of Frequency',
+  subtitle: 'قیدهای تکرار',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور بگی یک کار را چند وقت یک‌بار انجام می‌دهی؛ مثلاً همیشه، معمولاً، اغلب، گاهی یا هرگز.\n\n'
+      '📌 نکات مهم\n'
+      '۱. always = همیشه؛ برای کاری که تقریباً همیشه انجام می‌شود.\n'
+      '۲. usually = معمولاً؛ برای کاری که بیشتر اوقات انجام می‌شود.\n'
+      '۳. often = اغلب؛ برای کاری که زیاد اتفاق می‌افتد.\n'
+      '۴. sometimes = گاهی؛ برای کاری که بعضی وقت‌ها اتفاق می‌افتد.\n'
+      '۵. rarely = به ندرت؛ برای کاری که خیلی کم اتفاق می‌افتد.\n'
+      '۶. never = هرگز؛ برای کاری که اصلاً اتفاق نمی‌افتد.\n'
+      '۷. با فعل‌های معمولی، قید تکرار معمولاً قبل از فعل اصلی می‌آید: I always study.\n'
+      '۸. با فعل to be، قید معمولاً بعد از am/is/are می‌آید: I am always happy.\n'
+      '۹. این قیدها معمولاً با Present Simple استفاده می‌شوند.\n\n'
+      '💡 ترتیب تقریبی تکرار:\n'
+      'Always → Usually → Often → Sometimes → Rarely → Never',
+  formula:
+      'Subject + adverb + main verb\n'
+      'I always study English.\n'
+      'She usually walks to school.\n\n'
+      'Subject + be + adverb\n'
+      'I am always happy.\n'
+      'He is never late.\n\n'
+      'Frequency: always → usually → often → sometimes → rarely → never',
+  words: const [
+    Word('always', 'همیشه', 'AWL-wayz', '🔄'),
+    Word('usually', 'معمولاً', 'YOO-zhoo-uh-lee', '📅'),
+    Word('often', 'اغلب', 'AW-fun', '🔁'),
+    Word('sometimes', 'گاهی', 'SUM-taimz', '🔄'),
+    Word('rarely', 'به ندرت', 'RAIR-lee', '🔽'),
+    Word('never', 'هرگز', 'NEV-er', '🚫'),
+    Word('often', 'اغلب', 'AW-fun', '🔁'),
+    Word('every', 'هر', 'EV-ree', '📆'),
+    Word('day', 'روز', 'DEY', '☀️'),
+    Word('week', 'هفته', 'WEEK', '🗓️'),
+    Word('weekend', 'آخر هفته', 'WEEK-end', '🎉'),
+    Word('morning', 'صبح', 'MOR-ning', '🌅'),
+    Word('night', 'شب', 'NAIT', '🌙'),
+    Word('routine', 'روال روزانه', 'roo-TEEN', '📋'),
+    Word('habit', 'عادت', 'HAB-it', '🔄'),
+    Word('exercise', 'ورزش کردن', 'EK-ser-size', '🏃'),
+    Word('study', 'درس خواندن', 'STUD-ee', '📚'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('sleep', 'خوابیدن', 'SLEEP', '😴'),
+    Word('eat', 'خوردن', 'EET', '🍽️'),
+    Word('drink', 'نوشیدن', 'DRINK', '🥤'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('go', 'رفتن', 'GOH', '🚶'),
+    Word('come', 'آمدن', 'KUM', '👋'),
+    Word('visit', 'دیدن / سر زدن', 'VIZ-it', '🏠'),
+    Word('late', 'دیر', 'LEYT', '⏰'),
+    Word('early', 'زود', 'ER-lee', '🌅'),
+  ],
+  examples: const [
+    'I always study English. — من همیشه انگلیسی می‌خوانم.',
+    'I always wake up early. — من همیشه زود بیدار می‌شوم.',
+    'She always helps her mother. — او همیشه به مادرش کمک می‌کند.',
+    'We usually eat breakfast at home. — ما معمولاً صبحانه را در خانه می‌خوریم.',
+    'I usually go to school by bus. — من معمولاً با اتوبوس به مدرسه می‌روم.',
+    'He usually studies at night. — او معمولاً شب درس می‌خواند.',
+    'I often read books. — من اغلب کتاب می‌خوانم.',
+    'She often plays football. — او اغلب فوتبال بازی می‌کند.',
+    'We often watch movies. — ما اغلب فیلم تماشا می‌کنیم.',
+    'I sometimes drink coffee. — من گاهی قهوه می‌نوشم.',
+    'He sometimes walks to school. — او گاهی پیاده به مدرسه می‌رود.',
+    'They sometimes visit their grandparents. — آن‌ها گاهی به پدربزرگ و مادربزرگشان سر می‌زنند.',
+    'I rarely eat fast food. — من به ندرت فست‌فود می‌خورم.',
+    'She rarely watches TV. — او به ندرت تلویزیون تماشا می‌کند.',
+    'We rarely go there. — ما به ندرت به آنجا می‌رویم.',
+    'I never smoke. — من هرگز سیگار نمی‌کشم.',
+    'He never comes late. — او هرگز دیر نمی‌آید.',
+    'She never misses school. — او هرگز مدرسه را از دست نمی‌دهد.',
+    'I am always happy. — من همیشه خوشحالم.',
+    'He is usually busy. — او معمولاً مشغول است.',
+    'She is often tired. — او اغلب خسته است.',
+    'They are sometimes late. — آن‌ها گاهی دیر می‌کنند.',
+    'I am rarely angry. — من به ندرت عصبانی می‌شوم.',
+    'He is never late. — او هرگز دیر نمی‌کند.',
+    'I study every day. — من هر روز درس می‌خوانم.',
+    'I exercise every morning. — من هر صبح ورزش می‌کنم.',
+    'We play football every weekend. — ما هر آخر هفته فوتبال بازی می‌کنیم.',
+    'I usually read before bed. — من معمولاً قبل از خواب مطالعه می‌کنم.',
+    'Do you often study English? — آیا اغلب انگلیسی می‌خوانی؟',
+    'How often do you exercise? — هر چند وقت یک‌بار ورزش می‌کنی؟',
+  ],
+  questions: const [
+    Question(
+      'What does "always" mean?',
+      ['همیشه', 'گاهی', 'هرگز', 'به ندرت'],
+      'همیشه',
+    ),
+    Question(
+      'What does "usually" mean?',
+      ['معمولاً', 'هرگز', 'گاهی', 'به ندرت'],
+      'معمولاً',
+    ),
+    Question(
+      'What does "often" mean?',
+      ['اغلب', 'هرگز', 'گاهی', 'همیشه'],
+      'اغلب',
+    ),
+    Question(
+      'What does "sometimes" mean?',
+      ['گاهی', 'همیشه', 'هرگز', 'معمولاً'],
+      'گاهی',
+    ),
+    Question(
+      'What does "rarely" mean?',
+      ['به ندرت', 'اغلب', 'همیشه', 'معمولاً'],
+      'به ندرت',
+    ),
+    Question(
+      'What does "never" mean?',
+      ['هرگز', 'همیشه', 'اغلب', 'گاهی'],
+      'هرگز',
+    ),
+    Question(
+      'Complete: "I ___ study English."',
+      ['always', 'am', 'is', 'are'],
+      'always',
+    ),
+    Question(
+      'Complete: "She ___ goes to school by bus."',
+      ['usually', 'is', 'are', 'am'],
+      'usually',
+    ),
+    Question(
+      'Complete: "He ___ reads books."',
+      ['often', 'is', 'are', 'does'],
+      'often',
+    ),
+    Question(
+      'Complete: "I ___ watch TV."',
+      ['sometimes', 'am', 'is', 'are'],
+      'sometimes',
+    ),
+    Question(
+      'Complete: "We ___ eat fast food."',
+      ['rarely', 'are', 'is', 'am'],
+      'rarely',
+    ),
+    Question(
+      'Complete: "I ___ smoke."',
+      ['never', 'always', 'usually', 'often'],
+      'never',
+    ),
+    Question(
+      'Where does the adverb usually go with a main verb?',
+      ['Before the main verb', 'After the main verb', 'At the end always', 'Before the subject'],
+      'Before the main verb',
+    ),
+    Question(
+      'Choose the correct sentence.',
+      [
+        'I always study.',
+        'I study always.',
+        'Always I study.',
+        'I am study always.'
+      ],
+      'I always study.',
+    ),
+    Question(
+      'Where does the adverb usually go with "be"?',
+      ['After am/is/are', 'Before am/is/are', 'After every noun', 'Before the subject'],
+      'After am/is/are',
+    ),
+    Question(
+      'Choose the correct sentence.',
+      [
+        'I am always happy.',
+        'I always am happy.',
+        'I am happy always.',
+        'Always I am happy.'
+      ],
+      'I am always happy.',
+    ),
+    Question(
+      'What does "habit" mean?',
+      ['عادت', 'روز', 'هفته', 'صبح'],
+      'عادت',
+    ),
+    Question(
+      'What does "routine" mean?',
+      ['روال روزانه', 'تعطیلات', 'ورزش', 'خواب'],
+      'روال روزانه',
+    ),
+    Question(
+      'Complete: "I study ___ day."',
+      ['every', 'never', 'rarely', 'often'],
+      'every',
+    ),
+    Question(
+      'What does "exercise" mean?',
+      ['ورزش کردن', 'خوابیدن', 'خواندن', 'نوشیدن'],
+      'ورزش کردن',
+    ),
+    Question(
+      'Complete: "I ___ exercise every morning."',
+      ['usually', 'am', 'is', 'are'],
+      'usually',
+    ),
+    Question(
+      'What does "sleep" mean?',
+      ['خوابیدن', 'خوردن', 'نوشیدن', 'رفتن'],
+      'خوابیدن',
+    ),
+    Question(
+      'Complete: "I ___ read before bed."',
+      ['usually', 'am', 'is', 'are'],
+      'usually',
+    ),
+    Question(
+      'What does "visit" mean?',
+      ['دیدن / سر زدن', 'خوابیدن', 'کار کردن', 'دویدن'],
+      'دیدن / سر زدن',
+    ),
+    Question(
+      'Complete: "They ___ visit their grandparents."',
+      ['sometimes', 'is', 'am', 'are'],
+      'sometimes',
+    ),
+    Question(
+      'What does "early" mean?',
+      ['زود', 'دیر', 'اغلب', 'هرگز'],
+      'زود',
+    ),
+    Question(
+      'What does "late" mean?',
+      ['دیر', 'زود', 'همیشه', 'معمولاً'],
+      'دیر',
+    ),
+    Question(
+      'Choose the correct sentence.',
+      [
+        'He is never late.',
+        'He never is late.',
+        'He is late never.',
+        'Never he is late.'
+      ],
+      'He is never late.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'She often reads books.',
+        'She often read books.',
+        'She reads often books.',
+        'She is often read books.'
+      ],
+      'She often reads books.',
+    ),
+    Question(
+      'What question asks about frequency?',
+      [
+        'How often do you exercise?',
+        'Where do you exercise?',
+        'Who do you exercise with?',
+        'Why do you exercise?'
+      ],
+      'How often do you exercise?',
+    ),
+  ],
+);
