@@ -941,17 +941,6 @@ final lesson5 = Lesson(
 );
 
 // ==========================================================
-// ALL LESSONS
-// ==========================================================
-
-final lessons = [
-  lesson1,
-  lesson2,
-  lesson3,
-  lesson4,
-  lesson5,
-];
-// ==========================================================
 // LESSON 6: A / An & Singular Nouns
 // ==========================================================
 final lesson6 = Lesson(
@@ -6216,3 +6205,300 @@ final lesson29 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 30: Review & A1 Final Challenge
+// ==========================================================
+final lesson30 = Lesson(
+  id: 30,
+  title: 'A1 Final Review',
+  subtitle: 'مرور نهایی و چالش پایانی A1',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس مهم‌ترین گرامرها و کلمات سطح A1 را مرور می‌کنی تا مطمئن شوی پایه‌ی انگلیسی‌ات محکم شده است.\n\n'
+      '📌 نکات مهم\n'
+      '۱. فعل to be: I am, You/We/They are, He/She/It is.\n'
+      '۲. حال ساده: I/You/We/They work و He/She/It works.\n'
+      '۳. گذشته ساده: I worked / I went / I saw.\n'
+      '۴. آینده با going to: I am going to study.\n'
+      '۵. حال کامل: I have finished / She has finished.\n'
+      '۶. can برای توانایی و must برای الزام استفاده می‌شود.\n'
+      '۷. First Conditional: If + present simple, will + verb.\n'
+      '۸. صفت‌ها معمولاً قبل از اسم می‌آیند: a big house, a red car.\n'
+      '۹. برای سؤال از کلمات What, Where, When, Who, Why و How استفاده می‌کنیم.\n'
+      '۱۰. برای صحبت کردن بهتر، فقط حفظ کردن گرامر کافی نیست؛ باید جمله بسازی و تمرین کنی.',
+  formula:
+      'Present: I work. / She works.\n'
+      'Past: I worked. / I went.\n'
+      'Future: I am going to study.\n'
+      'Present Perfect: I have finished.\n'
+      'Ability: I can swim.\n'
+      'Obligation: You must study.\n'
+      'Conditional: If I study, I will learn.',
+  words: const [
+    Word('learn', 'یاد گرفتن', 'LURN', '📚'),
+    Word('study', 'مطالعه کردن', 'STUH-dee', '📖'),
+    Word('practice', 'تمرین کردن', 'PRAK-tis', '🏋️'),
+    Word('remember', 'به یاد آوردن', 'ree-MEM-ber', '🧠'),
+    Word('forget', 'فراموش کردن', 'fer-GET', '🤔'),
+    Word('understand', 'متوجه شدن', 'un-der-STAND', '💡'),
+    Word('answer', 'پاسخ', 'AN-ser', '✅'),
+    Word('question', 'سؤال', 'KWES-chun', '❓'),
+    Word('correct', 'درست', 'kuh-REKT', '✔️'),
+    Word('wrong', 'اشتباه', 'RONG', '❌'),
+    Word('easy', 'آسان', 'EE-zee', '😊'),
+    Word('difficult', 'سخت', 'DIF-i-kult', '😤'),
+    Word('important', 'مهم', 'im-POR-tunt', '⭐'),
+    Word('ready', 'آماده', 'RED-ee', '🚀'),
+    Word('goal', 'هدف', 'GOHL', '🎯'),
+    Word('success', 'موفقیت', 'suk-SES', '🏆'),
+    Word('future', 'آینده', 'FYOO-cher', '🔮'),
+    Word('past', 'گذشته', 'PAST', '⏪'),
+    Word('present', 'حال', 'PREZ-ent', '⏺️'),
+    Word('remembered', 'به یاد آورد', 'ree-MEM-berd', '🧠'),
+    Word('improve', 'بهبود دادن', 'im-PROOV', '📈'),
+    Word('try', 'تلاش کردن', 'TRAI', '💪'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '🏁'),
+    Word('start', 'شروع کردن', 'START', '▶️'),
+    Word('challenge', 'چالش', 'CHAL-inj', '🔥'),
+    Word('level', 'سطح', 'LEV-ul', '📊'),
+    Word('skill', 'مهارت', 'SKIL', '🛠️'),
+    Word('language', 'زبان', 'LANG-gwij', '🌍'),
+    Word('knowledge', 'دانش', 'NOL-ij', '🧠'),
+  ],
+  examples: const [
+    'I am a student. — من دانش‌آموز هستم.',
+    'She is my friend. — او دوست من است.',
+    'I have a computer. — من یک کامپیوتر دارم.',
+    'He has a new phone. — او یک گوشی جدید دارد.',
+    'I study English every day. — من هر روز انگلیسی مطالعه می‌کنم.',
+    'She works in a shop. — او در یک فروشگاه کار می‌کند.',
+    'I studied English yesterday. — من دیروز انگلیسی مطالعه کردم.',
+    'He went to school yesterday. — او دیروز به مدرسه رفت.',
+    'I am going to study tonight. — من امشب قرار است مطالعه کنم.',
+    'We are going to learn English. — ما قرار است انگلیسی یاد بگیریم.',
+    'I have finished my homework. — تکالیفم را تمام کرده‌ام.',
+    'She has learned many words. — او کلمات زیادی یاد گرفته است.',
+    'I can speak English. — من می‌توانم انگلیسی صحبت کنم.',
+    'Can you help me? — می‌توانی به من کمک کنی؟',
+    'You must study. — تو باید مطالعه کنی.',
+    'You must not be late. — نباید دیر کنی.',
+    'If I study, I will improve. — اگر مطالعه کنم، پیشرفت خواهم کرد.',
+    'If it rains, we will stay home. — اگر باران ببارد، در خانه می‌مانیم.',
+    'What do you study? — چه چیزی مطالعه می‌کنی؟',
+    'Where do you live? — کجا زندگی می‌کنی؟',
+    'When do you study? — چه زمانی مطالعه می‌کنی؟',
+    'Who is your teacher? — معلمت کیست؟',
+    'Why are you tired? — چرا خسته‌ای؟',
+    'How do you learn English? — چگونه انگلیسی یاد می‌گیری؟',
+    'This is a big house. — این یک خانه بزرگ است.',
+    'I have a red phone. — من یک گوشی قرمز دارم.',
+    'English is important. — انگلیسی مهم است.',
+    'Learning takes time. — یادگیری زمان می‌برد.',
+    'I want to improve my English. — می‌خواهم انگلیسی‌ام را بهتر کنم.',
+    'I am ready for the next level. — برای سطح بعدی آماده‌ام.',
+  ],
+  questions: const [
+    Question(
+      'Complete: "I ___ a student."',
+      ['am', 'is', 'are', 'be'],
+      'am',
+    ),
+    Question(
+      'Complete: "She ___ English every day."',
+      ['study', 'studies', 'studied', 'studying'],
+      'studies',
+    ),
+    Question(
+      'What is the past of "go"?',
+      ['goed', 'went', 'gone', 'going'],
+      'went',
+    ),
+    Question(
+      'Complete: "I am going ___ study."',
+      ['to', 'at', 'in', 'on'],
+      'to',
+    ),
+    Question(
+      'Complete: "She has ___ her homework."',
+      ['finish', 'finished', 'finishing', 'finishes'],
+      'finished',
+    ),
+    Question(
+      'What does "can" express?',
+      ['Ability', 'Past', 'Time', 'Possession'],
+      'Ability',
+    ),
+    Question(
+      'Complete: "You ___ study for the test."',
+      ['must', 'are', 'has', 'did'],
+      'must',
+    ),
+    Question(
+      'Complete: "If I study, I ___ learn."',
+      ['will', 'am', 'did', 'have'],
+      'will',
+    ),
+    Question(
+      'Which word asks about a place?',
+      ['Where', 'When', 'Why', 'Who'],
+      'Where',
+    ),
+    Question(
+      'Which word asks about a person?',
+      ['What', 'Who', 'Where', 'How'],
+      'Who',
+    ),
+    Question(
+      'What does "learn" mean?',
+      ['یاد گرفتن', 'فراموش کردن', 'شروع کردن', 'تمام کردن'],
+      'یاد گرفتن',
+    ),
+    Question(
+      'What does "practice" mean?',
+      ['تمرین کردن', 'خوابیدن', 'رفتن', 'خریدن'],
+      'تمرین کردن',
+    ),
+    Question(
+      'What does "important" mean?',
+      ['مهم', 'آسان', 'اشتباه', 'آماده'],
+      'مهم',
+    ),
+    Question(
+      'How do you say "هدف" in English?',
+      ['Goal', 'Level', 'Skill', 'Future'],
+      'Goal',
+    ),
+    Question(
+      'What does "success" mean?',
+      ['موفقیت', 'چالش', 'دانش', 'زبان'],
+      'موفقیت',
+    ),
+    Question(
+      'Complete: "I ___ English yesterday."',
+      ['study', 'studied', 'studies', 'studying'],
+      'studied',
+    ),
+    Question(
+      'Complete: "He ___ a computer."',
+      ['have', 'has', 'having', 'had'],
+      'has',
+    ),
+    Question(
+      'Complete: "They ___ going to travel."',
+      ['are', 'is', 'am', 'be'],
+      'are',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'She work every day.',
+        'She works every day.',
+        'She working every day.',
+        'She worked every day tomorrow.'
+      ],
+      'She works every day.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I can to swim.',
+        'I can swimming.',
+        'I can swim.',
+        'I can swims.'
+      ],
+      'I can swim.',
+    ),
+    Question(
+      'What does "future" mean?',
+      ['آینده', 'گذشته', 'حال', 'امروز'],
+      'آینده',
+    ),
+    Question(
+      'What does "past" mean?',
+      ['گذشته', 'آینده', 'تمرین', 'هدف'],
+      'گذشته',
+    ),
+    Question(
+      'What does "improve" mean?',
+      ['بهبود دادن', 'فراموش کردن', 'پرسیدن', 'جواب دادن'],
+      'بهبود دادن',
+    ),
+    Question(
+      'Complete: "I want to ___ my English."',
+      ['improve', 'wrong', 'past', 'answer'],
+      'improve',
+    ),
+    Question(
+      'What does "challenge" mean?',
+      ['چالش', 'موفقیت', 'سطح', 'دانش'],
+      'چالش',
+    ),
+    Question(
+      'Complete: "I am ___ for the next level."',
+      ['ready', 'wrong', 'past', 'difficult'],
+      'ready',
+    ),
+    Question(
+      'Which word means "مهارت"?',
+      ['Skill', 'Knowledge', 'Language', 'Success'],
+      'Skill',
+    ),
+    Question(
+      'Which word means "دانش"?',
+      ['Knowledge', 'Practice', 'Goal', 'Level'],
+      'Knowledge',
+    ),
+    Question(
+      'Complete: "If it rains, we ___ stay home."',
+      ['will', 'are', 'have', 'did'],
+      'will',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I have finished my homework.',
+        'I has finished my homework.',
+        'I have finish my homework.',
+        'I finished have my homework.'
+      ],
+      'I have finished my homework.',
+    ),
+  ],
+);
+
+// ==========================================================
+// ALL LESSONS
+// ==========================================================
+
+final lessons = [
+  lesson1,
+  lesson2,
+  lesson3,
+  lesson4,
+  lesson5,
+  lesson6,
+  lesson7,
+  lesson8,
+  lesson9,
+  lesson10,
+  lesson11,
+  lesson12,
+  lesson13,
+  lesson14,
+  lesson15,
+  lesson16,
+  lesson17,
+  lesson18,
+  lesson19,
+  lesson20,
+  lesson21,
+  lesson22,
+  lesson23,
+  lesson24,
+  lesson25,
+  lesson26,
+  lesson27,
+  lesson28,
+  lesson29,
+  lesson30,
+];
