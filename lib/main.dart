@@ -1269,3 +1269,86 @@ class _ProgressRow extends StatelessWidget {
     );
   }
 }
+class TutorPage extends StatelessWidget {
+  const TutorPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(28),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.auto_awesome_rounded,
+              size: 82,
+              color: Color(0xFF00E5FF),
+            ),
+            const SizedBox(height: 18),
+            const Text(
+              'AI TUTOR',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w900,
+                color: Color(0xFF00E5FF),
+              ),
+            ),
+            const SizedBox(height: 12),
+            const Directionality(
+              textDirection: TextDirection.rtl,
+              child: Text(
+                'اینجا می‌توانیم بعداً مکالمه، تمرین تلفظ و چت آموزشی را اضافه کنیم.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white70,
+                  height: 1.6,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  final int xp;
+
+  const ProfilePage({
+    super.key,
+    required this.xp,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const NeonBadge(
+            icon: Icons.person,
+          ),
+          const SizedBox(height: 18),
+          const Text(
+            'ENGLISH QUEST PLAYER',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            '$xp XP',
+            style: const TextStyle(
+              color: Color(0xFF00E5FF),
+              fontSize: 18,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
