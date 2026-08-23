@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'models.dart';
 import 'lessons_data.dart';
 
@@ -228,7 +229,10 @@ class LessonCard extends StatelessWidget {
               Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(lesson.title, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 3),
-                Text(lesson.subtitle, style: const TextStyle(color: Color(0xFF00E5FF))),
+                Directionality(
+                  textDirection: TextDirection.rtl,
+                  child: Text(lesson.subtitle, style: const TextStyle(color: Color(0xFF00E5FF))),
+                ),
                 const SizedBox(height: 6),
                 Text('30 words • examples • quiz', style: const TextStyle(color: Colors.white54, fontSize: 11)),
               ])),
@@ -270,6 +274,20 @@ class LessonPage extends StatefulWidget {
 class _LessonPageState extends State<LessonPage> {
   int tab = 0, score = 0;
   final Set<int> answered = {};
+  final FlutterTts tts = FlutterTts();
+
+  @override
+  void initState() {
+    super.initState();
+    tts.setLanguage('en-US');
+    tts.setSpeechRate(0.42);
+  }
+
+  @override
+  void dispose() {
+    tts.stop();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -334,9 +352,17 @@ class _LessonPageState extends State<LessonPage> {
         children: [
           const Text('MISSION START', style: TextStyle(color: Color(0xFF00E5FF), fontWeight: FontWeight.w900, letterSpacing: 2)),
           const SizedBox(height: 8),
-          Text(widget.lesson.subtitle, style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)),
+          Directionality(
+            textDirection: TextDirection.rtl,
+            child: Text(widget.lesson.subtitle, style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)),
+          ),
           const SizedBox(height: 16),
-          _Panel(child: Text(widget.lesson.explanation, style: const TextStyle(fontSize: 17, height: 1.7))),
+          _Panel(
+            child: Directionality(
+              textDirection: TextDirection.rtl,
+              child: Text(widget.lesson.explanation, style: const TextStyle(fontSize: 17, height: 1.8)),
+            ),
+          ),
           const SizedBox(height: 16),
           const Text('FORMULA', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
           const SizedBox(height: 8),
@@ -363,9 +389,12 @@ class _LessonPageState extends State<LessonPage> {
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 leading: Text(w.emoji, style: const TextStyle(fontSize: 29)),
                 title: Text(w.word, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-                subtitle: Text('${w.meaning}  •  ${w.pronunciation}', style: const TextStyle(color: Color(0xFF00E5FF))),
+                subtitle: Directionality(
+                  textDirection: TextDirection.rtl,
+                  child: Text('${w.meaning}  •  ${w.pronunciation}', style: const TextStyle(color: Color(0xFF00E5FF))),
+                ),
                 trailing: IconButton(
-                  onPressed: () => ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('${w.word}  /${w.pronunciation}/'))),
+                  onPressed: () => tts.speak(w.word),
                   icon: const Icon(Icons.volume_up_rounded, color: Color(0xFF00E5FF)),
                 ),
               ),
@@ -377,20 +406,38 @@ class _LessonPageState extends State<LessonPage> {
   Widget _examples() => ListView(
         key: const ValueKey('examples'),
         padding: const EdgeInsets.all(18),
-        children: widget.lesson.examples.asMap().entries.map((e) => Container(
-          margin: const EdgeInsets.only(bottom: 10),
-          padding: const EdgeInsets.all(17),
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(.035),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: const Color(0xFF1E9DFF).withOpacity(.18)),
-          ),
-          child: Row(children: [
-            const Icon(Icons.check_circle_rounded, color: Color(0xFF00E5FF)),
-            const SizedBox(width: 12),
-            Expanded(child: Text(e.value, style: const TextStyle(fontSize: 17))),
-          ]),
-        )).toList(),
+        children: widget.lesson.examples.asMap().entries.map((e) {
+          final parts = e.value.split(' — ');
+          final english = parts.isNotEmpty ? parts[0] : e.value;
+          final persian = parts.length > 1 ? parts[1] : '';
+          return Container(
+            margin: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.all(17),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(.035),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: const Color(0xFF1E9DFF).withOpacity(.18)),
+            ),
+            child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              IconButton(
+                onPressed: () => tts.speak(english),
+                icon: const Icon(Icons.volume_up_rounded, color: Color(0xFF00E5FF)),
+              ),
+              Expanded(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text(english, style: const TextStyle(fontSize: 17)),
+                  if (persian.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: Text(persian, style: const TextStyle(fontSize: 14, color: Colors.white54)),
+                    ),
+                  ],
+                ]),
+              ),
+            ]),
+          );
+        }).toList(),
       );
 
   Widget _quiz() => ListView(
@@ -530,12 +577,15 @@ class TutorPage extends StatelessWidget {
   Widget build(BuildContext context) => Center(
         child: Padding(
           padding: const EdgeInsets.all(28),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: const [
-            Icon(Icons.auto_awesome_rounded, size: 82, color: Color(0xFF00E5FF)),
-            SizedBox(height: 18),
-            Text('AI TUTOR', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900, color: Color(0xFF00E5FF))),
-            SizedBox(height: 12),
-            Text('اینجا می‌توانیم بعداً مکالمه، تمرین تلفظ و چت آموزشی را اضافه کنیم.', textAlign: TextAlign.center, style: TextStyle(fontSize: 16, color: Colors.white70, height: 1.6)),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            const Icon(Icons.auto_awesome_rounded, size: 82, color: Color(0xFF00E5FF)),
+            const SizedBox(height: 18),
+            const Text('AI TUTOR', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900, color: Color(0xFF00E5FF))),
+            const SizedBox(height: 12),
+            const Directionality(
+              textDirection: TextDirection.rtl,
+              child: Text('اینجا می‌توانیم بعداً مکالمه، تمرین تلفظ و چت آموزشی را اضافه کنیم.', textAlign: TextAlign.center, style: TextStyle(fontSize: 16, color: Colors.white70, height: 1.6)),
+            ),
           ]),
         ),
       );
