@@ -3295,3 +3295,245 @@ final lesson15 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 16: How Often?
+// ==========================================================
+final lesson16 = Lesson(
+  id: 16,
+  title: 'How Often?',
+  subtitle: 'چند وقت یک‌بار؟',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور درباره‌ی تعداد دفعات انجام یک کار سؤال بپرسی و جواب بدهی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای پرسیدن «چند وقت یک‌بار؟» از How often استفاده می‌کنیم.\n'
+      '۲. جواب می‌تواند شامل always، usually، often، sometimes، rarely و never باشد.\n'
+      '۳. همچنین می‌توانیم از عبارت‌هایی مثل every day، once a week و twice a month استفاده کنیم.\n'
+      '۴. برای تعداد دفعات می‌گوییم once = یک بار، twice = دو بار و three times = سه بار.\n'
+      '۵. برای پرسیدن تعداد دفعات یک کار، ساختار رایج این است: How often + do/does + subject + verb?\n'
+      '۶. برای he/she/it از does استفاده می‌کنیم: How often does he study?\n'
+      '۷. برای I/you/we/they از do استفاده می‌کنیم: How often do you exercise?',
+  formula:
+      'How often + do/does + subject + verb?\n'
+      'How often do you study? → Every day.\n'
+      'How often does she exercise? → Twice a week.\n\n'
+      'once = یک بار\n'
+      'twice = دو بار\n'
+      'three times = سه بار',
+  words: const [
+    Word('often', 'اغلب', 'OF-en', '🔄'),
+    Word('always', 'همیشه', 'AWL-wayz', '♾️'),
+    Word('usually', 'معمولاً', 'YOO-zhoo-uh-lee', '📅'),
+    Word('sometimes', 'گاهی اوقات', 'SUM-taimz', '🔀'),
+    Word('rarely', 'به‌ندرت', 'RAIR-lee', '🔽'),
+    Word('never', 'هرگز', 'NEV-er', '🚫'),
+    Word('once', 'یک بار', 'WUNS', '1️⃣'),
+    Word('twice', 'دو بار', 'TWAIS', '2️⃣'),
+    Word('times', 'بار/دفعات', 'TAIMZ', '🔢'),
+    Word('daily', 'روزانه', 'DEY-lee', '☀️'),
+    Word('weekly', 'هفتگی', 'WEEK-lee', '🗓️'),
+    Word('monthly', 'ماهانه', 'MUNTH-lee', '📆'),
+    Word('every', 'هر', 'EV-ree', '🔁'),
+    Word('exercise', 'ورزش کردن', 'EK-ser-saiz', '🏃'),
+    Word('study', 'مطالعه کردن', 'STUH-dee', '📚'),
+    Word('practice', 'تمرین کردن', 'PRAK-tis', '✍️'),
+    Word('read', 'خواندن', 'REED', '📖'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('visit', 'دیدن/بازدید کردن', 'VIZ-it', '🏠'),
+    Word('travel', 'سفر کردن', 'TRAV-ul', '✈️'),
+    Word('cook', 'آشپزی کردن', 'KOOK', '🍳'),
+    Word('clean', 'تمیز کردن', 'KLEEN', '🧹'),
+    Word('walk', 'پیاده‌روی کردن', 'WAWK', '🚶'),
+    Word('run', 'دویدن', 'RUN', '🏃'),
+    Word('drink', 'نوشیدن', 'DRINK', '🥤'),
+    Word('eat', 'خوردن', 'EET', '🍎'),
+    Word('sleep', 'خوابیدن', 'SLEEP', '😴'),
+    Word('week', 'هفته', 'WEEK', '🗓️'),
+    Word('month', 'ماه', 'MUNTH', '📅'),
+  ],
+  examples: const [
+    'How often do you study English? — چند وقت یک‌بار انگلیسی مطالعه می‌کنی؟',
+    'I study English every day. — من هر روز انگلیسی مطالعه می‌کنم.',
+    'How often do you exercise? — چند وقت یک‌بار ورزش می‌کنی؟',
+    'I exercise three times a week. — من سه بار در هفته ورزش می‌کنم.',
+    'How often does he play football? — او چند وقت یک‌بار فوتبال بازی می‌کند؟',
+    'He plays football twice a week. — او دو بار در هفته فوتبال بازی می‌کند.',
+    'How often does she read? — او چند وقت یک‌بار مطالعه می‌کند؟',
+    'She reads every night. — او هر شب مطالعه می‌کند.',
+    'I always drink water in the morning. — من همیشه صبح آب می‌نوشم.',
+    'I usually study at night. — من معمولاً شب مطالعه می‌کنم.',
+    'I often watch movies. — من اغلب فیلم تماشا می‌کنم.',
+    'I sometimes play games. — من گاهی بازی می‌کنم.',
+    'I rarely eat fast food. — من به‌ندرت فست‌فود می‌خورم.',
+    'I never smoke. — من هرگز سیگار نمی‌کشم.',
+    'She always helps her mother. — او همیشه به مادرش کمک می‌کند.',
+    'He usually walks to school. — او معمولاً پیاده به مدرسه می‌رود.',
+    'We often visit our grandparents. — ما اغلب به دیدن پدربزرگ و مادربزرگمان می‌رویم.',
+    'They sometimes travel in summer. — آن‌ها گاهی در تابستان سفر می‌کنند.',
+    'I clean my room once a week. — من هفته‌ای یک بار اتاقم را تمیز می‌کنم.',
+    'We go shopping twice a month. — ما ماهی دو بار خرید می‌رویم.',
+    'I practice English three times a week. — من سه بار در هفته انگلیسی تمرین می‌کنم.',
+    'She cooks every day. — او هر روز آشپزی می‌کند.',
+    'He runs every morning. — او هر صبح می‌دود.',
+    'Do you often read books? — آیا اغلب کتاب می‌خوانی؟',
+    'Yes, I do. — بله.',
+    'No, I don’t. — نه.',
+    'Does he usually exercise? — آیا او معمولاً ورزش می‌کند؟',
+    'Yes, he does. — بله.',
+    'No, he doesn’t. — نه.',
+    'How often do they travel? — آن‌ها چند وقت یک‌بار سفر می‌کنند؟',
+  ],
+  questions: const [
+    Question(
+      'What does "often" mean?',
+      ['همیشه', 'اغلب', 'هرگز', 'به‌ندرت'],
+      'اغلب',
+    ),
+    Question(
+      'How do you say "همیشه"?',
+      ['Never', 'Always', 'Rarely', 'Sometimes'],
+      'Always',
+    ),
+    Question(
+      'What does "usually" mean?',
+      ['معمولاً', 'هرگز', 'گاهی', 'یک بار'],
+      'معمولاً',
+    ),
+    Question(
+      'Complete: "I ___ study English every day."',
+      ['always', 'never', 'once', 'twice'],
+      'always',
+    ),
+    Question(
+      'What does "sometimes" mean?',
+      ['همیشه', 'گاهی اوقات', 'هرگز', 'اغلب'],
+      'گاهی اوقات',
+    ),
+    Question(
+      'How do you say "به‌ندرت"?',
+      ['Often', 'Rarely', 'Always', 'Usually'],
+      'Rarely',
+    ),
+    Question(
+      'What does "never" mean?',
+      ['هرگز', 'معمولاً', 'اغلب', 'یک بار'],
+      'هرگز',
+    ),
+    Question(
+      'Complete: "How ___ do you exercise?"',
+      ['often', 'many', 'old', 'much'],
+      'often',
+    ),
+    Question(
+      'What does "once" mean?',
+      ['یک بار', 'دو بار', 'سه بار', 'هر روز'],
+      'یک بار',
+    ),
+    Question(
+      'How do you say "دو بار"?',
+      ['Once', 'Twice', 'Three times', 'Every'],
+      'Twice',
+    ),
+    Question(
+      'Complete: "I exercise ___ a week."',
+      ['twice', 'always', 'never', 'usually'],
+      'twice',
+    ),
+    Question(
+      'What does "every" mean?',
+      ['هر', 'یک بار', 'هرگز', 'گاهی'],
+      'هر',
+    ),
+    Question(
+      'Complete: "How often ___ you study?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+    Question(
+      'Complete: "How often ___ he exercise?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'What does "daily" mean?',
+      ['هفتگی', 'روزانه', 'ماهانه', 'سالانه'],
+      'روزانه',
+    ),
+    Question(
+      'How do you say "هفتگی"?',
+      ['Daily', 'Weekly', 'Monthly', 'Yearly'],
+      'Weekly',
+    ),
+    Question(
+      'What does "exercise" mean?',
+      ['مطالعه کردن', 'ورزش کردن', 'خوابیدن', 'خواندن'],
+      'ورزش کردن',
+    ),
+    Question(
+      'Complete: "She ___ every night."',
+      ['reads', 'read', 'reading', 'to read'],
+      'reads',
+    ),
+    Question(
+      'What does "practice" mean?',
+      ['تمرین کردن', 'سفر کردن', 'خوردن', 'تمیز کردن'],
+      'تمرین کردن',
+    ),
+    Question(
+      'Complete: "I practice English three ___ a week."',
+      ['times', 'time', 'often', 'every'],
+      'times',
+    ),
+    Question(
+      'What does "rarely" mean?',
+      ['اغلب', 'به‌ندرت', 'همیشه', 'معمولاً'],
+      'به‌ندرت',
+    ),
+    Question(
+      'How do you say "هرگز"?',
+      ['Never', 'Always', 'Often', 'Usually'],
+      'Never',
+    ),
+    Question(
+      'Complete: "I ___ eat fast food."',
+      ['rarely', 'once', 'twice', 'every'],
+      'rarely',
+    ),
+    Question(
+      'What does "weekly" mean?',
+      ['روزانه', 'هفتگی', 'ماهانه', 'سالانه'],
+      'هفتگی',
+    ),
+    Question(
+      'Complete: "We go shopping ___ a month."',
+      ['twice', 'always', 'never', 'often'],
+      'twice',
+    ),
+    Question(
+      'What does "monthly" mean?',
+      ['ماهانه', 'روزانه', 'هفتگی', 'هرگز'],
+      'ماهانه',
+    ),
+    Question(
+      'Complete: "How often ___ they travel?"',
+      ['do', 'does', 'is', 'am'],
+      'do',
+    ),
+    Question(
+      'Complete: "How often ___ she reads?"',
+      ['does', 'do', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'What does "three times" mean?',
+      ['یک بار', 'دو بار', 'سه بار', 'هر روز'],
+      'سه بار',
+    ),
+    Question(
+      'Complete: "He ___ plays football twice a week."',
+      ['usually', 'once', 'never', 'every'],
+      'usually',
+    ),
+  ],
+);
