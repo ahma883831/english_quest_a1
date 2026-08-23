@@ -4599,3 +4599,281 @@ final lesson20 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 21: Will — Future Decisions & Predictions
+// ==========================================================
+final lesson21 = Lesson(
+  id: 21,
+  title: 'Will — Future',
+  subtitle: 'آینده با Will',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور با will درباره آینده صحبت کنی؛ مخصوصاً برای تصمیم‌هایی که همان لحظه می‌گیری، قول دادن و پیش‌بینی کردن.\n\n'
+      '📌 نکات مهم\n'
+      '۱. بعد از will همیشه شکل ساده فعل می‌آید: will go, will study, will help.\n'
+      '۲. will برای همه فاعل‌ها یکسان است: I will, he will, they will.\n'
+      '۳. شکل کوتاه will معمولاً به صورت \'ll می‌آید: I\'ll, you\'ll, he\'ll, they\'ll.\n'
+      '۴. منفی will می‌شود will not یا شکل کوتاه won\'t.\n'
+      '۵. برای سوال، will را به ابتدای جمله می‌بریم: Will you come?\n'
+      '۶. برای قول و پیشنهاد هم از will استفاده می‌کنیم: I\'ll help you.\n\n'
+      'مثبت:\n'
+      'I will study tomorrow.\n\n'
+      'منفی:\n'
+      'I will not study tomorrow.\n'
+      'I won\'t study tomorrow.\n\n'
+      'سوالی:\n'
+      'Will you study tomorrow?\n'
+      'Yes, I will. / No, I won\'t.',
+  formula:
+      'Positive:\n'
+      'Subject + will + verb\n\n'
+      'Negative:\n'
+      'Subject + will not + verb\n'
+      'Subject + won\'t + verb\n\n'
+      'Question:\n'
+      'Will + subject + verb?\n\n'
+      'Short answers:\n'
+      'Yes, I will.\n'
+      'No, I won\'t.',
+  words: const [
+    Word('will', 'خواهد / خواهم', 'WIL', '🔮'),
+    Word('future', 'آینده', 'FYOO-cher', '🚀'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '📅'),
+    Word('later', 'بعداً', 'LEY-ter', '⏳'),
+    Word('soon', 'به‌زودی', 'SOON', '⚡'),
+    Word('maybe', 'شاید', 'MEY-bee', '🤔'),
+    Word('probably', 'احتمالاً', 'PROB-uh-blee', '🎯'),
+    Word('promise', 'قول دادن', 'PROM-is', '🤝'),
+    Word('help', 'کمک کردن', 'HELP', '🆘'),
+    Word('call', 'تماس گرفتن', 'KAWL', '📞'),
+    Word('answer', 'پاسخ دادن', 'AN-ser', '💬'),
+    Word('wait', 'صبر کردن', 'WEYT', '⏳'),
+    Word('open', 'باز کردن', 'OH-pen', '🚪'),
+    Word('close', 'بستن', 'KLOHZ', '🔒'),
+    Word('bring', 'آوردن', 'BRING', '🎒'),
+    Word('give', 'دادن', 'GIV', '🎁'),
+    Word('take', 'گرفتن/بردن', 'TEYK', '✋'),
+    Word('send', 'فرستادن', 'SEND', '📨'),
+    Word('tell', 'گفتن', 'TEL', '🗣️'),
+    Word('show', 'نشان دادن', 'SHOH', '👀'),
+    Word('remember', 'به یاد آوردن', 'ri-MEM-ber', '🧠'),
+    Word('forget', 'فراموش کردن', 'fer-GET', '😵'),
+    Word('rain', 'باریدن', 'REYN', '🌧️'),
+    Word('win', 'برنده شدن', 'WIN', '🏆'),
+    Word('lose', 'باختن', 'LOOZ', '❌'),
+    Word('become', 'شدن', 'bi-KUM', '📈'),
+    Word('grow', 'رشد کردن', 'GROH', '🌱'),
+    Word('change', 'تغییر کردن', 'CHEYNJ', '🔄'),
+    Word('decide', 'تصمیم گرفتن', 'di-SAID', '🤔'),
+    Word('believe', 'باور کردن', 'bi-LEEV', '💭'),
+  ],
+  examples: const [
+    'I will study tomorrow. — من فردا درس خواهم خواند.',
+    'She will come soon. — او به‌زودی خواهد آمد.',
+    'They will travel next week. — آن‌ها هفته آینده سفر خواهند کرد.',
+    'He will help me. — او به من کمک خواهد کرد.',
+    'I will call you later. — بعداً با تو تماس خواهم گرفت.',
+    'We will meet tomorrow. — ما فردا همدیگر را خواهیم دید.',
+    'I will help you. — به تو کمک خواهم کرد.',
+    'I will open the door. — در را باز خواهم کرد.',
+    'I will close the window. — پنجره را خواهم بست.',
+    'I will bring your book. — کتابت را خواهم آورد.',
+    'She will give me the answer. — او جواب را به من خواهد داد.',
+    'I will take this bag. — این کیف را خواهم برد.',
+    'He will send a message. — او یک پیام خواهد فرستاد.',
+    'I will tell you later. — بعداً به تو خواهم گفت.',
+    'I will show you my project. — پروژه‌ام را به تو نشان خواهم داد.',
+    'I will remember your name. — اسم تو را به یاد خواهم داشت.',
+    'I will not forget this. — این را فراموش نخواهم کرد.',
+    'I won\'t be late. — دیر نخواهم کرد.',
+    'She won\'t come today. — او امروز نخواهد آمد.',
+    'They won\'t play tomorrow. — آن‌ها فردا بازی نخواهند کرد.',
+    'Will you help me? — به من کمک خواهی کرد؟',
+    'Will you come tomorrow? — فردا خواهی آمد؟',
+    'Will he call us? — آیا او با ما تماس خواهد گرفت؟',
+    'Will they win the game? — آیا آن‌ها بازی را خواهند برد؟',
+    'Yes, I will. — بله.',
+    'No, I won\'t. — نه.',
+    'Maybe it will rain tomorrow. — شاید فردا باران ببارد.',
+    'I think he will become successful. — فکر می‌کنم او موفق خواهد شد.',
+    'People will change in the future. — مردم در آینده تغییر خواهند کرد.',
+    'I believe you will succeed. — باور دارم که موفق خواهی شد.',
+  ],
+  questions: const [
+    Question(
+      'What is the basic structure of will?',
+      ['will + verb', 'will + verb-ing', 'will + past verb', 'will + to + verb'],
+      'will + verb',
+    ),
+    Question(
+      'Complete: "I ___ study tomorrow."',
+      ['will', 'am', 'do', 'have'],
+      'will',
+    ),
+    Question(
+      'Complete: "She ___ come soon."',
+      ['will', 'is', 'does', 'has'],
+      'will',
+    ),
+    Question(
+      'What does "promise" mean?',
+      ['قول دادن', 'فراموش کردن', 'بردن', 'تغییر کردن'],
+      'قول دادن',
+    ),
+    Question(
+      'Complete: "I will ___ you."',
+      ['help', 'helps', 'helping', 'helped'],
+      'help',
+    ),
+    Question(
+      'Which is the correct negative?',
+      [
+        'I won\'t go.',
+        'I don\'t will go.',
+        'I won\'t going.',
+        'I not will go.'
+      ],
+      'I won\'t go.',
+    ),
+    Question(
+      'What does "later" mean?',
+      ['بعداً', 'امروز', 'دیروز', 'همیشه'],
+      'بعداً',
+    ),
+    Question(
+      'Complete: "They ___ travel next week."',
+      ['will', 'are', 'do', 'have'],
+      'will',
+    ),
+    Question(
+      'What is the short form of "will not"?',
+      ['won\'t', 'willn\'t', 'don\'t', 'isn\'t'],
+      'won\'t',
+    ),
+    Question(
+      'Choose the correct question.',
+      [
+        'Will you come?',
+        'You will come?',
+        'Do you will come?',
+        'Will come you?'
+      ],
+      'Will you come?',
+    ),
+    Question(
+      'What does "soon" mean?',
+      ['به‌زودی', 'بعداً', 'دیروز', 'دیر'],
+      'به‌زودی',
+    ),
+    Question(
+      'Complete: "He will ___ me."',
+      ['call', 'calls', 'calling', 'called'],
+      'call',
+    ),
+    Question(
+      'What does "bring" mean?',
+      ['آوردن', 'بردن', 'گرفتن', 'فرستادن'],
+      'آوردن',
+    ),
+    Question(
+      'Complete: "I will ___ your book."',
+      ['bring', 'brings', 'bringing', 'brought'],
+      'bring',
+    ),
+    Question(
+      'What does "send" mean?',
+      ['فرستادن', 'گفتن', 'نشان دادن', 'باز کردن'],
+      'فرستادن',
+    ),
+    Question(
+      'Choose the correct sentence.',
+      [
+        'She will help me.',
+        'She will helps me.',
+        'She will helping me.',
+        'She will helped me.'
+      ],
+      'She will help me.',
+    ),
+    Question(
+      'What does "forget" mean?',
+      ['فراموش کردن', 'یاد گرفتن', 'به یاد آوردن', 'باور کردن'],
+      'فراموش کردن',
+    ),
+    Question(
+      'Complete: "I won\'t ___ this."',
+      ['forget', 'forgets', 'forgetting', 'forgot'],
+      'forget',
+    ),
+    Question(
+      'What does "remember" mean?',
+      ['به یاد آوردن', 'فراموش کردن', 'تصمیم گرفتن', 'تغییر کردن'],
+      'به یاد آوردن',
+    ),
+    Question(
+      'Choose the correct short answer: "Will you come?"',
+      ['Yes, I will.', 'Yes, I am.', 'Yes, I do.', 'Yes, I can.'],
+      'Yes, I will.',
+    ),
+    Question(
+      'Choose the correct negative answer: "Will he come?"',
+      ['No, he won\'t.', 'No, he isn\'t.', 'No, he doesn\'t.', 'No, he not.'],
+      'No, he won\'t.',
+    ),
+    Question(
+      'What does "maybe" mean?',
+      ['شاید', 'حتماً', 'هرگز', 'همیشه'],
+      'شاید',
+    ),
+    Question(
+      'Complete: "Maybe it ___ rain tomorrow."',
+      ['will', 'is', 'does', 'has'],
+      'will',
+    ),
+    Question(
+      'What does "win" mean?',
+      ['برنده شدن', 'باختن', 'رشد کردن', 'شدن'],
+      'برنده شدن',
+    ),
+    Question(
+      'Complete: "They will ___ the game."',
+      ['win', 'wins', 'winning', 'won'],
+      'win',
+    ),
+    Question(
+      'What does "become" mean?',
+      ['شدن', 'تغییر کردن', 'رشد کردن', 'باور کردن'],
+      'شدن',
+    ),
+    Question(
+      'Choose the correct sentence.',
+      [
+        'I will call you later.',
+        'I will calls you later.',
+        'I will calling you later.',
+        'I will called you later.'
+      ],
+      'I will call you later.',
+    ),
+    Question(
+      'What does "believe" mean?',
+      ['باور کردن', 'تصمیم گرفتن', 'کمک کردن', 'منتظر ماندن'],
+      'باور کردن',
+    ),
+    Question(
+      'Complete: "I believe you ___ succeed."',
+      ['will', 'are', 'do', 'have'],
+      'will',
+    ),
+    Question(
+      'Which sentence uses will correctly?',
+      [
+        'I will study tomorrow.',
+        'I will studying tomorrow.',
+        'I will studied tomorrow.',
+        'I will to study tomorrow.'
+      ],
+      'I will study tomorrow.',
+    ),
+  ],
+);
