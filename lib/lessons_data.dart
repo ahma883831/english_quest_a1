@@ -1992,3 +1992,281 @@ final lesson10 = Lesson(
     ], 'I have two apples.'),
   ],
 );
+// ==========================================================
+// LESSON 11: There is / There are
+// ==========================================================
+final lesson11 = Lesson(
+  id: 11,
+  title: 'There is / There are',
+  subtitle: 'وجود داشتن — هست / هستند',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور بگی چیزی یا کسی در یک مکان وجود دارد.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای یک چیز یا اسم مفرد از "There is" استفاده می‌کنیم.\n'
+      '۲. برای چند چیز یا اسم جمع از "There are" استفاده می‌کنیم.\n'
+      '۳. شکل کوتاه "There is" می‌شود "There’s".\n'
+      '۴. برای منفی کردن می‌گوییم "There isn’t" و "There aren’t".\n'
+      '۵. برای سوالی کردن می‌گوییم "Is there...?" و "Are there...?".\n'
+      '۶. برای مقدار نامشخص می‌توانیم از "some" استفاده کنیم: There are some books.\n\n'
+      '💡 مثال\n'
+      'There is a book on the table. → یک کتاب روی میز هست.\n'
+      'There are three books on the table. → سه کتاب روی میز هستند.',
+  formula:
+      'Singular:\n'
+      'There is + a/an + noun\n\n'
+      'Plural:\n'
+      'There are + number/some + plural noun\n\n'
+      'Negative:\n'
+      'There isn’t + singular noun\n'
+      'There aren’t + plural noun\n\n'
+      'Question:\n'
+      'Is there + ...?\n'
+      'Are there + ...?',
+  words: const [
+    Word('there', 'آنجا / وجود دارد', 'DHAIR', '📍'),
+    Word('room', 'اتاق', 'ROOM', '🚪'),
+    Word('kitchen', 'آشپزخانه', 'KITCH-en', '🍳'),
+    Word('bathroom', 'حمام / دستشویی', 'BATH-room', '🚿'),
+    Word('garden', 'باغ / باغچه', 'GAR-den', '🌳'),
+    Word('school', 'مدرسه', 'SKOOL', '🏫'),
+    Word('classroom', 'کلاس درس', 'KLASS-room', '🎓'),
+    Word('desk', 'میز تحریر', 'DESK', '🪑'),
+    Word('window', 'پنجره', 'WIN-doh', '🪟'),
+    Word('door', 'در', 'DOR', '🚪'),
+    Word('wall', 'دیوار', 'WAWL', '🧱'),
+    Word('floor', 'کف / طبقه', 'FLOR', '🏠'),
+    Word('bed', 'تختخواب', 'BED', '🛏️'),
+    Word('lamp', 'چراغ', 'LAMP', '💡'),
+    Word('computer', 'کامپیوتر', 'kum-PYOO-ter', '💻'),
+    Word('phone', 'تلفن / گوشی', 'FOHN', '📱'),
+    Word('picture', 'عکس / تصویر', 'PIK-cher', '🖼️'),
+    Word('chair', 'صندلی', 'CHAIR', '🪑'),
+    Word('book', 'کتاب', 'BOOK', '📖'),
+    Word('box', 'جعبه', 'BOKS', '📦'),
+    Word('table', 'میز', 'TEY-bul', '🪵'),
+    Word('street', 'خیابان', 'STREET', '🛣️'),
+    Word('park', 'پارک', 'PARK', '🌳'),
+    Word('shop', 'فروشگاه', 'SHOP', '🏪'),
+    Word('city', 'شهر', 'SIT-ee', '🏙️'),
+    Word('some', 'مقداری / چندتا', 'SUM', '➕'),
+    Word('any', 'هیچ / مقداری', 'EN-ee', '❓'),
+    Word('inside', 'داخل', 'in-SAID', '⬅️'),
+    Word('outside', 'بیرون', 'out-SAID', '➡️'),
+    Word('near', 'نزدیک', 'NEER', '📍'),
+  ],
+  examples: const [
+    'There is a book on the table. — یک کتاب روی میز هست.',
+    'There is a computer in the room. — یک کامپیوتر در اتاق هست.',
+    'There is a lamp next to the bed. — یک چراغ کنار تخت هست.',
+    'There is a picture on the wall. — یک عکس روی دیوار هست.',
+    'There is a chair near the desk. — یک صندلی نزدیک میز هست.',
+    'There is a garden behind the house. — یک باغچه پشت خانه هست.',
+    'There are two books on the table. — دو کتاب روی میز هستند.',
+    'There are three chairs in the room. — سه صندلی در اتاق هستند.',
+    'There are five students in the classroom. — پنج دانش‌آموز در کلاس هستند.',
+    'There are some pictures on the wall. — چند عکس روی دیوار هستند.',
+    'There are two windows in my room. — دو پنجره در اتاق من هست.',
+    'There are many shops in the city. — فروشگاه‌های زیادی در شهر هستند.',
+    'There isn’t a computer in the kitchen. — کامپیوتری در آشپزخانه نیست.',
+    'There isn’t a bed in the classroom. — تختخوابی در کلاس نیست.',
+    'There aren’t any books on the desk. — هیچ کتابی روی میز نیست.',
+    'There aren’t any students outside. — هیچ دانش‌آموزی بیرون نیست.',
+    'Is there a bathroom here? — آیا اینجا حمام/دستشویی هست؟',
+    'Is there a park near your house? — آیا نزدیک خانه‌ات پارک هست؟',
+    'Is there a computer in your room? — آیا در اتاقت کامپیوتر هست؟',
+    'Are there any books on the table? — آیا کتابی روی میز هست؟',
+    'Are there two chairs in the room? — آیا دو صندلی در اتاق هست؟',
+    'Are there many people outside? — آیا افراد زیادی بیرون هستند؟',
+    'There is some water in the bottle. — مقداری آب در بطری هست.',
+    'There are some apples in the kitchen. — چند سیب در آشپزخانه هست.',
+    'There is a shop near my school. — یک فروشگاه نزدیک مدرسه من هست.',
+    'There are many trees in the park. — در پارک درختان زیادی وجود دارند.',
+    'There is a phone on the desk. — یک گوشی روی میز هست.',
+    'There are four windows in the classroom. — چهار پنجره در کلاس هست.',
+    'There is a box under the table. — یک جعبه زیر میز هست.',
+    'There are some chairs outside. — چند صندلی بیرون هستند.',
+  ],
+  questions: const [
+    Question(
+      'Complete: "___ a book on the table."',
+      ['There is', 'There are', 'There am', 'There be'],
+      'There is',
+    ),
+    Question(
+      'Complete: "___ three chairs in the room."',
+      ['There is', 'There are', 'There am', 'There be'],
+      'There are',
+    ),
+    Question(
+      'What does "room" mean?',
+      ['اتاق', 'خیابان', 'پارک', 'مدرسه'],
+      'اتاق',
+    ),
+    Question(
+      'How do you say "پنجره"?',
+      ['Door', 'Window', 'Wall', 'Floor'],
+      'Window',
+    ),
+    Question(
+      'Complete: "There ___ a computer here."',
+      ['is', 'are', 'am', 'be'],
+      'is',
+    ),
+    Question(
+      'Complete: "There ___ two computers here."',
+      ['is', 'are', 'am', 'be'],
+      'are',
+    ),
+    Question(
+      'What does "garden" mean?',
+      ['آشپزخانه', 'باغ / باغچه', 'اتاق', 'خیابان'],
+      'باغ / باغچه',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'There is two books.',
+        'There are two books.',
+        'There are a book.',
+        'There am two books.'
+      ],
+      'There are two books.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'There are a computer.',
+        'There is a computer.',
+        'There am a computer.',
+        'There be a computer.'
+      ],
+      'There is a computer.',
+    ),
+    Question(
+      'Complete: "There ___ a lamp next to the bed."',
+      ['is', 'are', 'am', 'be'],
+      'is',
+    ),
+    Question(
+      'What does "desk" mean?',
+      ['میز تحریر', 'صندلی', 'در', 'پنجره'],
+      'میز تحریر',
+    ),
+    Question(
+      'How do you say "در"?',
+      ['Wall', 'Door', 'Floor', 'Desk'],
+      'Door',
+    ),
+    Question(
+      'Complete: "There ___ some books on the table."',
+      ['is', 'are', 'am', 'be'],
+      'are',
+    ),
+    Question(
+      'What is the negative of "There is a book."?',
+      [
+        'There isn’t a book.',
+        'There aren’t a book.',
+        'There not is a book.',
+        'There don’t a book.'
+      ],
+      'There isn’t a book.',
+    ),
+    Question(
+      'What is the negative of "There are books."?',
+      [
+        'There isn’t books.',
+        'There aren’t books.',
+        'There don’t books.',
+        'There not are books.'
+      ],
+      'There aren’t books.',
+    ),
+    Question(
+      'Complete: "___ there a park near here?"',
+      ['Is', 'Are', 'Am', 'Be'],
+      'Is',
+    ),
+    Question(
+      'Complete: "___ there any books?"',
+      ['Is', 'Are', 'Am', 'Be'],
+      'Are',
+    ),
+    Question(
+      'What does "inside" mean?',
+      ['بیرون', 'داخل', 'نزدیک', 'دور'],
+      'داخل',
+    ),
+    Question(
+      'How do you say "بیرون"?',
+      ['Inside', 'Outside', 'Near', 'There'],
+      'Outside',
+    ),
+    Question(
+      'Complete: "There is a shop ___ my school."',
+      ['near', 'many', 'some', 'any'],
+      'near',
+    ),
+    Question(
+      'What does "classroom" mean?',
+      ['کلاس درس', 'آشپزخانه', 'باغ', 'فروشگاه'],
+      'کلاس درس',
+    ),
+    Question(
+      'Complete: "There ___ five students in the classroom."',
+      ['is', 'are', 'am', 'be'],
+      'are',
+    ),
+    Question(
+      'What does "wall" mean?',
+      ['کف', 'دیوار', 'سقف', 'پنجره'],
+      'دیوار',
+    ),
+    Question(
+      'How do you say "کف / طبقه"?',
+      ['Floor', 'Wall', 'Door', 'Garden'],
+      'Floor',
+    ),
+    Question(
+      'Complete: "There ___ a phone on the desk."',
+      ['is', 'are', 'am', 'be'],
+      'is',
+    ),
+    Question(
+      'What does "park" mean?',
+      ['فروشگاه', 'پارک', 'شهر', 'خیابان'],
+      'پارک',
+    ),
+    Question(
+      'Complete: "There ___ many trees in the park."',
+      ['is', 'are', 'am', 'be'],
+      'are',
+    ),
+    Question(
+      'Which is correct?',
+      [
+        'Is there a computer?',
+        'Are there a computer?',
+        'There is a computer?',
+        'There are a computer?'
+      ],
+      'Is there a computer?',
+    ),
+    Question(
+      'Which is correct?',
+      [
+        'Are there any books?',
+        'Is there any books?',
+        'Are there a books?',
+        'There are any books?'
+      ],
+      'Are there any books?',
+    ),
+    Question(
+      'What does "outside" mean?',
+      ['داخل', 'بیرون', 'نزدیک', 'آنجا'],
+      'بیرون',
+    ),
+  ],
+);
