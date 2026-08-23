@@ -14,6 +14,8 @@ jobs:
       - name: Copy project files
         run: |
           cp lib/main.dart temp_app/lib/main.dart
+          cp lib/models.dart temp_app/lib/models.dart
+          cp lib/lessons_data.dart temp_app/lib/lessons_data.dart
           cp pubspec.yaml temp_app/pubspec.yaml
       - name: Get dependencies
         run: cd temp_app && flutter pub get
