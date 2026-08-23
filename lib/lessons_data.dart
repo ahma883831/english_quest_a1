@@ -1610,3 +1610,257 @@ final lesson8 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 9: Present Simple Questions
+// ==========================================================
+final lesson9 = Lesson(
+  id: 9,
+  title: 'Present Simple Questions',
+  subtitle: 'سؤال‌سازی با Do و Does',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور با زمان حال ساده سؤال بسازی و درباره عادت‌ها، کارهای روزمره و علایق دیگران سؤال بپرسی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای I, You, We, They از Do استفاده می‌کنیم: Do you work?\n'
+      '۲. برای He, She, It از Does استفاده می‌کنیم: Does he work?\n'
+      '۳. بعد از Does، فعل اصلی دیگر s نمی‌گیرد: Does she work? نه Does she works?\n'
+      '۴. جواب کوتاه با do یا does ساخته می‌شود: Yes, I do. / No, I don’t.\n'
+      '۵. با کلمات پرسشی مثل What, Where, When, Why و How نیز از Do/Does استفاده می‌کنیم.\n'
+      '۶. Do هم می‌تواند فعل کمکی باشد و هم خودش به معنی "انجام دادن" باشد.',
+  formula:
+      'I/You/We/They → Do + subject + verb?\n'
+      'He/She/It → Does + subject + verb?\n\n'
+      'Examples:\n'
+      'Do you like tea? → Yes, I do.\n'
+      'Does he play football? → No, he doesn’t.\n\n'
+      'Wh- Questions:\n'
+      'What do you eat?\n'
+      'Where does she work?\n'
+      'When do they study?',
+  words: const [
+    Word('question', 'سؤال', 'KWES-chun', '❓'),
+    Word('answer', 'پاسخ', 'AN-ser', '💬'),
+    Word('ask', 'پرسیدن', 'ASK', '🙋'),
+    Word('live', 'زندگی کردن', 'LIV', '🏠'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('study', 'درس خواندن', 'STUH-dee', '📚'),
+    Word('play', 'بازی کردن', 'PLEY', '🎮'),
+    Word('eat', 'خوردن', 'EET', '🍽️'),
+    Word('drink', 'نوشیدن', 'DRINK', '🥤'),
+    Word('like', 'دوست داشتن', 'LAIK', '❤️'),
+    Word('want', 'خواستن', 'WONT', '⭐'),
+    Word('need', 'نیاز داشتن', 'NEED', '📌'),
+    Word('know', 'دانستن', 'NOH', '🧠'),
+    Word('speak', 'صحبت کردن', 'SPEEK', '🗣️'),
+    Word('learn', 'یاد گرفتن', 'LURN', '📖'),
+    Word('read', 'خواندن', 'REED', '📚'),
+    Word('watch', 'تماشا کردن', 'WOTCH', '📺'),
+    Word('listen', 'گوش دادن', 'LIS-un', '🎧'),
+    Word('go', 'رفتن', 'GOH', '🚶'),
+    Word('come', 'آمدن', 'KUM', '🏃'),
+    Word('start', 'شروع کردن', 'START', '▶️'),
+    Word('finish', 'تمام کردن', 'FIN-ish', '🏁'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('use', 'استفاده کردن', 'YOOZ', '🛠️'),
+    Word('make', 'ساختن/درست کردن', 'MEYK', '🔨'),
+    Word('do', 'انجام دادن', 'DOO', '✅'),
+    Word('everywhere', 'همه‌جا', 'EV-ree-wair', '🌍'),
+    Word('usually', 'معمولاً', 'YOO-zhoo-uh-lee', '🔄'),
+    Word('often', 'اغلب', 'AW-fun', '🔁'),
+    Word('sometimes', 'گاهی اوقات', 'SUM-taimz', '🔀'),
+  ],
+  examples: const [
+    'Do you speak English? — آیا انگلیسی صحبت می‌کنی؟',
+    'Yes, I do. — بله، صحبت می‌کنم.',
+    'No, I don’t. — نه، صحبت نمی‌کنم.',
+    'Do you like coffee? — آیا قهوه دوست داری؟',
+    'Yes, I do. — بله، دوست دارم.',
+    'Do you study every day? — آیا هر روز درس می‌خوانی؟',
+    'Do they work here? — آیا آن‌ها اینجا کار می‌کنند؟',
+    'Do we have class today? — آیا امروز کلاس داریم؟',
+    'Do you play football? — آیا فوتبال بازی می‌کنی؟',
+    'Do you watch TV at night? — آیا شب تلویزیون تماشا می‌کنی؟',
+    'Does he work here? — آیا او اینجا کار می‌کند؟',
+    'Yes, he does. — بله، کار می‌کند.',
+    'No, he doesn’t. — نه، کار نمی‌کند.',
+    'Does she speak English? — آیا او انگلیسی صحبت می‌کند؟',
+    'Does he like pizza? — آیا او پیتزا دوست دارد؟',
+    'Does she study English? — آیا او انگلیسی می‌خواند؟',
+    'Does your brother play football? — آیا برادرت فوتبال بازی می‌کند؟',
+    'Does your father work here? — آیا پدرت اینجا کار می‌کند؟',
+    'What do you eat for breakfast? — برای صبحانه چه می‌خوری؟',
+    'Where do you live? — کجا زندگی می‌کنی؟',
+    'When do you study? — چه زمانی درس می‌خوانی؟',
+    'Why do you learn English? — چرا انگلیسی یاد می‌گیری؟',
+    'How do you go to school? — چطور به مدرسه می‌روی؟',
+    'What does he do? — او چه کار می‌کند؟',
+    'Where does she live? — او کجا زندگی می‌کند؟',
+    'When does the class start? — کلاس چه زمانی شروع می‌شود؟',
+    'Why does he study English? — چرا او انگلیسی می‌خواند؟',
+    'How does she learn English? — او چگونه انگلیسی یاد می‌گیرد؟',
+    'What do they do every day? — آن‌ها هر روز چه کار می‌کنند؟',
+    'Does your friend like English? — آیا دوستت انگلیسی را دوست دارد؟',
+  ],
+  questions: const [
+    Question(
+      'Complete: "___ you speak English?"',
+      ['Do', 'Does', 'Is', 'Are'],
+      'Do',
+    ),
+    Question(
+      'Complete: "___ he work here?"',
+      ['Do', 'Does', 'Is', 'Are'],
+      'Does',
+    ),
+    Question(
+      'What does "question" mean?',
+      ['پاسخ', 'سؤال', 'درس', 'کار'],
+      'سؤال',
+    ),
+    Question(
+      'How do you say "پاسخ"?',
+      ['Question', 'Answer', 'Ask', 'Help'],
+      'Answer',
+    ),
+    Question(
+      'Complete: "Do you ___ coffee?"',
+      ['like', 'likes', 'liking', 'liked'],
+      'like',
+    ),
+    Question(
+      'Complete: "Does she ___ English?"',
+      ['speak', 'speaks', 'speaking', 'spoke'],
+      'speak',
+    ),
+    Question(
+      'Which is correct?',
+      [
+        'Does he works?',
+        'Does he work?',
+        'Do he work?',
+        'Does he working?'
+      ],
+      'Does he work?',
+    ),
+    Question(
+      'What does "ask" mean?',
+      ['پرسیدن', 'پاسخ دادن', 'خواندن', 'نوشتن'],
+      'پرسیدن',
+    ),
+    Question(
+      'Complete: "___ they study English?"',
+      ['Do', 'Does', 'Is', 'Has'],
+      'Do',
+    ),
+    Question(
+      'Complete: "___ your sister like tea?"',
+      ['Do', 'Does', 'Are', 'Have'],
+      'Does',
+    ),
+    Question(
+      'What is the short answer to "Do you work?"',
+      ['Yes, I do.', 'Yes, I does.', 'Yes, I am.', 'Yes, I is.'],
+      'Yes, I do.',
+    ),
+    Question(
+      'What is the negative answer to "Do you like fish?"',
+      ['No, I don’t.', 'No, I doesn’t.', 'No, I am not.', 'No, I isn’t.'],
+      'No, I don’t.',
+    ),
+    Question(
+      'What is the short answer to "Does he study?"',
+      ['Yes, he do.', 'Yes, he does.', 'Yes, he is.', 'Yes, he has.'],
+      'Yes, he does.',
+    ),
+    Question(
+      'Complete: "Where ___ you live?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+    Question(
+      'Complete: "Where ___ she live?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'Complete: "What ___ you eat?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+    Question(
+      'Complete: "What ___ he do?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'What does "live" mean?',
+      ['کار کردن', 'زندگی کردن', 'رفتن', 'خوردن'],
+      'زندگی کردن',
+    ),
+    Question(
+      'How do you say "یاد گرفتن"?',
+      ['Learn', 'Listen', 'Know', 'Speak'],
+      'Learn',
+    ),
+    Question(
+      'Complete: "Why ___ you learn English?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+    Question(
+      'Complete: "Why ___ he learn English?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'Complete: "When ___ they study?"',
+      ['do', 'does', 'is', 'are'],
+      'do',
+    ),
+    Question(
+      'Complete: "When ___ the class start?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+    Question(
+      'What does "often" mean?',
+      ['هرگز', 'اغلب', 'همیشه', 'دیروز'],
+      'اغلب',
+    ),
+    Question(
+      'How do you say "گوش دادن"?',
+      ['Watch', 'Listen', 'Speak', 'Read'],
+      'Listen',
+    ),
+    Question(
+      'Complete: "Do they ___ here?"',
+      ['work', 'works', 'working', 'worked'],
+      'work',
+    ),
+    Question(
+      'Complete: "Does your father ___ here?"',
+      ['work', 'works', 'working', 'worked'],
+      'work',
+    ),
+    Question(
+      'Which question is correct?',
+      [
+        'Does she likes tea?',
+        'Does she like tea?',
+        'Do she like tea?',
+        'Does she liking tea?'
+      ],
+      'Does she like tea?',
+    ),
+    Question(
+      'What does "want" mean?',
+      ['خواستن', 'دانستن', 'کمک کردن', 'شروع کردن'],
+      'خواستن',
+    ),
+    Question(
+      'Complete: "How ___ she learn English?"',
+      ['do', 'does', 'is', 'are'],
+      'does',
+    ),
+  ],
+);
