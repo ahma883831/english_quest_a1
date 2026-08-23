@@ -5004,3 +5004,126 @@ final lesson23 = Lesson(
     Question('Complete: "English is one of the ___ important languages."', ['most', 'more', 'much', 'many'], 'most'),
   ],
 );
+// ==========================================================
+// LESSON 24: Adverbs of Manner
+// ==========================================================
+final lesson24 = Lesson(
+  id: 24,
+  title: 'Adverbs of Manner',
+  subtitle: 'قیدهای حالت و چگونگی انجام کار',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری چطور توضیح بدهی یک کار چگونه انجام می‌شود؛ مثلاً سریع، آرام، خوب یا با دقت.\n\n'
+      '📌 نکات مهم\n'
+      '۱. قیدهای حالت معمولاً توضیح می‌دهند یک فعل چگونه انجام می‌شود: He runs quickly.\n'
+      '۲. بسیاری از قیدها با اضافه کردن ly به صفت ساخته می‌شوند: slow → slowly.\n'
+      '۳. اگر صفت به y ختم شود، معمولاً y به i تبدیل می‌شود: easy → easily.\n'
+      '۴. بعضی کلمات بی‌قاعده هستند: good → well.\n'
+      '۵. بعد از فعل‌های حرکتی و عملی می‌توانیم از قید حالت استفاده کنیم: She speaks slowly.\n'
+      '۶. سؤال رایج برای قید حالت "How?" است: How does he speak? — He speaks slowly.',
+  formula:
+      'Adjective + ly → Adverb\n'
+      'slow → slowly\n'
+      'quick → quickly\n'
+      'careful → carefully\n'
+      'easy → easily\n\n'
+      'Irregular:\n'
+      'good → well\n'
+      'fast → fast',
+  words: const [
+    Word('quickly', 'به‌سرعت', 'KWIK-lee', '⚡'),
+    Word('slowly', 'آهسته', 'SLOH-lee', '🐢'),
+    Word('carefully', 'با دقت', 'KAIR-ful-lee', '🔍'),
+    Word('easily', 'به‌آسانی', 'EE-zuh-lee', '😊'),
+    Word('quietly', 'آرام و بی‌صدا', 'KWAI-et-lee', '🤫'),
+    Word('loudly', 'با صدای بلند', 'LOWD-lee', '📢'),
+    Word('happily', 'با خوشحالی', 'HAP-uh-lee', '😄'),
+    Word('sadly', 'با ناراحتی', 'SAD-lee', '😔'),
+    Word('angrily', 'با عصبانیت', 'ANG-gri-lee', '😠'),
+    Word('politely', 'مودبانه', 'puh-LAIT-lee', '🙏'),
+    Word('badly', 'بد', 'BAD-lee', '👎'),
+    Word('well', 'خوب', 'WEL', '👍'),
+    Word('fast', 'سریع', 'FAST', '🏎️'),
+    Word('hard', 'سخت', 'HARD', '💪'),
+    Word('beautifully', 'به زیبایی', 'BYOO-tuh-ful-lee', '🌸'),
+    Word('correctly', 'به‌درستی', 'kuh-REKT-lee', '✅'),
+    Word('wrongly', 'به‌اشتباه', 'RONG-lee', '❌'),
+    Word('clearly', 'واضح', 'KLEER-lee', '💡'),
+    Word('slow', 'آهسته', 'SLOH', '🐌'),
+    Word('quick', 'سریع', 'KWIK', '⚡'),
+    Word('careful', 'مراقب/دقیق', 'KAIR-ful', '🧐'),
+    Word('easy', 'آسان', 'EE-zee', '🙂'),
+    Word('quiet', 'ساکت', 'KWAI-et', '🤫'),
+    Word('loud', 'بلند', 'LOWD', '🔊'),
+    Word('happy', 'خوشحال', 'HAP-ee', '😃'),
+    Word('angry', 'عصبانی', 'ANG-gree', '😡'),
+    Word('polite', 'مودب', 'puh-LAIT', '🎩'),
+    Word('correct', 'درست', 'kuh-REKT', '✔️'),
+    Word('clear', 'واضح', 'KLEER', '💬'),
+    Word('speak', 'صحبت کردن', 'SPEEK', '🗣️'),
+  ],
+  examples: const [
+    'He runs quickly. — او سریع می‌دود.',
+    'She walks slowly. — او آهسته راه می‌رود.',
+    'Please drive carefully. — لطفاً با دقت رانندگی کن.',
+    'I can do it easily. — من می‌توانم آن را به‌آسانی انجام دهم.',
+    'The baby sleeps quietly. — نوزاد آرام می‌خوابد.',
+    'He speaks loudly. — او با صدای بلند صحبت می‌کند.',
+    'She smiled happily. — او با خوشحالی لبخند زد.',
+    'He answered sadly. — او با ناراحتی جواب داد.',
+    'She spoke angrily. — او با عصبانیت صحبت کرد.',
+    'He answered politely. — او مودبانه جواب داد.',
+    'You did it well. — تو آن را خوب انجام دادی.',
+    'He runs fast. — او سریع می‌دود.',
+    'She works hard. — او سخت کار می‌کند.',
+    'He sings beautifully. — او زیبا آواز می‌خواند.',
+    'Please write correctly. — لطفاً درست بنویس.',
+    'He answered wrongly. — او اشتباه جواب داد.',
+    'Please speak clearly. — لطفاً واضح صحبت کن.',
+    'She drives carefully. — او با دقت رانندگی می‌کند.',
+    'He learns quickly. — او سریع یاد می‌گیرد.',
+    'They work quietly. — آن‌ها بی‌صدا کار می‌کنند.',
+    'How does he speak? — او چگونه صحبت می‌کند؟',
+    'He speaks slowly. — او آهسته صحبت می‌کند.',
+    'How does she work? — او چگونه کار می‌کند؟',
+    'She works carefully. — او با دقت کار می‌کند.',
+    'How do you learn English? — چطور انگلیسی یاد می‌گیری؟',
+    'I learn English easily. — من انگلیسی را به‌آسانی یاد می‌گیرم.',
+    'He plays well. — او خوب بازی می‌کند.',
+    'The car moves quickly. — ماشین سریع حرکت می‌کند.',
+    'Please listen carefully. — لطفاً با دقت گوش بده.',
+    'She answered correctly. — او درست جواب داد.',
+  ],
+  questions: const [
+    Question('What does "quickly" mean?', ['به‌سرعت', 'آهسته', 'با دقت', 'آرام'], 'به‌سرعت'),
+    Question('How do you say "آهسته"?', ['Quickly', 'Slowly', 'Loudly', 'Happily'], 'Slowly'),
+    Question('Complete: "Please drive ___."', ['carefully', 'careful', 'care', 'caring'], 'carefully'),
+    Question('What does "easily" mean?', ['به‌سختی', 'به‌آسانی', 'با عصبانیت', 'بلند'], 'به‌آسانی'),
+    Question('How do you say "آرام و بی‌صدا"?', ['Loudly', 'Quietly', 'Quickly', 'Sadly'], 'Quietly'),
+    Question('Complete: "He speaks ___."', ['loudly', 'loud', 'louder', 'loudness'], 'loudly'),
+    Question('What does "happily" mean?', ['با ناراحتی', 'با خوشحالی', 'با عصبانیت', 'آرام'], 'با خوشحالی'),
+    Question('How do you say "با عصبانیت"?', ['Sadly', 'Happily', 'Angrily', 'Politely'], 'Angrily'),
+    Question('Complete: "She answered ___."', ['politely', 'polite', 'politest', 'politeness'], 'politely'),
+    Question('What does "well" mean?', ['بد', 'خوب', 'سریع', 'آهسته'], 'خوب'),
+    Question('Which is correct?', ['He runs fastly.', 'He runs fast.', 'He runs fastestly.', 'He fast runs.'], 'He runs fast.'),
+    Question('Complete: "She sings ___."', ['beautifully', 'beautiful', 'beauty', 'beautifulest'], 'beautifully'),
+    Question('What does "correctly" mean?', ['به‌اشتباه', 'به‌درستی', 'آهسته', 'بلند'], 'به‌درستی'),
+    Question('How do you say "واضح"?', ['Clearly', 'Wrongly', 'Badly', 'Slowly'], 'Clearly'),
+    Question('Complete: "Please speak ___."', ['clearly', 'clear', 'clearness', 'clearest'], 'clearly'),
+    Question('What is the adverb of "slow"?', ['slowly', 'slowy', 'slowness', 'slowest'], 'slowly'),
+    Question('What is the adverb of "quick"?', ['quickly', 'quickful', 'quickness', 'quickest'], 'quickly'),
+    Question('What is the adverb of "careful"?', ['carefully', 'carefuly', 'care', 'careless'], 'carefully'),
+    Question('What is the adverb of "easy"?', ['easyly', 'easily', 'easly', 'easiest'], 'easily'),
+    Question('What is the adverb of "happy"?', ['happyly', 'happily', 'happily', 'happiest'], 'happily'),
+    Question('What is the adverb of "polite"?', ['politely', 'politeful', 'politeness', 'polited'], 'politely'),
+    Question('Complete: "He works ___."', ['hard', 'hardly', 'hardness', 'hardest'], 'hard'),
+    Question('How do you ask about the way someone does something?', ['Why?', 'How?', 'When?', 'Who?'], 'How?'),
+    Question('Complete: "How does he ___?"', ['speak', 'speaks', 'speaking', 'spoke'], 'speak'),
+    Question('Complete: "He speaks ___."', ['slowly', 'slow', 'slowness', 'slower'], 'slowly'),
+    Question('What does "badly" mean?', ['خوب', 'بد', 'سریع', 'واضح'], 'بد'),
+    Question('Complete: "She did the job ___."', ['well', 'good', 'best', 'better'], 'well'),
+    Question('What does "wrongly" mean?', ['به‌درستی', 'به‌اشتباه', 'به‌سرعت', 'مودبانه'], 'به‌اشتباه'),
+    Question('Complete: "Please listen ___."', ['carefully', 'careful', 'care', 'cared'], 'carefully'),
+    Question('Which word is an adverb?', ['quick', 'quickly', 'quickness', 'quicker'], 'quickly'),
+  ],
+);
