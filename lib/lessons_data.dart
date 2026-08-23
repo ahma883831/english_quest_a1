@@ -621,3 +621,168 @@ final lesson4 = Lesson(
       ['گرد', 'صاف', 'تیره', 'روشن'],
       'گرد',
     ),
+    Question(
+      'Complete: "What ___ is it?" (asking color)',
+      ['color', 'shape', 'size', 'name'],
+      'color',
+    ),
+    Question(
+      'What does "purple" mean?',
+      ['بنفش', 'صورتی', 'نارنجی', 'قهوه‌ای'],
+      'بنفش',
+    ),
+    Question(
+      'How do you say "صورتی"?',
+      ['Purple', 'Pink', 'Orange', 'Gray'],
+      'Pink',
+    ),
+    Question(
+      'What does "white" mean?',
+      ['سیاه', 'سفید', 'خاکستری', 'طلایی'],
+      'سفید',
+    ),
+    Question(
+      'Complete: "My favorite ___ is blue."',
+      ['color', 'shape', 'name', 'size'],
+      'color',
+    ),
+    Question(
+      'What does "heart" mean?',
+      ['ستاره', 'قلب', 'لوزی', 'دایره'],
+      'قلب',
+    ),
+    Question(
+      'How do you say "روشن (رنگ)"?',
+      ['Dark', 'Light', 'Bright', 'Flat'],
+      'Light',
+    ),
+    Question(
+      'What does "dark" mean?',
+      ['روشن', 'تیره', 'درخشان', 'گرد'],
+      'تیره',
+    ),
+    Question(
+      'Complete: "The stars are ___."',
+      ['bright', 'flat', 'square', 'small'],
+      'bright',
+    ),
+    Question(
+      'What does "diamond" mean?',
+      ['لوزی', 'مربع', 'دایره', 'مثلث'],
+      'لوزی',
+    ),
+    Question(
+      'How do you say "بیضی"?',
+      ['Circle', 'Oval', 'Star', 'Heart'],
+      'Oval',
+    ),
+    Question(
+      'What does "shape" mean?',
+      ['رنگ', 'شکل', 'اندازه', 'نور'],
+      'شکل',
+    ),
+    Question(
+      'Complete: "This box is ___." (opposite of small)',
+      ['big', 'flat', 'dark', 'round'],
+      'big',
+    ),
+    Question(
+      'What does "gray" mean?',
+      ['خاکستری', 'طلایی', 'قهوه‌ای', 'سفید'],
+      'خاکستری',
+    ),
+    Question(
+      'How do you say "مورد علاقه"?',
+      ['Color', 'Favorite', 'Shape', 'Bright'],
+      'Favorite',
+    ),
+  ],
+);
+
+// ==========================================================
+// LESSON 5: Days & Months
+// ==========================================================
+final lesson5 = Lesson(
+  id: 5,
+  title: 'Days & Months',
+  subtitle: 'روزهای هفته و ماه‌ها',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس روزهای هفته، ماه‌های سال و فصل‌ها رو یاد می‌گیری و می‌آموزی چطور درباره‌ی تاریخ و زمان صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. روزهای هفته و ماه‌ها همیشه با حرف بزرگ شروع می‌شن: Monday نه monday.\n'
+      '۲. برای روزها از حرف اضافه "on" استفاده می‌کنیم: "on Monday".\n'
+      '۳. برای ماه‌ها از حرف اضافه "in" استفاده می‌کنیم: "in June".\n'
+      '۴. برای سال‌ها هم "in" به کار می‌ره: "in 2026".\n'
+      '۵. کلمه "weekend" در انگلیسی به شنبه و یکشنبه اشاره داره، نه پنج‌شنبه و جمعه.\n'
+      '۶. برای پرسیدن تاریخ می‌گیم "What is the date today?" و جواب مثلاً "It is August 23rd."',
+  formula:
+      'What day is it? → It is + [day].\n'
+      'on + [day]   |   in + [month/year]\n'
+      'What is the date? → It is + [month] + [day].',
+
+  words: const [
+    Word('monday', 'دوشنبه', 'MUN-dey', '📅'),
+    Word('tuesday', 'سه‌شنبه', 'TOOZ-dey', '📅'),
+    Word('wednesday', 'چهارشنبه', 'WENZ-dey', '📅'),
+    Word('thursday', 'پنج‌شنبه', 'THURZ-dey', '📅'),
+    Word('friday', 'جمعه', 'FRAI-dey', '📅'),
+    Word('saturday', 'شنبه', 'SAT-er-dey', '📅'),
+    Word('sunday', 'یکشنبه', 'SUN-dey', '📅'),
+    Word('week', 'هفته', 'WEEK', '🗓️'),
+    Word('weekend', 'آخر هفته', 'WEEK-end', '🎉'),
+    Word('january', 'ژانویه', 'JAN-yoo-air-ee', '❄️'),
+    Word('february', 'فوریه', 'FEB-roo-air-ee', '💝'),
+    Word('march', 'مارس', 'MARCH', '🌱'),
+    Word('april', 'آوریل', 'EY-prul', '🌷'),
+    Word('may', 'مه', 'MEY', '🌸'),
+    Word('june', 'ژوئن', 'JOON', '☀️'),
+    Word('july', 'جولای', 'juh-LAI', '🎆'),
+    Word('august', 'آگوست', 'AW-gust', '🏖️'),
+    Word('september', 'سپتامبر', 'sep-TEM-ber', '🍂'),
+    Word('october', 'اکتبر', 'ok-TOH-ber', '🎃'),
+    Word('november', 'نوامبر', 'noh-VEM-ber', '🍁'),
+    Word('december', 'دسامبر', 'dee-SEM-ber', '🎄'),
+    Word('month', 'ماه', 'MUNTH', '📆'),
+    Word('year', 'سال', 'YEER', '🗓️'),
+    Word('date', 'تاریخ', 'DEYT', '📅'),
+    Word('calendar', 'تقویم', 'KAL-en-der', '📆'),
+    Word('holiday', 'تعطیلات', 'HOL-uh-dey', '🏝️'),
+    Word('birthday', 'تولد', 'BURTH-dey', '🎂'),
+    Word('season', 'فصل', 'SEE-zun', '🍁'),
+    Word('spring', 'بهار', 'SPRING', '🌼'),
+    Word('winter', 'زمستان', 'WIN-ter', '⛄'),
+  ],
+
+  examples: const [
+    'What day is it today? — امروز چه روزیه؟',
+    'Today is Monday. — امروز دوشنبه است.',
+    'I have school on Tuesday. — سه‌شنبه مدرسه دارم.',
+    'Wednesday is the middle of the week. — چهارشنبه وسط هفته است.',
+    'I like Thursday. — من پنج‌شنبه را دوست دارم.',
+    'Friday is a busy day. — جمعه روز شلوغی است.',
+    'Saturday is a holiday. — شنبه تعطیل است.',
+    'Sunday is a family day. — یکشنبه روز خانواده است.',
+    'A week has seven days. — یک هفته هفت روز دارد.',
+    'I relax on the weekend. — آخر هفته استراحت می‌کنم.',
+    'My birthday is in January. — تولدم در ژانویه است.',
+    'February is a short month. — فوریه ماه کوتاهی است.',
+    'Spring starts in March. — بهار در مارس شروع می‌شود.',
+    'It rains a lot in April. — در آوریل خیلی باران می‌بارد.',
+    'Flowers grow in May. — گل‌ها در مه رشد می‌کنند.',
+    'School ends in June. — مدرسه در ژوئن تمام می‌شود.',
+    'We have a holiday in July. — در جولای تعطیلات داریم.',
+    'August is very hot. — آگوست خیلی گرم است.',
+    'School starts in September. — مدرسه در سپتامبر شروع می‌شود.',
+    'Leaves fall in October. — برگ‌ها در اکتبر می‌ریزند.',
+    'It gets cold in November. — در نوامبر هوا سرد می‌شود.',
+    'We celebrate in December. — در دسامبر جشن می‌گیریم.',
+    'What month is it? — الان چه ماهیه؟',
+    'This year is exciting. — امسال هیجان‌انگیز است.',
+    'What is the date today? — امروز چندمه؟',
+    'I look at the calendar every day. — هر روز به تقویم نگاه می‌کنم.',
+    'We have a holiday next week. — هفته‌ی آینده تعطیلات داریم.',
+    'My birthday is in May. — تولد من در ماه مه است.',
+    'There are four seasons. — چهار فصل وجود دارد.',
+    'Winter is very cold. — زمستان خیلی سرد است.',
+  ],
