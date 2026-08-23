@@ -3537,3 +3537,263 @@ final lesson16 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 17: Simple Past - Regular Verbs
+// ==========================================================
+final lesson17 = Lesson(
+  id: 17,
+  title: 'Simple Past - Regular Verbs',
+  subtitle: 'گذشته ساده — افعال باقاعده',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره‌ی کارهایی که در گذشته انجام شده‌اند صحبت کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای صحبت درباره‌ی کاری که در گذشته تمام شده، از Simple Past استفاده می‌کنیم.\n'
+      '۲. در افعال باقاعده معمولاً به آخر فعل ed اضافه می‌کنیم: play → played.\n'
+      '۳. شکل گذشته برای همه‌ی فاعل‌ها یکسان است: I played, She played, They played.\n'
+      '۴. برای منفی کردن از did not یا didn’t + شکل ساده فعل استفاده می‌کنیم: I didn’t play.\n'
+      '۵. برای سؤال از Did + subject + base verb استفاده می‌کنیم: Did you play?\n'
+      '۶. بعد از did و didn’t، فعل به شکل ساده برمی‌گردد؛ نمی‌گوییم didn’t played.\n'
+      '۷. yesterday، last night، last week و ago از نشانه‌های رایج گذشته هستند.',
+  formula:
+      'Positive:\n'
+      'Subject + past verb\n'
+      'I played football.\n\n'
+      'Negative:\n'
+      'Subject + did not/didn’t + base verb\n'
+      'I didn’t play football.\n\n'
+      'Question:\n'
+      'Did + subject + base verb?\n'
+      'Did you play football?',
+  words: const [
+    Word('yesterday', 'دیروز', 'YES-ter-dey', '📅'),
+    Word('ago', 'پیش', 'uh-GOH', '⏳'),
+    Word('last', 'قبلی/گذشته', 'LAST', '⏮️'),
+    Word('played', 'بازی کرد', 'PLEYD', '🎮'),
+    Word('watched', 'تماشا کرد', 'WOTCHT', '📺'),
+    Word('worked', 'کار کرد', 'WERKT', '💼'),
+    Word('walked', 'راه رفت', 'WAWKT', '🚶'),
+    Word('talked', 'صحبت کرد', 'TAWKT', '🗣️'),
+    Word('called', 'تماس گرفت', 'KAWLD', '📞'),
+    Word('helped', 'کمک کرد', 'HELPT', '🤝'),
+    Word('cleaned', 'تمیز کرد', 'KLEEND', '🧹'),
+    Word('opened', 'باز کرد', 'OH-pənd', '🚪'),
+    Word('closed', 'بست', 'KLOHZD', '🚪'),
+    Word('started', 'شروع کرد', 'STAR-tid', '▶️'),
+    Word('finished', 'تمام کرد', 'FIN-isht', '🏁'),
+    Word('visited', 'دیدن کرد', 'VIZ-it-id', '🏠'),
+    Word('wanted', 'خواست', 'WON-tid', '⭐'),
+    Word('needed', 'نیاز داشت', 'NEE-did', '📌'),
+    Word('liked', 'دوست داشت', 'LAIKT', '❤️'),
+    Word('loved', 'دوست داشت/عاشق بود', 'LUVD', '❤️'),
+    Word('studied', 'مطالعه کرد', 'STUH-deed', '📚'),
+    Word('practiced', 'تمرین کرد', 'PRAK-tist', '✍️'),
+    Word('cooked', 'آشپزی کرد', 'KOOKT', '🍳'),
+    Word('washed', 'شست', 'WOSHT', '🧼'),
+    Word('waited', 'صبر کرد', 'WEY-tid', '⏳'),
+    Word('answered', 'جواب داد', 'AN-serd', '💬'),
+    Word('arrived', 'رسید', 'uh-RAIVD', '📍'),
+    Word('stayed', 'ماند', 'STEYD', '🏠'),
+    Word('danced', 'رقصید', 'DANST', '💃'),
+    Word('visited', 'بازدید کرد', 'VIZ-it-id', '🧳'),
+  ],
+  examples: const [
+    'I played football yesterday. — من دیروز فوتبال بازی کردم.',
+    'She watched a movie last night. — او دیشب یک فیلم تماشا کرد.',
+    'I worked yesterday. — من دیروز کار کردم.',
+    'We walked to school. — ما به مدرسه پیاده رفتیم.',
+    'They talked for an hour. — آن‌ها یک ساعت صحبت کردند.',
+    'He called his friend. — او با دوستش تماس گرفت.',
+    'I helped my mother. — من به مادرم کمک کردم.',
+    'She cleaned her room. — او اتاقش را تمیز کرد.',
+    'He opened the door. — او در را باز کرد.',
+    'I closed the window. — من پنجره را بستم.',
+    'The class started at eight. — کلاس ساعت هشت شروع شد.',
+    'The lesson finished at ten. — درس ساعت ده تمام شد.',
+    'We visited our grandparents. — ما به دیدن پدربزرگ و مادربزرگمان رفتیم.',
+    'I wanted a new phone. — من یک گوشی جدید می‌خواستم.',
+    'She needed some help. — او به کمی کمک نیاز داشت.',
+    'I liked the movie. — من فیلم را دوست داشتم.',
+    'They loved the food. — آن‌ها غذا را خیلی دوست داشتند.',
+    'I studied English yesterday. — من دیروز انگلیسی مطالعه کردم.',
+    'He practiced English for one hour. — او یک ساعت انگلیسی تمرین کرد.',
+    'My father cooked dinner. — پدرم شام پخت.',
+    'I washed my hands. — من دست‌هایم را شستم.',
+    'We waited for the bus. — ما منتظر اتوبوس ماندیم.',
+    'She answered the question. — او به سؤال جواب داد.',
+    'They arrived late. — آن‌ها دیر رسیدند.',
+    'I stayed at home. — من در خانه ماندم.',
+    'We danced at the party. — ما در مهمانی رقصیدیم.',
+    'Did you play football? — آیا فوتبال بازی کردی؟',
+    'Yes, I did. — بله.',
+    'No, I didn’t. — نه.',
+    'I didn’t watch TV yesterday. — من دیروز تلویزیون تماشا نکردم.',
+  ],
+  questions: const [
+    Question(
+      'What does "yesterday" mean?',
+      ['امروز', 'فردا', 'دیروز', 'هفته بعد'],
+      'دیروز',
+    ),
+    Question(
+      'What does "ago" mean?',
+      ['بعد', 'پیش', 'امروز', 'همیشه'],
+      'پیش',
+    ),
+    Question(
+      'Complete: "I ___ football yesterday."',
+      ['played', 'play', 'playing', 'plays'],
+      'played',
+    ),
+    Question(
+      'What is the past of "play"?',
+      ['played', 'plays', 'playing', 'play'],
+      'played',
+    ),
+    Question(
+      'Complete: "She ___ a movie last night."',
+      ['watched', 'watch', 'watches', 'watching'],
+      'watched',
+    ),
+    Question(
+      'What does "worked" mean?',
+      ['کار کرد', 'بازی کرد', 'خوابید', 'دوید'],
+      'کار کرد',
+    ),
+    Question(
+      'How do you say "راه رفت" in English?',
+      ['Walked', 'Played', 'Called', 'Helped'],
+      'Walked',
+    ),
+    Question(
+      'Complete: "They ___ yesterday."',
+      ['talked', 'talk', 'talks', 'talking'],
+      'talked',
+    ),
+    Question(
+      'What does "called" mean?',
+      ['تماس گرفت', 'کمک کرد', 'تمیز کرد', 'باز کرد'],
+      'تماس گرفت',
+    ),
+    Question(
+      'Complete: "I ___ my mother."',
+      ['helped', 'help', 'helps', 'helping'],
+      'helped',
+    ),
+    Question(
+      'What does "cleaned" mean?',
+      ['تمیز کرد', 'بست', 'باز کرد', 'صبر کرد'],
+      'تمیز کرد',
+    ),
+    Question(
+      'Complete: "He ___ the door."',
+      ['opened', 'open', 'opens', 'opening'],
+      'opened',
+    ),
+    Question(
+      'What does "closed" mean?',
+      ['باز کرد', 'بست', 'شروع کرد', 'تمام کرد'],
+      'بست',
+    ),
+    Question(
+      'Complete: "The class ___ at eight."',
+      ['started', 'start', 'starts', 'starting'],
+      'started',
+    ),
+    Question(
+      'What does "finished" mean?',
+      ['شروع کرد', 'تمام کرد', 'رسید', 'ماند'],
+      'تمام کرد',
+    ),
+    Question(
+      'Complete: "We ___ our grandparents."',
+      ['visited', 'visit', 'visits', 'visiting'],
+      'visited',
+    ),
+    Question(
+      'What does "wanted" mean?',
+      ['خواست', 'نیاز داشت', 'دوست داشت', 'کمک کرد'],
+      'خواست',
+    ),
+    Question(
+      'Complete: "She ___ some help."',
+      ['needed', 'need', 'needs', 'needing'],
+      'needed',
+    ),
+    Question(
+      'What is the past of "like"?',
+      ['liked', 'likes', 'liking', 'like'],
+      'liked',
+    ),
+    Question(
+      'Complete: "I ___ English yesterday."',
+      ['studied', 'study', 'studies', 'studying'],
+      'studied',
+    ),
+    Question(
+      'What does "practiced" mean?',
+      ['تمرین کرد', 'آشپزی کرد', 'شست', 'تماشا کرد'],
+      'تمرین کرد',
+    ),
+    Question(
+      'Complete: "My father ___ dinner."',
+      ['cooked', 'cook', 'cooks', 'cooking'],
+      'cooked',
+    ),
+    Question(
+      'What does "washed" mean?',
+      ['شست', 'صبر کرد', 'جواب داد', 'رسید'],
+      'شست',
+    ),
+    Question(
+      'Complete: "We ___ for the bus."',
+      ['waited', 'wait', 'waits', 'waiting'],
+      'waited',
+    ),
+    Question(
+      'What does "arrived" mean?',
+      ['رسید', 'ماند', 'رقصید', 'باز کرد'],
+      'رسید',
+    ),
+    Question(
+      'Complete: "I ___ at home."',
+      ['stayed', 'stay', 'stays', 'staying'],
+      'stayed',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'I played football yesterday.',
+        'I play football yesterday.',
+        'I plays football yesterday.',
+        'I playing football yesterday.'
+      ],
+      'I played football yesterday.',
+    ),
+    Question(
+      'Choose the correct negative sentence:',
+      [
+        'I didn’t play.',
+        'I didn’t played.',
+        'I don’t played.',
+        'I not played.'
+      ],
+      'I didn’t play.',
+    ),
+    Question(
+      'Choose the correct question:',
+      [
+        'Did you play?',
+        'Did you played?',
+        'Do you played?',
+        'You did play?'
+      ],
+      'Did you play?',
+    ),
+    Question(
+      'Complete: "She didn’t ___ TV."',
+      ['watch', 'watched', 'watches', 'watching'],
+      'watch',
+    ),
+  ],
+);
