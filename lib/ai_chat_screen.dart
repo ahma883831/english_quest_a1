@@ -15,7 +15,8 @@ class _AIChatScreenState extends State<AIChatScreen> {
 
   // فقط برای تست.
   // این مقدار را در GitHub عمومی قرار نده.
-  static const String apiKey = 'YOUR_GEMINI_API_KEY';
+static const String apiKey =
+    String.fromEnvironment('GEMINI_API_KEY');
 
   final List<ChatMessage> _messages = [
     ChatMessage(
