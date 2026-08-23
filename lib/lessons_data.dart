@@ -245,3 +245,231 @@ final lesson2 = Lesson(
     Question('How do you say "با هم"?', ['Alone', 'Together', 'Family', 'Home'], 'Together'),
   ],
 );
+// ==========================================================
+// LESSON 3: Numbers & Time
+// ==========================================================
+final lesson3 = Lesson(
+  id: 3,
+  title: 'Numbers & Time',
+  subtitle: 'اعداد و زمان',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس اعداد ۱ تا ۱۰۰ رو یاد می‌گیری و می‌آموزی چطور ساعت بپرسی و بگی، و سنت رو بیان کنی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. برای پرسیدن ساعت می‌گیم "What time is it?" و جواب با "It is..." شروع میشه.\n'
+      '۲. "half past" یعنی نیم، مثلاً "half past 3" = ساعت سه و نیم.\n'
+      '۳. "quarter to" یعنی ربع مونده به اون ساعت، "quarter past" یعنی ربع گذشته از اون ساعت.\n'
+      '۴. اعداد ترتیبی (first, second, third...) برای بیان ترتیب استفاده میشن، نه شمارش ساده.\n'
+      '۵. برای سن می‌گیم "How old are you?" و جواب "I am ... years old." — کلمه "years old" رو فراموش نکن.\n'
+      '۶. "today, tomorrow, yesterday" حرف اضافه نمی‌خوان: می‌گیم "Today is Monday." نه "In today".',
+  formula:
+      'What time is it? → It is ___ o\\'clock.\n'
+      'Half past ___  |  Quarter to/past ___\n\n'
+      'How old are you? → I am ___ years old.',
+  words: const [
+    Word('one', 'یک', 'WUN', '1️⃣'),
+    Word('two', 'دو', 'TOO', '2️⃣'),
+    Word('three', 'سه', 'THREE', '3️⃣'),
+    Word('four', 'چهار', 'FOR', '4️⃣'),
+    Word('five', 'پنج', 'FAIV', '5️⃣'),
+    Word('six', 'شش', 'SIKS', '6️⃣'),
+    Word('seven', 'هفت', 'SEV-en', '7️⃣'),
+    Word('eight', 'هشت', 'EYT', '8️⃣'),
+    Word('nine', 'نه', 'NAIN', '9️⃣'),
+    Word('ten', 'ده', 'TEN', '🔟'),
+    Word('eleven', 'یازده', 'ee-LEV-en', '1️⃣1️⃣'),
+    Word('twelve', 'دوازده', 'TWELV', '1️⃣2️⃣'),
+    Word('twenty', 'بیست', 'TWEN-tee', '2️⃣0️⃣'),
+    Word('hundred', 'صد', 'HUN-dred', '💯'),
+    Word('time', 'زمان/ساعت', 'TAIM', '⏰'),
+    Word('hour', 'ساعت (مدت)', 'OW-er', '🕐'),
+    Word('minute', 'دقیقه', 'MIN-it', '⏱️'),
+    Word('secondTime', 'ثانیه', 'SEK-und', '⏳'),
+    Word('clock', 'ساعت (دستگاه)', 'KLOK', '🕰️'),
+    Word('early', 'زود', 'ER-lee', '⏰'),
+    Word('late', 'دیر', 'LEYT', '⏰'),
+    Word('now', 'الان', 'NOW', '👉'),
+    Word('today', 'امروز', 'tuh-DEY', '📅'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '📆'),
+    Word('yesterday', 'دیروز', 'YES-ter-dey', '📆'),
+    Word('first', 'اول', 'FURST', '🥇'),
+    Word('secondOrder', 'دوم', 'SEK-und', '🥈'),
+    Word('third', 'سوم', 'THURD', '🥉'),
+    Word('quarter', 'ربع', 'KWOR-ter', '🍕'),
+    Word('half', 'نیم', 'HAF', '🌗'),
+  ],
+  examples: const [
+    'I have one brother. — من یک برادر دارم.',
+    'There are two books. — دو تا کتاب هست.',
+    'She is three years old. — او سه ساله است.',
+    'I have four pens. — من چهار خودکار دارم.',
+    'We are five friends. — ما پنج دوست هستیم.',
+    "It is six o'clock. — ساعت شش است.",
+    'I wake up at seven. — من ساعت هفت بیدار می‌شوم.',
+    'School starts at eight. — مدرسه ساعت هشت شروع می‌شود.',
+    'I go to bed at nine. — من ساعت نه می‌خوابم.',
+    'There are ten students. — ده دانش‌آموز هست.',
+    'What time is it? — ساعت چنده؟',
+    'It is half past twelve. — ساعت دوازده و نیم است.',
+    'I am sixteen years old. — من شانزده سالمه.',
+    'There are twenty questions. — بیست سوال هست.',
+    'I have a hundred words. — من صد کلمه دارم.',
+    'What is the time now? — الان ساعت چنده؟',
+    'One hour has sixty minutes. — یک ساعت شصت دقیقه دارد.',
+    'Wait a minute, please. — یک دقیقه صبر کن، لطفاً.',
+    'The clock is on the wall. — ساعت روی دیوار است.',
+    'I am early today. — من امروز زود رسیدم.',
+    'He is late for school. — او برای مدرسه دیر کرده.',
+    'I am busy right now. — من الان مشغولم.',
+    'Today is Monday. — امروز دوشنبه است.',
+    'Tomorrow is a holiday. — فردا تعطیل است.',
+    'Yesterday was Sunday. — دیروز یکشنبه بود.',
+    'This is my first lesson. — این اولین درس من است.',
+    'That is the second question. — آن سوال دوم است.',
+    'He came in third place. — او سوم شد.',
+    'It is a quarter past five. — ساعت پنج و ربع است.',
+    'It is half past nine. — ساعت نه و نیم است.',
+  ],
+  questions: const [
+    Question(
+      'What does "one" mean?',
+      ['یک', 'دو', 'سه', 'چهار'],
+      'یک',
+    ),
+    Question(
+      'How do you say "ده"?',
+      ['Two', 'Five', 'Ten', 'Nine'],
+      'Ten',
+    ),
+    Question(
+      'What does "seven" mean?',
+      ['شش', 'هفت', 'هشت', 'نه'],
+      'هفت',
+    ),
+    Question(
+      'Complete: "I am sixteen years ___."',
+      ['old', 'time', 'now', 'late'],
+      'old',
+    ),
+    Question(
+      'What does "hour" mean?',
+      ['دقیقه', 'ثانیه', 'ساعت (مدت)', 'زمان'],
+      'ساعت (مدت)',
+    ),
+    Question(
+      'How do you say "دقیقه"?',
+      ['Hour', 'Minute', 'Second', 'Clock'],
+      'Minute',
+    ),
+    Question(
+      'What does "today" mean?',
+      ['دیروز', 'فردا', 'امروز', 'الان'],
+      'امروز',
+    ),
+    Question(
+      'Complete: "___ is a holiday."',
+      ['Tomorrow', 'Early', 'Late', 'Now'],
+      'Tomorrow',
+    ),
+    Question(
+      'What does "yesterday" mean?',
+      ['امروز', 'فردا', 'دیروز', 'الان'],
+      'دیروز',
+    ),
+    Question(
+      'How do you say "زود"?',
+      ['Late', 'Early', 'Now', 'Time'],
+      'Early',
+    ),
+    Question(
+      'What does "late" mean?',
+      ['زود', 'دیر', 'الان', 'امروز'],
+      'دیر',
+    ),
+    Question(
+      'Complete: "What ___ is it?"',
+      ['time', 'name', 'age', 'day'],
+      'time',
+    ),
+    Question(
+      'What does "clock" mean?',
+      ['دقیقه', 'ساعت (دستگاه)', 'زمان', 'ثانیه'],
+      'ساعت (دستگاه)',
+    ),
+    Question(
+      'How do you say "اول"?',
+      ['Second', 'Third', 'First', 'Quarter'],
+      'First',
+    ),
+    Question(
+      'What does "half" mean?',
+      ['ربع', 'نیم', 'کل', 'ثانیه'],
+      'نیم',
+    ),
+    Question(
+      'Complete: "It is ___ past three."',
+      ['half', 'first', 'late', 'now'],
+      'half',
+    ),
+    Question(
+      'What does "quarter" mean?',
+      ['نیم', 'ربع', 'کل', 'ساعت'],
+      'ربع',
+    ),
+    Question(
+      'How do you say "بیست"?',
+      ['Twelve', 'Twenty', 'Two', 'Ten'],
+      'Twenty',
+    ),
+    Question(
+      'What does "hundred" mean?',
+      ['ده', 'صد', 'هزار', 'بیست'],
+      'صد',
+    ),
+    Question(
+      'Complete: "I wake up at ___."',
+      ['seven', 'name', 'family', 'house'],
+      'seven',
+    ),
+    Question(
+      'What does "secondOrder" (second) mean?',
+      ['اول', 'دوم', 'سوم', 'آخر'],
+      'دوم',
+    ),
+    Question(
+      'How do you say "الان"?',
+      ['Today', 'Now', 'Tomorrow', 'Late'],
+      'Now',
+    ),
+    Question(
+      'What does "eleven" mean?',
+      ['ده', 'یازده', 'دوازده', 'سیزده'],
+      'یازده',
+    ),
+    Question(
+      'Complete: "There are ___ students." (12)',
+      ['twelve', 'twenty', 'ten', 'eleven'],
+      'twelve',
+    ),
+    Question(
+      'What does "minute" mean?',
+      ['ساعت', 'دقیقه', 'ثانیه', 'زمان'],
+      'دقیقه',
+    ),
+    Question(
+      'How do you say "سوم"?',
+      ['First', 'Second', 'Third', 'Fourth'],
+      'Third',
+    ),
+    Question(
+      'What does "five" mean?',
+      ['چهار', 'پنج', 'شش', 'سه'],
+      'پنج',
+    ),
+    Question(
+      'How do you say "زمان/ساعت"?',
+      ['Clock', 'Time', 'Hour', 'Minute'],
+      'Time',
+    ),
+  ],
+);
