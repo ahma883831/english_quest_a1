@@ -5933,3 +5933,286 @@ final lesson28 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 29: First Conditional
+// ==========================================================
+final lesson29 = Lesson(
+  id: 29,
+  title: 'First Conditional',
+  subtitle: 'شرطی نوع اول',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری درباره اتفاق‌هایی صحبت کنی که در آینده ممکن است رخ بدهند، اگر یک شرط اتفاق بیفتد.\n\n'
+      '📌 نکات مهم\n'
+      '۱. ساختار اصلی: If + Present Simple, will + base verb.\n'
+      '۲. بخش If شرط را بیان می‌کند و بخش will نتیجه را.\n'
+      '۳. مثال: If it rains, I will stay home. یعنی اگر باران ببارد، در خانه می‌مانم.\n'
+      '۴. می‌توانی جای دو بخش جمله را عوض کنی: I will stay home if it rains.\n'
+      '۵. اگر جمله با If شروع شود، معمولاً بعد از بخش شرط کاما می‌گذاریم.\n'
+      '۶. بعد از If از will استفاده نمی‌کنیم: ❌ If it will rain. ✅ If it rains.\n'
+      '۷. First Conditional درباره یک موقعیت واقعی یا ممکن در آینده صحبت می‌کند.\n'
+      '۸. می‌توانی به جای will از افعال کمکی دیگری مثل can یا may هم استفاده کنی، اما ساختار اصلی این درس will است.',
+  formula:
+      'If + Present Simple, will + base verb\n\n'
+      'If I study, I will pass.\n'
+      'If she comes, we will start.\n\n'
+      'نتیجه + if + شرط:\n'
+      'I will pass if I study.',
+  words: const [
+    Word('condition', 'شرط', 'kun-DISH-un', '📌'),
+    Word('result', 'نتیجه', 'ree-ZULT', '🎯'),
+    Word('future', 'آینده', 'FYOO-cher', '🔮'),
+    Word('possible', 'ممکن', 'POS-uh-bul', '💡'),
+    Word('rain', 'باران باریدن', 'REYN', '🌧️'),
+    Word('snow', 'برف باریدن', 'SNOH', '❄️'),
+    Word('study', 'مطالعه کردن', 'STUD-ee', '📚'),
+    Word('pass', 'قبول شدن', 'PAS', '✅'),
+    Word('fail', 'رد شدن', 'FEYL', '❌'),
+    Word('stay', 'ماندن', 'STEY', '🏠'),
+    Word('leave', 'ترک کردن/رفتن', 'LEEV', '🚪'),
+    Word('come', 'آمدن', 'KUM', '➡️'),
+    Word('call', 'تماس گرفتن', 'KAWL', '📞'),
+    Word('help', 'کمک کردن', 'HELP', '🤝'),
+    Word('need', 'نیاز داشتن', 'NEED', '🆘'),
+    Word('have', 'داشتن', 'HAV', '📦'),
+    Word('be', 'بودن', 'BEE', '⭐'),
+    Word('feel', 'احساس کردن', 'FEEL', '😊'),
+    Word('get', 'گرفتن/شدن', 'GET', '🎁'),
+    Word('buy', 'خریدن', 'BAI', '🛒'),
+    Word('save', 'پس‌انداز کردن/نجات دادن', 'SEYV', '💰'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('practice', 'تمرین کردن', 'PRAK-tis', '🏋️'),
+    Word('learn', 'یاد گرفتن', 'LURN', '🎓'),
+    Word('win', 'برنده شدن', 'WIN', '🏆'),
+    Word('lose', 'باختن/از دست دادن', 'LOOZ', '❌'),
+    Word('hurry', 'عجله کردن', 'HUR-ee', '🏃'),
+    Word('miss', 'از دست دادن', 'MIS', '⏰'),
+    Word('weather', 'آب‌وهوا', 'WETH-er', '🌤️'),
+    Word('sunny', 'آفتابی', 'SUN-ee', '☀️'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '📅'),
+  ],
+  examples: const [
+    'If I study, I will pass the exam. — اگر درس بخوانم، در امتحان قبول می‌شوم.',
+    'If it rains, I will stay home. — اگر باران ببارد، در خانه می‌مانم.',
+    'If you work hard, you will succeed. — اگر سخت کار کنی، موفق می‌شوی.',
+    'If she comes, we will start. — اگر او بیاید، شروع می‌کنیم.',
+    'If he calls me, I will answer. — اگر او به من زنگ بزند، جواب می‌دهم.',
+    'If you need help, I will help you. — اگر کمک لازم داشته باشی، به تو کمک می‌کنم.',
+    'If I have time, I will call you. — اگر وقت داشته باشم، با تو تماس می‌گیرم.',
+    'If they arrive early, we will eat together. — اگر آن‌ها زود برسند، با هم غذا می‌خوریم.',
+    'If the weather is good, we will go outside. — اگر هوا خوب باشد، بیرون می‌رویم.',
+    'If it is sunny tomorrow, we will go to the park. — اگر فردا هوا آفتابی باشد، به پارک می‌رویم.',
+    'If you practice every day, you will improve. — اگر هر روز تمرین کنی، پیشرفت می‌کنی.',
+    'If I save money, I will buy a new computer. — اگر پول پس‌انداز کنم، یک کامپیوتر جدید می‌خرم.',
+    'If she studies English, she will learn faster. — اگر او انگلیسی بخواند، سریع‌تر یاد می‌گیرد.',
+    'If we hurry, we will catch the bus. — اگر عجله کنیم، به اتوبوس می‌رسیم.',
+    'If you leave now, you will arrive early. — اگر الان بروی، زود می‌رسی.',
+    'I will call you if I have time. — اگر وقت داشته باشم، با تو تماس می‌گیرم.',
+    'We will stay home if it rains. — اگر باران ببارد، در خانه می‌مانیم.',
+    'She will be happy if you come. — اگر بیایی، او خوشحال می‌شود.',
+    'He will help you if you ask him. — اگر از او بخواهی، به تو کمک می‌کند.',
+    'They will win if they practice. — اگر تمرین کنند، برنده می‌شوند.',
+    'If you do not study, you will fail. — اگر درس نخوانی، رد می‌شوی.',
+    'If he does not hurry, he will miss the bus. — اگر عجله نکند، اتوبوس را از دست می‌دهد.',
+    'If we do not leave now, we will be late. — اگر الان نرویم، دیر می‌کنیم.',
+    'If she does not call, I will call her. — اگر او زنگ نزند، من به او زنگ می‌زنم.',
+    'If you are tired, you will feel better after resting. — اگر خسته باشی، بعد از استراحت بهتر می‌شوی.',
+    'If I win, I will celebrate. — اگر برنده شوم، جشن می‌گیرم.',
+    'If I lose, I will try again. — اگر ببازم، دوباره تلاش می‌کنم.',
+    'If you learn English, you will have more opportunities. — اگر انگلیسی یاد بگیری، فرصت‌های بیشتری خواهی داشت.',
+    'If I get enough money, I will buy a laptop. — اگر پول کافی به دست بیاورم، یک لپ‌تاپ می‌خرم.',
+    'If tomorrow is sunny, we will play football. — اگر فردا آفتابی باشد، فوتبال بازی می‌کنیم.',
+  ],
+  questions: const [
+    Question(
+      'What is the main structure of First Conditional?',
+      [
+        'If + Present Simple, will + verb',
+        'If + will, Present Simple',
+        'Past Simple + will',
+        'Present Continuous + would'
+      ],
+      'If + Present Simple, will + verb',
+    ),
+    Question(
+      'Complete: "If I ___, I will pass."',
+      ['study', 'will study', 'studied', 'studying'],
+      'study',
+    ),
+    Question(
+      'Complete: "If it ___, I will stay home."',
+      ['rains', 'will rain', 'rained', 'raining'],
+      'rains',
+    ),
+    Question(
+      'What does "condition" mean?',
+      ['شرط', 'نتیجه', 'آینده', 'امتحان'],
+      'شرط',
+    ),
+    Question(
+      'What does "result" mean?',
+      ['شرط', 'نتیجه', 'احتمال', 'آب‌وهوا'],
+      'نتیجه',
+    ),
+    Question(
+      'What does "future" mean?',
+      ['گذشته', 'حال', 'آینده', 'امروز'],
+      'آینده',
+    ),
+    Question(
+      'Complete: "If she ___, we will start."',
+      ['comes', 'will come', 'came', 'coming'],
+      'comes',
+    ),
+    Question(
+      'Complete: "If he calls me, I ___ answer."',
+      ['will', 'am', 'did', 'have'],
+      'will',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'If I study, I will pass.',
+        'If I will study, I pass.',
+        'If I studied, I will pass.',
+        'If I studying, I will pass.'
+      ],
+      'If I study, I will pass.',
+    ),
+    Question(
+      'Which sentence is correct?',
+      [
+        'If it rains, I will stay home.',
+        'If it will rain, I stay home.',
+        'If it raining, I will stay home.',
+        'If it rained, I will stay home.'
+      ],
+      'If it rains, I will stay home.',
+    ),
+    Question(
+      'How do you say "اگر درس بخوانم، قبول می‌شوم"?',
+      [
+        'If I study, I will pass.',
+        'If I will study, I pass.',
+        'If I studied, I passed.',
+        'I study if I will pass.'
+      ],
+      'If I study, I will pass.',
+    ),
+    Question(
+      'What does "possible" mean?',
+      ['غیرممکن', 'ممکن', 'قطعی', 'گذشته'],
+      'ممکن',
+    ),
+    Question(
+      'Complete: "If you work hard, you ___ succeed."',
+      ['will', 'are', 'have', 'did'],
+      'will',
+    ),
+    Question(
+      'Complete: "If we hurry, we ___ catch the bus."',
+      ['will', 'are', 'have', 'did'],
+      'will',
+    ),
+    Question(
+      'Complete: "If you need help, I ___ help you."',
+      ['will', 'am', 'did', 'have'],
+      'will',
+    ),
+    Question(
+      'What happens to the verb after "if"?',
+      [
+        'Present Simple is used',
+        'Will is always used',
+        'Past Perfect is used',
+        'Would is always used'
+      ],
+      'Present Simple is used',
+    ),
+    Question(
+      'Which is correct?',
+      [
+        'If I have time, I will call you.',
+        'If I will have time, I call you.',
+        'If I had time, I will call you.',
+        'If I having time, I call you.'
+      ],
+      'If I have time, I will call you.',
+    ),
+    Question(
+      'Complete: "If you ___ every day, you will improve."',
+      ['practice', 'will practice', 'practiced', 'practicing'],
+      'practice',
+    ),
+    Question(
+      'What does "save" mean in "save money"?',
+      ['پس‌انداز کردن', 'خرج کردن', 'گم کردن', 'بردن'],
+      'پس‌انداز کردن',
+    ),
+    Question(
+      'Complete: "If I save money, I ___ buy a computer."',
+      ['will', 'am', 'did', 'have'],
+      'will',
+    ),
+    Question(
+      'Which sentence is negative?',
+      [
+        'If you do not study, you will fail.',
+        'If you study, you will pass.',
+        'If you study, you pass.',
+        'You will study if you pass.'
+      ],
+      'If you do not study, you will fail.',
+    ),
+    Question(
+      'Complete: "If he does not hurry, he ___ miss the bus."',
+      ['will', 'is', 'has', 'did'],
+      'will',
+    ),
+    Question(
+      'Can we put the result before the if-clause?',
+      ['Yes', 'No', 'Only in questions', 'Only in negatives'],
+      'Yes',
+    ),
+    Question(
+      'Which sentence has the correct word order?',
+      [
+        'I will call you if I have time.',
+        'I will call you if I will have time.',
+        'I call you if I will have time.',
+        'I calling you if I have time.'
+      ],
+      'I will call you if I have time.',
+    ),
+    Question(
+      'What does "weather" mean?',
+      ['آب‌وهوا', 'فصل', 'باران', 'آسمان'],
+      'آب‌وهوا',
+    ),
+    Question(
+      'Complete: "If the weather ___ good, we will go outside."',
+      ['is', 'will be', 'was', 'being'],
+      'is',
+    ),
+    Question(
+      'Complete: "If you leave now, you ___ arrive early."',
+      ['will', 'are', 'have', 'did'],
+      'will',
+    ),
+    Question(
+      'Which sentence talks about a possible future situation?',
+      [
+        'If I study, I will pass.',
+        'I studied yesterday.',
+        'I am studying now.',
+        'I study every day.'
+      ],
+      'If I study, I will pass.',
+    ),
+    Question(
+      'Complete: "If I lose, I ___ try again."',
+      ['will', 'am', 'did', 'have'],
+      'will',
+    ),
+  ],
+);
