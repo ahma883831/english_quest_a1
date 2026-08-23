@@ -574,24 +574,179 @@ class _ProgressRow extends StatelessWidget {
 }
 
 class TutorPage extends StatelessWidget {
+  /
+/ ⚠️ کلید API خودت رو اینجا بذار (بین کوتیشن‌ها):
+const String geminiApiKey = 'AQ.Ab8RN6JmoSluI4hYlvf0K3YYFxZse0JdaVDn66jYBqtJaVh8WQ';
+
+class ChatMessage {
+  final String text;
+  final bool isUser;
+  ChatMessage(this.text, this.isUser);
+}
+
+class TutorPage extends StatefulWidget {
   const TutorPage({super.key});
   @override
-  Widget build(BuildContext context) => Center(
-        child: Padding(
-          padding: const EdgeInsets.all(28),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            const Icon(Icons.auto_awesome_rounded, size: 82, color: Color(0xFF00E5FF)),
-            const SizedBox(height: 18),
-            const Text('AI TUTOR', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900, color: Color(0xFF00E5FF))),
-            const SizedBox(height: 12),
-            const Directionality(
-              textDirection: TextDirection.rtl,
-              child: Text('اینجا می‌توانیم بعداً مکالمه، تمرین تلفظ و چت آموزشی را اضافه کنیم.', textAlign: TextAlign.center, style: TextStyle(fontSize: 16, color: Colors.white70, height: 1.6)),
-            ),
-          ]),
-        ),
-      );
+  State<TutorPage> createState() => _TutorPageState();
 }
+
+class _TutorPageState extends State<TutorPage> {
+  final List<ChatMessage> messages = [
+    ChatMessage('سلام! من دستیار هوش‌مصنوعی تو برای یادگیری انگلیسی هستم. هر سوالی درباره گرامر، کلمات یا جمله‌سازی داری بپرس!', false),
+  ];
+  final TextEditingController controller = TextEditingController();
+  final ScrollController scrollController = ScrollController();
+  bool loading = false;
+
+  Future<void> sendMessage() async {
+    final text = controller.text.trim();
+    if (text.isEmpty || loading) return;
+
+    setState(() {
+      messages.add(ChatMessage(text, true));
+      loading = true;
+      controller.clear();
+    });
+    _scrollToBottom();
+
+    try {
+      final url = Uri.parse(
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$geminiApiKey',
+      );
+      final response = await http.post(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'contents': [
+            {
+              'parts': [
+                {
+                  'text':
+                      'You are a friendly English tutor helping a Persian-speaking A1 student named Ahmad. '
+                      'Answer briefly and simply, mixing simple English with Persian explanations when helpful. '
+                      'Student says: $text'
+                }
+              ]
+            }
+          ]
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(utf8.decode(response.bodyBytes));
+        final reply = data['candidates'][0]['content']['parts'][0]['text'] as String;
+        setState(() {
+          messages.add(ChatMessage(reply.trim(), false));
+        });
+      } else {
+        setState(() {
+          messages.add(ChatMessage('خطا در دریافت پاسخ (کد ${response.statusCode}). دوباره امتحان کن.', false));
+        });
+      }
+    } catch (e) {
+      setState(() {
+        messages.add(ChatMessage('اتصال برقرار نشد. اینترنتت رو چک کن.', false));
+      });
+    } finally {
+      setState(() => loading = false);
+      _scrollToBottom();
+    }
+  }
+
+  void _scrollToBottom() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (scrollController.hasClients) {
+        scrollController.animateTo(
+          scrollController.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeOut,
+        );
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AI Tutor'),
+        backgroundColor: Colors.transparent,
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+              controller: scrollController,
+              padding: const EdgeInsets.all(14),
+              itemCount: messages.length,
+              itemBuilder: (_, i) {
+                final m = messages[i];
+                return Align(
+                  alignment: m.isUser ? Alignment.centerRight : Alignment.centerLeft,
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(vertical: 6),
+                    padding: const EdgeInsets.all(12),
+                    constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.75),
+                    decoration: BoxDecoration(
+                      color: m.isUser ? const Color(0xFF00C8FF).withOpacity(.18) : Colors.white.withOpacity(.06),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: m.isUser ? const Color(0xFF00E5FF).withOpacity(.4) : Colors.white24,
+                      ),
+                    ),
+                    child: Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: Text(m.text, style: const TextStyle(fontSize: 15, height: 1.5)),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          if (loading)
+            const Padding(
+              padding: EdgeInsets.only(bottom: 8),
+              child: SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(strokeWidth: 2, color: Color(0xFF00E5FF)),
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: controller,
+                    textDirection: TextDirection.rtl,
+                    decoration: InputDecoration(
+                      hintText: 'سوالت رو بپرس...',
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(.06),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none,
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                    ),
+                    onSubmitted: (_) => sendMessage(),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                IconButton(
+                  onPressed: loading ? null : sendMessage,
+                  icon: const Icon(Icons.send_rounded, color: Color(0xFF00E5FF)),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 
 class ProfilePage extends StatelessWidget {
   final int xp;
