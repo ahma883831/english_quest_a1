@@ -574,8 +574,7 @@ class _ProgressRow extends StatelessWidget {
 }
 
 class TutorPage extends StatelessWidget {
-  /
-/ ⚠️ کلید API خودت رو اینجا بذار (بین کوتیشن‌ها):
+  
 const String geminiApiKey = 'AQ.Ab8RN6JmoSluI4hYlvf0K3YYFxZse0JdaVDn66jYBqtJaVh8WQ';
 
 class ChatMessage {
