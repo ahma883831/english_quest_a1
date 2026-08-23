@@ -2770,3 +2770,257 @@ final lesson13 = Lesson(
     ),
   ],
 );
+// ==========================================================
+// LESSON 14: Question Words
+// ==========================================================
+final lesson14 = Lesson(
+  id: 14,
+  title: 'Question Words',
+  subtitle: 'کلمات پرسشی: What, Where, When, Who, Why, How',
+  explanation:
+      '🎯 هدف درس\n'
+      'در این درس یاد می‌گیری با کلمات پرسشی مهم انگلیسی سؤال بسازی و اطلاعات مختلف را بپرسی.\n\n'
+      '📌 نکات مهم\n'
+      '۱. What = چه / چی → برای پرسیدن درباره چیزها.\n'
+      '۲. Where = کجا → برای پرسیدن درباره مکان.\n'
+      '۳. When = کی / چه زمانی → برای پرسیدن درباره زمان.\n'
+      '۴. Who = چه کسی / کی → برای پرسیدن درباره افراد.\n'
+      '۵. Why = چرا → برای پرسیدن دلیل.\n'
+      '۶. How = چگونه / چطور → برای پرسیدن روش یا وضعیت.\n'
+      '۷. معمولاً بعد از کلمه پرسشی، فعل کمکی یا فعل to be می‌آید.\n'
+      '۸. برای پرسیدن سن از How old و برای پرسیدن تعداد از How many استفاده می‌کنیم.\n'
+      '۹. برای پرسیدن قیمت از How much استفاده می‌کنیم.\n\n'
+      '💡 مثال\n'
+      'What do you want? → چی می‌خواهی؟\n'
+      'Where do you live? → کجا زندگی می‌کنی؟\n'
+      'When do you study? → کی درس می‌خوانی؟\n'
+      'Who is your teacher? → معلمت کیست؟\n'
+      'Why are you late? → چرا دیر کردی؟\n'
+      'How are you? → حالت چطوره؟',
+  formula:
+      'What + ...? → چه چیزی؟\n'
+      'Where + ...? → کجا؟\n'
+      'When + ...? → چه زمانی؟\n'
+      'Who + ...? → چه کسی؟\n'
+      'Why + ...? → چرا؟\n'
+      'How + ...? → چگونه؟\n\n'
+      'How old ...? → چند ساله؟\n'
+      'How many ...? → چند تا؟\n'
+      'How much ...? → چقدر؟',
+  words: const [
+    Word('what', 'چه / چی', 'WUT', '❓'),
+    Word('where', 'کجا', 'WAIR', '📍'),
+    Word('when', 'کی / چه زمانی', 'WEN', '⏰'),
+    Word('who', 'چه کسی / کی', 'HOO', '👤'),
+    Word('why', 'چرا', 'WAI', '🤔'),
+    Word('how', 'چطور / چگونه', 'HOW', '❓'),
+    Word('question', 'سؤال', 'KWES-chun', '❓'),
+    Word('answer', 'جواب', 'AN-ser', '✅'),
+    Word('place', 'مکان', 'PLEYS', '📍'),
+    Word('time', 'زمان', 'TAIM', '⏰'),
+    Word('person', 'شخص', 'PUR-sun', '👤'),
+    Word('reason', 'دلیل', 'REE-zun', '💡'),
+    Word('way', 'روش / راه', 'WEY', '🛣️'),
+    Word('thing', 'چیز', 'THING', '📦'),
+    Word('name', 'اسم', 'NEYM', '📛'),
+    Word('address', 'آدرس', 'AD-res', '🏠'),
+    Word('age', 'سن', 'EYJ', '🎂'),
+    Word('number', 'عدد / شماره', 'NUM-ber', '🔢'),
+    Word('price', 'قیمت', 'PRAIS', '💰'),
+    Word('favorite', 'مورد علاقه', 'FEY-vuh-rit', '❤️'),
+    Word('because', 'زیرا / چون', 'bi-KOZ', '💡'),
+    Word('today', 'امروز', 'tuh-DEY', '📅'),
+    Word('tomorrow', 'فردا', 'tuh-MOR-oh', '📆'),
+    Word('yesterday', 'دیروز', 'YES-ter-dey', '📆'),
+    Word('live', 'زندگی کردن', 'LIV', '🏠'),
+    Word('work', 'کار کردن', 'WURK', '💼'),
+    Word('study', 'درس خواندن', 'STUD-ee', '📚'),
+    Word('want', 'خواستن', 'WONT', '⭐'),
+    Word('need', 'نیاز داشتن', 'NEED', '🛒'),
+    Word('know', 'دانستن', 'NOH', '🧠'),
+  ],
+  examples: const [
+    'What is your name? — اسمت چیست؟',
+    'What do you want? — چه می‌خواهی؟',
+    'What is this? — این چیست؟',
+    'What do you study? — چه چیزی می‌خوانی؟',
+    'Where do you live? — کجا زندگی می‌کنی؟',
+    'Where is my phone? — گوشی من کجاست؟',
+    'Where is the school? — مدرسه کجاست؟',
+    'Where do you work? — کجا کار می‌کنی؟',
+    'When is your birthday? — تولدت چه زمانی است؟',
+    'When do you study English? — چه زمانی انگلیسی می‌خوانی؟',
+    'When do you go to school? — چه زمانی به مدرسه می‌روی؟',
+    'When is the meeting? — جلسه چه زمانی است؟',
+    'Who is your teacher? — معلمت کیست؟',
+    'Who is that boy? — آن پسر کیست؟',
+    'Who is your best friend? — بهترین دوستت کیست؟',
+    'Who can help me? — چه کسی می‌تواند به من کمک کند؟',
+    'Why are you late? — چرا دیر کردی؟',
+    'Why are you sad? — چرا ناراحتی؟',
+    'Why do you study English? — چرا انگلیسی می‌خوانی؟',
+    'Why is he angry? — چرا او عصبانی است؟',
+    'How are you? — حالت چطوره؟',
+    'How do you go to school? — چطور به مدرسه می‌روی؟',
+    'How do you make this? — چطور این را درست می‌کنی؟',
+    'How can I help you? — چطور می‌توانم به تو کمک کنم؟',
+    'How old are you? — چند سالت است؟',
+    'How many brothers do you have? — چند برادر داری؟',
+    'How much is this? — این چقدر قیمت دارد؟',
+    'What is your favorite color? — رنگ مورد علاقه‌ات چیست؟',
+    'Why do you need this? — چرا به این نیاز داری؟',
+    'Where is your house? — خانه‌ات کجاست؟',
+  ],
+  questions: const [
+    Question(
+      'What does "what" mean?',
+      ['چه / چی', 'کجا', 'چرا', 'چه کسی'],
+      'چه / چی',
+    ),
+    Question(
+      'What does "where" mean?',
+      ['کی', 'کجا', 'چرا', 'چطور'],
+      'کجا',
+    ),
+    Question(
+      'What does "when" mean?',
+      ['چه زمانی', 'چه کسی', 'کجا', 'چرا'],
+      'چه زمانی',
+    ),
+    Question(
+      'What does "who" mean?',
+      ['چه چیزی', 'کجا', 'چه کسی', 'چطور'],
+      'چه کسی',
+    ),
+    Question(
+      'What does "why" mean?',
+      ['چرا', 'کجا', 'کی', 'چه چیزی'],
+      'چرا',
+    ),
+    Question(
+      'What does "how" mean?',
+      ['چطور / چگونه', 'چرا', 'کجا', 'چه کسی'],
+      'چطور / چگونه',
+    ),
+    Question(
+      'Complete: "___ is your name?"',
+      ['What', 'Where', 'Why', 'When'],
+      'What',
+    ),
+    Question(
+      'Complete: "___ do you live?"',
+      ['Where', 'What', 'Who', 'Why'],
+      'Where',
+    ),
+    Question(
+      'Complete: "___ is your birthday?"',
+      ['When', 'Where', 'Who', 'How'],
+      'When',
+    ),
+    Question(
+      'Complete: "___ is your teacher?"',
+      ['Who', 'What', 'Where', 'Why'],
+      'Who',
+    ),
+    Question(
+      'Complete: "___ are you late?"',
+      ['Why', 'Who', 'When', 'Where'],
+      'Why',
+    ),
+    Question(
+      'Complete: "___ are you?"',
+      ['How', 'What', 'Who', 'Where'],
+      'How',
+    ),
+    Question(
+      'Which question asks about a place?',
+      ['Where do you live?', 'What is your name?', 'Why are you sad?', 'Who is he?'],
+      'Where do you live?',
+    ),
+    Question(
+      'Which question asks about a person?',
+      ['Who is he?', 'Where is he?', 'When is it?', 'Why is he here?'],
+      'Who is he?',
+    ),
+    Question(
+      'Which question asks about a reason?',
+      ['Why are you here?', 'Where are you?', 'Who are you?', 'What is this?'],
+      'Why are you here?',
+    ),
+    Question(
+      'Which question asks about time?',
+      ['When do you study?', 'Where do you study?', 'Who studies?', 'Why do you study?'],
+      'When do you study?',
+    ),
+    Question(
+      'Which question asks about a thing?',
+      ['What is this?', 'Where is this?', 'Who is this?', 'Why is this?'],
+      'What is this?',
+    ),
+    Question(
+      'Complete: "___ old are you?"',
+      ['How', 'What', 'Where', 'Why'],
+      'How',
+    ),
+    Question(
+      'Complete: "___ many brothers do you have?"',
+      ['How', 'What', 'Where', 'Who'],
+      'How',
+    ),
+    Question(
+      'Complete: "___ much is this?"',
+      ['How', 'What', 'Why', 'When'],
+      'How',
+    ),
+    Question(
+      'What does "answer" mean?',
+      ['جواب', 'سؤال', 'دلیل', 'مکان'],
+      'جواب',
+    ),
+    Question(
+      'What does "question" mean?',
+      ['سؤال', 'جواب', 'زمان', 'آدرس'],
+      'سؤال',
+    ),
+    Question(
+      'What does "reason" mean?',
+      ['دلیل', 'مکان', 'زمان', 'اسم'],
+      'دلیل',
+    ),
+    Question(
+      'What does "place" mean?',
+      ['مکان', 'دلیل', 'جواب', 'سن'],
+      'مکان',
+    ),
+    Question(
+      'What does "age" mean?',
+      ['سن', 'قیمت', 'شماره', 'آدرس'],
+      'سن',
+    ),
+    Question(
+      'What does "price" mean?',
+      ['قیمت', 'اسم', 'سن', 'مکان'],
+      'قیمت',
+    ),
+    Question(
+      'Complete: "___ do you study English?"',
+      ['Why', 'Who', 'Where', 'What'],
+      'Why',
+    ),
+    Question(
+      'Complete: "___ can help me?"',
+      ['Who', 'Why', 'Where', 'When'],
+      'Who',
+    ),
+    Question(
+      'Complete: "___ do you go to school?"',
+      ['How', 'Who', 'Why', 'What'],
+      'How',
+    ),
+    Question(
+      'Complete: "___ is your favorite color?"',
+      ['What', 'Where', 'When', 'Who'],
+      'What',
+    ),
+  ],
+);
