@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 
 class AiTutorPage extends StatefulWidget {
   const AiTutorPage({super.key});
@@ -20,7 +18,9 @@ class _AiTutorPageState extends State<AiTutorPage> {
   Future<void> sendMessage() async {
     final text = controller.text.trim();
 
-    if (text.isEmpty || loading) return;
+    if (text.isEmpty || loading) {
+      return;
+    }
 
     setState(() {
       messages.add(
@@ -34,37 +34,26 @@ class _AiTutorPageState extends State<AiTutorPage> {
       loading = true;
     });
 
-    try {
-      // API connection will be added safely
-      // in the next step.
-      
-      await Future.delayed(
-        const Duration(milliseconds: 500),
+    // اتصال واقعی Gemini را در مرحله بعد
+    // از طریق روش امن اضافه می‌کنیم.
+
+    await Future.delayed(
+      const Duration(milliseconds: 700),
+    );
+
+    if (!mounted) return;
+
+    setState(() {
+      messages.add(
+        const _Message(
+          text:
+              'پیامت دریافت شد! 🤖\nاتصال واقعی AI در مرحله بعد فعال می‌شود.',
+          isUser: false,
+        ),
       );
 
-      setState(() {
-        messages.add(
-          const _Message(
-            text:
-                'AI Tutor آماده است. در مرحله بعد اتصال Gemini را اضافه می‌کنیم.',
-            isUser: false,
-          ),
-        );
-      });
-    } catch (e) {
-      setState(() {
-        messages.add(
-          _Message(
-            text: 'خطا: $e',
-            isUser: false,
-          ),
-        );
-      });
-    } finally {
-      setState(() {
-        loading = false;
-      });
-    }
+      loading = false;
+    });
   }
 
   @override
@@ -77,7 +66,7 @@ class _AiTutorPageState extends State<AiTutorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AI Tutor'),
+        title: const Text('AI Tutor 🤖'),
       ),
       body: Column(
         children: [
@@ -85,7 +74,7 @@ class _AiTutorPageState extends State<AiTutorPage> {
             child: messages.isEmpty
                 ? const Center(
                     child: Text(
-                      'Ask me anything about English 🤖',
+                      'Ask me anything about English!',
                     ),
                   )
                 : ListView.builder(
@@ -102,8 +91,11 @@ class _AiTutorPageState extends State<AiTutorPage> {
                           margin: const EdgeInsets.only(
                             bottom: 10,
                           ),
-                          padding:
-                              const EdgeInsets.all(14),
+                          padding: const EdgeInsets.all(14),
+                          constraints:
+                              const BoxConstraints(
+                            maxWidth: 320,
+                          ),
                           decoration: BoxDecoration(
                             color: message.isUser
                                 ? const Color(0xFF0066FF)
@@ -132,13 +124,18 @@ class _AiTutorPageState extends State<AiTutorPage> {
                     child: TextField(
                       controller: controller,
                       decoration:
-                          const InputDecoration(
+                          InputDecoration(
                         hintText:
-                            'Ask something...',
-                        border: OutlineInputBorder(),
+                            'Ask about English...',
+                        border:
+                            OutlineInputBorder(
+                          borderRadius:
+                              BorderRadius.circular(16),
+                        ),
                       ),
-                      onSubmitted: (_) =>
-                          sendMessage(),
+                      onSubmitted: (_) {
+                        sendMessage();
+                      },
                     ),
                   ),
                   const SizedBox(width: 8),
@@ -156,6 +153,7 @@ class _AiTutorPageState extends State<AiTutorPage> {
                           )
                         : const Icon(
                             Icons.send_rounded,
+                            color: Color(0xFF00E5FF),
                           ),
                   ),
                 ],
