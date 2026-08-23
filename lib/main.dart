@@ -160,7 +160,7 @@ class _Glow extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: color.withValues(alpha: .20),
+            color: color.withOpacity(.20),
             blurRadius: 130,
             spreadRadius: 45,
           ),
@@ -293,11 +293,11 @@ class NeonBadge extends StatelessWidget {
         shape: BoxShape.circle,
         color: const Color(0xFF07182E),
         border: Border.all(
-          color: const Color(0xFF00D9FF).withValues(alpha: .45),
+          color: const Color(0xFF00D9FF).withOpacity(.45),
         ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF00D9FF).withValues(alpha: .15),
+            color: const Color(0xFF00D9FF).withOpacity(.15),
             blurRadius: 20,
           ),
         ],
@@ -326,19 +326,23 @@ class StatCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 14),
+        padding: const EdgeInsets.symmetric(
+          vertical: 14,
+        ),
         decoration: BoxDecoration(
           color: const Color(0xFF0A1224),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: const Color(0xFF1E9DFF).withValues(alpha: .18),
+            color: const Color(0xFF1E9DFF).withOpacity(.18),
           ),
         ),
         child: Column(
           children: [
             Text(
               icon,
-              style: const TextStyle(fontSize: 22),
+              style: const TextStyle(
+                fontSize: 22,
+              ),
             ),
             const SizedBox(height: 3),
             Text(
@@ -428,12 +432,12 @@ class LessonCard extends StatelessWidget {
             ),
             border: Border.all(
               color: const Color(0xFF00E5FF)
-                  .withValues(alpha: .28),
+                  .withOpacity(.28),
             ),
             boxShadow: [
               BoxShadow(
                 color: const Color(0xFF0066FF)
-                    .withValues(alpha: .10),
+                    .withOpacity(.10),
                 blurRadius: 24,
               ),
             ],
@@ -448,8 +452,9 @@ class LessonCard extends StatelessWidget {
                 height: 56,
                 decoration: BoxDecoration(
                   color: const Color(0xFF00BFFF)
-                      .withValues(alpha: .12),
-                  borderRadius: BorderRadius.circular(17),
+                      .withOpacity(.12),
+                  borderRadius:
+                      BorderRadius.circular(17),
                 ),
                 child: Center(
                   child: Text(
@@ -476,7 +481,8 @@ class LessonCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 3),
                     Directionality(
-                      textDirection: TextDirection.rtl,
+                      textDirection:
+                          TextDirection.rtl,
                       child: Text(
                         lesson.subtitle,
                         style: const TextStyle(
@@ -524,11 +530,12 @@ class DailyQuestCard extends StatelessWidget {
           ],
         ),
         border: Border.all(
-          color: Colors.orangeAccent.withValues(alpha: .25),
+          color: Colors.orangeAccent.withOpacity(.25),
         ),
       ),
       child: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment:
+            CrossAxisAlignment.start,
         children: [
           Text(
             '🔥 DAILY QUEST',
@@ -556,8 +563,7 @@ class DailyQuestCard extends StatelessWidget {
       ),
     );
   }
-}
-class LessonPage extends StatefulWidget {
+}class LessonPage extends StatefulWidget {
   final Lesson lesson;
   final VoidCallback onReward;
 
@@ -671,13 +677,13 @@ class _LessonPageState extends State<LessonPage> {
         decoration: BoxDecoration(
           color: active
               ? const Color(0xFF00C8FF)
-                  .withValues(alpha: .16)
+                  .withOpacity(.16)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(15),
           border: Border.all(
             color: active
                 ? const Color(0xFF00E5FF)
-                    .withValues(alpha: .35)
+                    .withOpacity(.35)
                 : Colors.transparent,
           ),
         ),
@@ -801,9 +807,7 @@ class _LessonPageState extends State<LessonPage> {
             );
           },
           child: Card(
-            color: Colors.white.withValues(
-              alpha: .035,
-            ),
+            color: Colors.white.withOpacity(.035),
             margin: const EdgeInsets.only(
               bottom: 8,
             ),
@@ -873,15 +877,11 @@ class _LessonPageState extends State<LessonPage> {
           ),
           padding: const EdgeInsets.all(17),
           decoration: BoxDecoration(
-            color: Colors.white.withValues(
-              alpha: .035,
-            ),
-            borderRadius: BorderRadius.circular(
-              20,
-            ),
+            color: Colors.white.withOpacity(.035),
+            borderRadius: BorderRadius.circular(20),
             border: Border.all(
               color: const Color(0xFF1E9DFF)
-                  .withValues(alpha: .18),
+                  .withOpacity(.18),
             ),
           ),
           child: Row(
@@ -946,7 +946,8 @@ class _LessonPageState extends State<LessonPage> {
               ),
               const SizedBox(width: 10),
               Text(
-                'Score: $score / ${widget.lesson.questions.length}',
+                'Score: $score / '
+                '${widget.lesson.questions.length}',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -956,6 +957,7 @@ class _LessonPageState extends State<LessonPage> {
           ),
         ),
         const SizedBox(height: 12),
+
         ...widget.lesson.questions
             .asMap()
             .entries
@@ -965,9 +967,7 @@ class _LessonPageState extends State<LessonPage> {
           final done = answered.contains(i);
 
           return Card(
-            color: Colors.white.withValues(
-              alpha: .035,
-            ),
+            color: Colors.white.withOpacity(.035),
             margin: const EdgeInsets.only(
               bottom: 12,
             ),
@@ -985,51 +985,55 @@ class _LessonPageState extends State<LessonPage> {
                     ),
                   ),
                   const SizedBox(height: 10),
+
                   Wrap(
                     spacing: 7,
                     runSpacing: 7,
-                    children: q.options.map(
-                      (answer) {
-                        return OutlinedButton(
-                          onPressed: done
-                              ? null
-                              : () {
-                                  final correct =
-                                      answer ==
-                                          q.answer;
+                    children: q.options
+                        .map(
+                          (answer) =>
+                              OutlinedButton(
+                            onPressed: done
+                                ? null
+                                : () {
+                                    final correct =
+                                        answer ==
+                                            q.answer;
 
-                                  setState(() {
-                                    answered.add(i);
+                                    setState(() {
+                                      answered.add(i);
 
-                                    if (correct) {
-                                      score++;
-                                    }
-                                  });
+                                      if (correct) {
+                                        score++;
+                                      }
+                                    });
 
-                                  ScaffoldMessenger
-                                          .of(
-                                    context,
-                                  ).showSnackBar(
-                                    SnackBar(
-                                      content: Text(
-                                        correct
-                                            ? '✅ Correct!'
-                                            : '❌ Answer: ${q.answer}',
+                                    ScaffoldMessenger
+                                            .of(context)
+                                        .showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          correct
+                                              ? '✅ Correct!'
+                                              : '❌ Answer: '
+                                                  '${q.answer}',
+                                        ),
                                       ),
-                                    ),
-                                  );
-                                },
-                          child: Text(answer),
-                        );
-                      },
-                    ).toList(),
+                                    );
+                                  },
+                            child: Text(answer),
+                          ),
+                        )
+                        .toList(),
                   ),
                 ],
               ),
             ),
           );
         }),
+
         const SizedBox(height: 6),
+
         ElevatedButton.icon(
           onPressed: () {
             widget.onReward();
@@ -1038,7 +1042,8 @@ class _LessonPageState extends State<LessonPage> {
                 .showSnackBar(
               const SnackBar(
                 content: Text(
-                  '🎉 Lesson completed! +100 XP • +20 Coins',
+                  '🎉 Lesson completed! '
+                  '+100 XP • +20 Coins',
                 ),
               ),
             );
@@ -1073,13 +1078,11 @@ class _Panel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(
-          alpha: .035,
-        ),
+        color: Colors.white.withOpacity(.035),
         borderRadius: BorderRadius.circular(22),
         border: Border.all(
           color: const Color(0xFF00E5FF)
-              .withValues(alpha: .18),
+              .withOpacity(.18),
         ),
       ),
       child: child,
@@ -1097,7 +1100,7 @@ class _PulseOrb extends StatefulWidget {
 
 class _PulseOrbState extends State<_PulseOrb>
     with SingleTickerProviderStateMixin {
-  late final AnimationController controller =
+  late final AnimationController c =
       AnimationController(
     vsync: this,
     duration: const Duration(seconds: 2),
@@ -1105,33 +1108,33 @@ class _PulseOrbState extends State<_PulseOrb>
 
   @override
   void dispose() {
-    controller.dispose();
+    c.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: controller,
+      animation: c,
       builder: (_, __) {
         return Center(
           child: Container(
-            width: 70 + controller.value * 12,
-            height: 70 + controller.value * 12,
+            width: 70 + c.value * 12,
+            height: 70 + c.value * 12,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: const Color(0xFF00C8FF)
-                  .withValues(alpha: .08),
+                  .withOpacity(.08),
               border: Border.all(
                 color: const Color(0xFF00E5FF)
-                    .withValues(alpha: .45),
+                    .withOpacity(.45),
               ),
               boxShadow: [
                 BoxShadow(
                   color: const Color(0xFF00C8FF)
-                      .withValues(alpha: .22),
+                      .withOpacity(.22),
                   blurRadius:
-                      30 + controller.value * 20,
+                      30 + c.value * 20,
                 ),
               ],
             ),
@@ -1146,209 +1149,151 @@ class _PulseOrbState extends State<_PulseOrb>
     );
   }
 }
+const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 7,
+                    runSpacing: 7,
+                    children: q.options.map((a) {
+                      return OutlinedButton(
+                        onPressed: done
+                            ? null
+                            : () {
+                                final ok = a == q.answer;
 
-class ProgressPage extends StatelessWidget {
-  final int xp;
+                                setState(() {
+                                  answered.add(i);
 
-  const ProgressPage({
-    super.key,
-    required this.xp,
-  });
+                                  if (ok) {
+                                    score++;
+                                  }
+                                });
 
-  @override
-  Widget build(BuildContext context) {
-    final level = xp ~/ 100 + 1;
-    final p = (xp % 100) / 100;
+                                ScaffoldMessenger.of(context)
+                                    .showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      ok
+                                          ? '✅ Correct!'
+                                          : '❌ Answer: ${q.answer}',
+                                    ),
+                                  ),
+                                );
+                              },
+                        child: Text(a),
+                      );
+                    }).toList(),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }).toList(),
+        const SizedBox(height: 6),
+        ElevatedButton.icon(
+          onPressed: () {
+            widget.onReward();
 
-    return ListView(
-      padding: const EdgeInsets.all(20),
-      children: [
-        const Text(
-          'YOUR PROGRESS',
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.w900,
-            color: Color(0xFF00E5FF),
-          ),
-        ),
-        const SizedBox(height: 20),
-        _Panel(
-          child: Column(
-            children: [
-              Text(
-                'LEVEL $level',
-                style: const TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w900,
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text(
+                  '🎉 Lesson completed! +100 XP • +20 Coins',
                 ),
               ),
-              const SizedBox(height: 16),
-              ClipRRect(
-                borderRadius:
-                    BorderRadius.circular(20),
-                child: LinearProgressIndicator(
-                  value: p,
-                  minHeight: 13,
-                ),
+            );
+          },
+          icon: const Icon(Icons.bolt_rounded),
+          label: const Padding(
+            padding: EdgeInsets.all(12),
+            child: Text(
+              'COMPLETE LESSON',
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
               ),
-              const SizedBox(height: 10),
-              Text('$xp XP total'),
-            ],
+            ),
           ),
-        ),
-        const SizedBox(height: 16),
-        _ProgressRow(
-          label: 'Grammar',
-          value: p,
-        ),
-        _ProgressRow(
-          label: 'Vocabulary',
-          value: (p * .8).clamp(0.0, 1.0),
-        ),
-        _ProgressRow(
-          label: 'Quiz',
-          value: (p * .65).clamp(0.0, 1.0),
         ),
       ],
     );
   }
 }
 
-class _ProgressRow extends StatelessWidget {
-  final String label;
-  final double value;
+class _Panel extends StatelessWidget {
+  final Widget child;
 
-  const _ProgressRow({
-    required this.label,
-    required this.value,
+  const _Panel({
+    required this.child,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(
-        bottom: 10,
-      ),
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(
-          alpha: .035,
+        color: Colors.white.withOpacity(.035),
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(
+          color: const Color(0xFF00E5FF).withOpacity(.18),
         ),
-        borderRadius: BorderRadius.circular(18),
       ),
-      child: Column(
-        crossAxisAlignment:
-            CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  label,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Text(
-                '${(value * 100).round()}%',
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          ClipRRect(
-            borderRadius:
-                BorderRadius.circular(20),
-            child: LinearProgressIndicator(
-              value: value,
-              minHeight: 8,
-            ),
-          ),
-        ],
-      ),
+      child: child,
     );
   }
 }
-class TutorPage extends StatelessWidget {
-  const TutorPage({super.key});
+
+class _PulseOrb extends StatefulWidget {
+  const _PulseOrb();
+
+  @override
+  State<_PulseOrb> createState() => _PulseOrbState();
+}
+
+class _PulseOrbState extends State<_PulseOrb>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController c =
+      AnimationController(
+    vsync: this,
+    duration: const Duration(seconds: 2),
+  )..repeat(reverse: true);
+
+  @override
+  void dispose() {
+    c.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(28),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
+    return AnimatedBuilder(
+      animation: c,
+      builder: (_, __) {
+        return Center(
+          child: Container(
+            width: 70 + c.value * 12,
+            height: 70 + c.value * 12,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: const Color(0xFF00C8FF)
+                  .withOpacity(.08),
+              border: Border.all(
+                color: const Color(0xFF00E5FF)
+                    .withOpacity(.45),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFF00C8FF)
+                      .withOpacity(.22),
+                  blurRadius: 30 + c.value * 20,
+                ),
+              ],
+            ),
+            child: const Icon(
               Icons.auto_awesome_rounded,
-              size: 82,
               color: Color(0xFF00E5FF),
-            ),
-            const SizedBox(height: 18),
-            const Text(
-              'AI TUTOR',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w900,
-                color: Color(0xFF00E5FF),
-              ),
-            ),
-            const SizedBox(height: 12),
-            const Directionality(
-              textDirection: TextDirection.rtl,
-              child: Text(
-                'اینجا می‌توانیم بعداً مکالمه، تمرین تلفظ و چت آموزشی را اضافه کنیم.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white70,
-                  height: 1.6,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ProfilePage extends StatelessWidget {
-  final int xp;
-
-  const ProfilePage({
-    super.key,
-    required this.xp,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const NeonBadge(
-            icon: Icons.person,
-          ),
-          const SizedBox(height: 18),
-          const Text(
-            'ENGLISH QUEST PLAYER',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w900,
+              size: 32,
             ),
           ),
-          const SizedBox(height: 8),
-          Text(
-            '$xp XP',
-            style: const TextStyle(
-              color: Color(0xFF00E5FF),
-              fontSize: 18,
-            ),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }
