@@ -11,6 +11,9 @@ jobs:
           flutter-version: '3.24.0'
       - name: Create Flutter scaffold
         run: flutter create --platforms=android temp_app
+        - name: Add internet permission
+        run: |
+          sed -i 's/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">\n    <uses-permission android:name="android.permission.INTERNET" \/>/' temp_app/android/app/src/main/AndroidManifest.xml
       - name: Copy project files
         run: |
           cp lib/main.dart temp_app/lib/main.dart
