@@ -43,6 +43,15 @@ jobs:
           cp pubspec.yaml temp_app/pubspec.yaml
       - name: Get dependencies
         run: cd temp_app && flutter pub get
+
+      - name: DEBUG - inspect actual file and resolved version
+        run: |
+          cd temp_app
+          echo "===== FILE CONTENT (lines 60-75) ====="
+          sed -n '60,75p' lib/notifications_service.dart
+          echo "===== RESOLVED PACKAGE VERSION ====="
+          cat pubspec.lock | grep -A3 "flutter_local_notifications:"
+
       - name: Build APK
         run: cd temp_app && flutter build apk --release
       - name: Upload APK
