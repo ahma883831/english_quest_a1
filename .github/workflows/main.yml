@@ -9,6 +9,21 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.0'
+
+      - name: Restore or create a stable debug keystore
+        run: |
+          mkdir -p ~/.android
+      - name: Cache debug keystore
+        id: keystore-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore-v1
+      - name: Generate keystore if not cached
+        if: steps.keystore-cache.outputs.cache-hit != 'true'
+        run: |
+          keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+
       - name: Create Flutter scaffold
         run: flutter create --platforms=android temp_app
       - name: Update Kotlin version
