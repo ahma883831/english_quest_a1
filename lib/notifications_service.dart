@@ -1,14 +1,14 @@
 // ============================================================
-// DAILY REMINDER — local notification each day at a chosen time,
-// nudging the user to open the app and keep their streak alive.
-// Uses flutter_local_notifications + timezone for exact daily scheduling.
+// DAILY REMINDER — Local daily notification
+// Compatible with Flutter 3.24.x
+// flutter_local_notifications: ^18.0.1
 // ============================================================
 
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tzdata;
-import 'main.dart'; // AppStorage, NeonBackground
+import 'main.dart';
 
 const int kDailyReminderNotificationId = 1001;
 
@@ -23,19 +23,21 @@ class NotificationService {
 
     tzdata.initializeTimeZones();
 
-    // Falls back to UTC if the device zone can't be resolved.
+    // Try to use the device timezone.
     try {
       tz.setLocalLocation(
         tz.getLocation(DateTime.now().timeZoneName),
       );
     } catch (_) {
-      // Keep the default timezone.
+      // Keep the default timezone if the device timezone
+      // cannot be resolved.
     }
 
-    const androidInit =
+    const AndroidInitializationSettings androidInit =
         AndroidInitializationSettings('@mipmap/ic_launcher');
 
-    const iosInit = DarwinInitializationSettings(
+    const DarwinInitializationSettings iosInit =
+        DarwinInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
       requestSoundPermission: false,
@@ -48,11 +50,13 @@ class NotificationService {
       ),
     );
 
+    // Android notification permission.
     await _plugin
         .resolvePlatformSpecificImplementation<
             AndroidFlutterLocalNotificationsPlugin>()
         ?.requestNotificationsPermission();
 
+    // iOS notification permission.
     await _plugin
         .resolvePlatformSpecificImplementation<
             IOSFlutterLocalNotificationsPlugin>()
@@ -65,25 +69,29 @@ class NotificationService {
     _initialized = true;
   }
 
-  static bool isEnabled() =>
-      AppStorage.getInt('reminder_enabled', 0) == 1;
-
-  static int savedHour() =>
-      AppStorage.getInt('reminder_hour', 20);
-
-  static int savedMinute() =>
-      AppStorage.getInt('reminder_minute', 0);
-
-  /// Re-applies whatever the user last saved.
-  static Future<void> rescheduleFromSavedSettings() async {
-    if (isEnabled()) {
-      await scheduleDaily(
-        hour: savedHour(),
-        minute: savedMinute(),
-      );
-    }
+  static bool isEnabled() {
+    return AppStorage.getInt('reminder_enabled', 0) == 1;
   }
 
+  static int savedHour() {
+    return AppStorage.getInt('reminder_hour', 20);
+  }
+
+  static int savedMinute() {
+    return AppStorage.getInt('reminder_minute', 0);
+  }
+
+  /// Re-schedules the reminder using the settings saved by the user.
+  static Future<void> rescheduleFromSavedSettings() async {
+    if (!isEnabled()) return;
+
+    await scheduleDaily(
+      hour: savedHour(),
+      minute: savedMinute(),
+    );
+  }
+
+  /// Schedule a notification every day at the selected time.
   static Future<void> scheduleDaily({
     required int hour,
     required int minute,
@@ -111,8 +119,7 @@ class NotificationService {
       androidScheduleMode:
           AndroidScheduleMode.exactAllowWhileIdle,
 
-      // Required by the version of flutter_local_notifications
-      // used by this project.
+      // Required for flutter_local_notifications 18.0.1.
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
 
@@ -122,20 +129,24 @@ class NotificationService {
     );
   }
 
+  /// Cancel the daily reminder.
   static Future<void> cancelDaily() async {
     await AppStorage.saveInt('reminder_enabled', 0);
+
     await _plugin.cancel(
       kDailyReminderNotificationId,
     );
   }
 
+  /// Returns the next occurrence of the selected time.
   static tz.TZDateTime _nextInstanceOf(
     int hour,
     int minute,
   ) {
-    final now = tz.TZDateTime.now(tz.local);
+    final tz.TZDateTime now =
+        tz.TZDateTime.now(tz.local);
 
-    var scheduled = tz.TZDateTime(
+    tz.TZDateTime scheduled = tz.TZDateTime(
       tz.local,
       now.year,
       now.month,
@@ -155,7 +166,7 @@ class NotificationService {
 }
 
 // ============================================================
-// UI — let the user turn the reminder on/off and pick a time
+// UI — Daily reminder settings
 // ============================================================
 
 class ReminderSettingsPage extends StatefulWidget {
@@ -186,19 +197,21 @@ class _ReminderSettingsPageState
   }
 
   Future<void> _pickTime() async {
-    final picked = await showTimePicker(
+    final TimeOfDay? picked = await showTimePicker(
       context: context,
       initialTime: time,
-      builder: (context, child) => Theme(
-        data: Theme.of(context).copyWith(
-          colorScheme:
-              Theme.of(context).colorScheme.copyWith(
-                    primary: const Color(0xFF00E5FF),
-                    surface: const Color(0xFF10182E),
-                  ),
-        ),
-        child: child!,
-      ),
+      builder: (context, child) {
+        return Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme:
+                Theme.of(context).colorScheme.copyWith(
+                      primary: const Color(0xFF00E5FF),
+                      surface: const Color(0xFF10182E),
+                    ),
+          ),
+          child: child!,
+        );
+      },
     );
 
     if (picked != null) {
@@ -253,7 +266,7 @@ class _ReminderSettingsPageState
           content: Directionality(
             textDirection: TextDirection.rtl,
             child: Text(
-              'خطا در تنظیم یادآوری: $e',
+              'خطا در تنظیم یادآوری',
             ),
           ),
         ),
@@ -262,8 +275,11 @@ class _ReminderSettingsPageState
   }
 
   String _formatTime(TimeOfDay t) {
-    final h = t.hour.toString().padLeft(2, '0');
-    final m = t.minute.toString().padLeft(2, '0');
+    final String h =
+        t.hour.toString().padLeft(2, '0');
+
+    final String m =
+        t.minute.toString().padLeft(2, '0');
 
     return '$h:$m';
   }
@@ -293,7 +309,9 @@ class _ReminderSettingsPageState
                   children: [
                     const Text(
                       '🔔',
-                      style: TextStyle(fontSize: 50),
+                      style: TextStyle(
+                        fontSize: 50,
+                      ),
                     ),
 
                     const SizedBox(height: 10),
@@ -319,27 +337,27 @@ class _ReminderSettingsPageState
                     const SizedBox(height: 26),
 
                     Container(
-                      padding: const EdgeInsets.symmetric(
+                      padding:
+                          const EdgeInsets.symmetric(
                         horizontal: 16,
                         vertical: 6,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(
-                          alpha: .035,
-                        ),
+                        color:
+                            Colors.white.withOpacity(.035),
                         borderRadius:
                             BorderRadius.circular(18),
                         border: Border.all(
-                          color:
-                              const Color(0xFF00E5FF)
-                                  .withValues(alpha: .18),
+                          color: const Color(
+                            0xFF00E5FF,
+                          ).withOpacity(.18),
                         ),
                       ),
                       child: SwitchListTile(
                         value: enabled,
-                        onChanged: (v) {
+                        onChanged: (bool value) {
                           setState(() {
-                            enabled = v;
+                            enabled = value;
                           });
                         },
                         activeColor:
@@ -347,7 +365,8 @@ class _ReminderSettingsPageState
                         title: const Text(
                           'یادآوری روزانه فعال باشه',
                           style: TextStyle(
-                            fontWeight: FontWeight.w600,
+                            fontWeight:
+                                FontWeight.w600,
                           ),
                         ),
                       ),
@@ -356,7 +375,7 @@ class _ReminderSettingsPageState
                     const SizedBox(height: 16),
 
                     AnimatedOpacity(
-                      opacity: enabled ? 1 : .35,
+                      opacity: enabled ? 1.0 : 0.35,
                       duration:
                           const Duration(milliseconds: 200),
                       child: IgnorePointer(
@@ -370,16 +389,14 @@ class _ReminderSettingsPageState
                             padding:
                                 const EdgeInsets.all(18),
                             decoration: BoxDecoration(
-                              color:
-                                  Colors.white.withValues(
-                                alpha: .035,
-                              ),
+                              color: Colors.white
+                                  .withOpacity(.035),
                               borderRadius:
                                   BorderRadius.circular(18),
                               border: Border.all(
                                 color: const Color(
                                   0xFF00E5FF,
-                                ).withValues(alpha: .18),
+                                ).withOpacity(.18),
                               ),
                             ),
                             child: Row(
@@ -404,7 +421,8 @@ class _ReminderSettingsPageState
 
                                 Text(
                                   _formatTime(time),
-                                  style: const TextStyle(
+                                  style:
+                                      const TextStyle(
                                     fontSize: 18,
                                     color:
                                         Color(0xFF00E5FF),
