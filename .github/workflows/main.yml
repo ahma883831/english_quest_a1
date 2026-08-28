@@ -15,8 +15,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.0'
+          channel: stable
 
-      - name: Restore or create a stable debug keystore
+      - name: Restore or create debug keystore
         run: |
           mkdir -p ~/.android
 
@@ -27,10 +28,10 @@ jobs:
           path: ~/.android/debug.keystore
           key: android-debug-keystore-v1
 
-      - name: Generate keystore if not cached
+      - name: Generate debug keystore if not cached
         if: steps.keystore-cache.outputs.cache-hit != 'true'
         run: |
-          keytool -genkey -v \
+          keytool -genkeypair -v \
             -keystore ~/.android/debug.keystore \
             -storepass android \
             -alias androiddebugkey \
@@ -40,7 +41,7 @@ jobs:
             -validity 10000 \
             -dname "CN=Android Debug,O=Android,C=US"
 
-      - name: Create Flutter scaffold
+      - name: Create Flutter Android project
         run: |
           flutter create --platforms=android temp_app
 
@@ -56,18 +57,23 @@ jobs:
 
       - name: Copy project files
         run: |
-          # Copy ALL Dart source files from the repository.
+          # Copy every Dart file from the repository.
           cp -r lib/*.dart temp_app/lib/
 
-          # Use the repository's dependency configuration.
+          # Copy the dependency configuration.
           cp pubspec.yaml temp_app/pubspec.yaml
 
-          # Verify important scene files exist in the build project.
-          echo "===== LIB FILES IN BUILD PROJECT ====="
+          # Make sure declared asset directories exist.
+          mkdir -p temp_app/assets/scenes
+
+          echo "===== LIB FILES ====="
           ls -la temp_app/lib
 
           echo "===== SCENE FILES ====="
           ls -la temp_app/lib/*scene*.dart
+
+          echo "===== ASSETS ====="
+          find temp_app/assets -maxdepth 2 -type d -print
 
       - name: Get dependencies
         run: |
@@ -77,9 +83,9 @@ jobs:
       - name: Analyze Flutter project
         run: |
           cd temp_app
-          flutter analyze --no-fatal-infos
+          flutter analyze lib --no-fatal-infos
 
-      - name: Debug - inspect project
+      - name: Debug project
         run: |
           cd temp_app
 
