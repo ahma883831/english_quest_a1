@@ -52,6 +52,7 @@ jobs:
         run: |
           cp lib/main.dart temp_app/lib/main.dart
           cp lib/models.dart temp_app/lib/models.dart
+          cp lib/interactive_world.dart temp_app/lib/interactive_world.dart
           cp lib/lessons_data.dart temp_app/lib/lessons_data.dart
           cp lib/notifications_service.dart temp_app/lib/notifications_service.dart
           cp lib/grammar_reference.dart temp_app/lib/grammar_reference.dart
