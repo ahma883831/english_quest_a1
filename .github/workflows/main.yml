@@ -1,11 +1,14 @@
 name: Build Flutter APK
+
 on: workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.0'
@@ -13,25 +16,38 @@ jobs:
       - name: Restore or create a stable debug keystore
         run: |
           mkdir -p ~/.android
+
       - name: Cache debug keystore
         id: keystore-cache
         uses: actions/cache@v4
         with:
           path: ~/.android/debug.keystore
           key: android-debug-keystore-v1
+
       - name: Generate keystore if not cached
         if: steps.keystore-cache.outputs.cache-hit != 'true'
         run: |
-          keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          keytool -genkey -v \
+            -keystore ~/.android/debug.keystore \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Create Flutter scaffold
         run: flutter create --platforms=android temp_app
+
       - name: Update Kotlin version
         run: |
           sed -i 's/id "org.jetbrains.kotlin.android" version "[^"]*"/id "org.jetbrains.kotlin.android" version "1.9.22"/' temp_app/android/settings.gradle
-      - name: Add permissions (internet, mic, notifications, exact alarm)
+
+      - name: Add permissions
         run: |
           sed -i 's/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">\n    <uses-permission android:name="android.permission.INTERNET" \/>\n    <uses-permission android:name="android.permission.RECORD_AUDIO" \/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" \/>\n    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" \/>/' temp_app/android/app/src/main/AndroidManifest.xml
+
       - name: Copy project files
         run: |
           cp lib/main.dart temp_app/lib/main.dart
@@ -45,12 +61,17 @@ jobs:
           cp lib/interactive_scene_page.dart temp_app/lib/interactive_scene_page.dart
           cp lib/scenes_list_page.dart temp_app/lib/scenes_list_page.dart
           cp pubspec.yaml temp_app/pubspec.yaml
-          mkdir -p temp_app/assets/scenes
-          cp assets/scenes/*.jpg temp_app/assets/scenes/
+
       - name: Get dependencies
-        run: cd temp_app && flutter pub get
+        run: |
+          cd temp_app
+          flutter pub get
+
       - name: Build APK
-        run: cd temp_app && flutter build apk --release
+        run: |
+          cd temp_app
+          flutter build apk --release
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
