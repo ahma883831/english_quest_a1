@@ -1,0 +1,58 @@
+name: Build Flutter APK
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+
+      - name: Restore or create a stable debug keystore
+        run: |
+          mkdir -p ~/.android
+      - name: Cache debug keystore
+        id: keystore-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore-v1
+      - name: Generate keystore if not cached
+        if: steps.keystore-cache.outputs.cache-hit != 'true'
+        run: |
+          keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+
+      - name: Create Flutter scaffold
+        run: flutter create --platforms=android temp_app
+      - name: Update Kotlin version
+        run: |
+          sed -i 's/id "org.jetbrains.kotlin.android" version "[^"]*"/id "org.jetbrains.kotlin.android" version "1.9.22"/' temp_app/android/settings.gradle
+      - name: Add permissions (internet, mic, notifications, exact alarm)
+        run: |
+          sed -i 's/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">/<manifest xmlns:android="http:\/\/schemas.android.com\/apk\/res\/android">\n    <uses-permission android:name="android.permission.INTERNET" \/>\n    <uses-permission android:name="android.permission.RECORD_AUDIO" \/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" \/>\n    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" \/>/' temp_app/android/app/src/main/AndroidManifest.xml
+      - name: Copy project files
+        run: |
+          cp lib/main.dart temp_app/lib/main.dart
+          cp lib/models.dart temp_app/lib/models.dart
+          cp lib/lessons_data.dart temp_app/lib/lessons_data.dart
+          cp lib/notifications_service.dart temp_app/lib/notifications_service.dart
+          cp lib/grammar_reference.dart temp_app/lib/grammar_reference.dart
+          cp lib/pronunciation_practice.dart temp_app/lib/pronunciation_practice.dart
+          cp lib/mnemonics_data.dart temp_app/lib/mnemonics_data.dart
+          cp lib/chain_story_page.dart temp_app/lib/chain_story_page.dart
+          cp lib/speed_duel_page.dart temp_app/lib/speed_duel_page.dart
+          cp lib/listening_practice_page.dart temp_app/lib/listening_practice_page.dart
+          cp lib/reverse_recall_page.dart temp_app/lib/reverse_recall_page.dart
+          cp lib/mistake_notebook.dart temp_app/lib/mistake_notebook.dart
+          cp pubspec.yaml temp_app/pubspec.yaml
+      - name: Get dependencies
+        run: cd temp_app && flutter pub get
+      - name: Build APK
+        run: cd temp_app && flutter build apk --release
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: temp_app/build/app/outputs/flutter-apk/app-release.apk
