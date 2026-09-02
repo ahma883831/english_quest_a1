@@ -2072,7 +2072,7 @@ class _LessonProgressRow extends StatelessWidget {
 }
 
 // 🔑 کلید API از پنل GapGPT (gapgpt.app):
-const String gapgptApiKey = 'sk-ijmrxgC8YKYn7n8TyptKM8cC6SePgl7lzY8VbO68xe3GNKDb';
+const String gapgptApiKey = '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';
 
 class ChatMessage {
   final String text;
