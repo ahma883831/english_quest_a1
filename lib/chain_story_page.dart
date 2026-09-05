@@ -1,10 +1,11 @@
 // ============================================================
 // CHAIN STORY PAGE
-// Picks a lesson, then a random set of 3-5 words from it, and
-// asks the user to write a short 2-3 sentence story that uses
-// every one of those words. Checks (simple substring/whole-word
-// match, case-insensitive) whether each target word appears in
-// what they wrote, and gives per-word feedback.
+// Picks one or more lessons, then a random set of 3-5 words from
+// their combined pool, and asks the user to write a short 2-3
+// sentence story that uses every one of those words. Checks
+// (simple substring/whole-word match, case-insensitive) whether
+// each target word appears in what they wrote, and gives per-word
+// feedback.
 //
 // Usage:
 //   Navigator.push(context, MaterialPageRoute(
@@ -16,19 +17,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'models.dart';
 import 'lessons_data.dart';
+import 'lesson_picker.dart';
 import 'main.dart';
 
 const _neon = Color(0xFF00E5FF);
 
 class ChainStoryPage extends StatefulWidget {
+  // Kept for backward compatibility with call sites that still pass a
+  // single lesson (e.g. opening practice from inside one lesson).
   final Lesson? initialLesson;
-  const ChainStoryPage({super.key, this.initialLesson});
+  // Preferred going forward: pre-select several lessons at once.
+  final List<Lesson>? initialLessons;
+  const ChainStoryPage({super.key, this.initialLesson, this.initialLessons});
   @override
   State<ChainStoryPage> createState() => _ChainStoryPageState();
 }
 
 class _ChainStoryPageState extends State<ChainStoryPage> {
-  Lesson? selectedLesson;
+  List<Lesson> selectedLessons = [];
   List<Word> targetWords = [];
   final TextEditingController _controller = TextEditingController();
   Map<String, bool> results = {};
@@ -41,7 +47,8 @@ class _ChainStoryPageState extends State<ChainStoryPage> {
     super.initState();
     _tts = FlutterTts();
     _tts.setLanguage('en-US');
-    selectedLesson = widget.initialLesson ?? lessons.first;
+    selectedLessons = widget.initialLessons ??
+        (widget.initialLesson != null ? [widget.initialLesson!] : [lessons.first]);
     _pickWords();
   }
 
@@ -52,12 +59,23 @@ class _ChainStoryPageState extends State<ChainStoryPage> {
     super.dispose();
   }
 
+  Future<void> _changeLessons() async {
+    final picked = await Navigator.push<List<Lesson>>(
+      context,
+      MaterialPageRoute(builder: (_) => MultiLessonPickerPage(initialSelected: selectedLessons)),
+    );
+    if (picked != null && picked.isNotEmpty) {
+      setState(() => selectedLessons = picked);
+      _pickWords();
+    }
+  }
+
   void _pickWords() {
-    if (selectedLesson == null) return;
+    if (selectedLessons.isEmpty) return;
     final rnd = Random();
-    final pool = List<Word>.from(selectedLesson!.words);
+    final pool = selectedLessons.expand((l) => l.words).toList();
     pool.shuffle(rnd);
-    final count = 3 + rnd.nextInt(3); // 3..5
+    final count = min(3 + rnd.nextInt(3), pool.length); // 3..5, capped by pool size
     setState(() {
       targetWords = pool.take(count).toList();
       _controller.clear();
@@ -96,6 +114,13 @@ class _ChainStoryPageState extends State<ChainStoryPage> {
           textDirection: TextDirection.rtl,
           child: Text('داستان زنجیره‌ای'),
         ),
+        actions: [
+          IconButton(
+            tooltip: 'تغییر درس‌ها',
+            onPressed: _changeLessons,
+            icon: const Icon(Icons.swap_horiz_rounded),
+          ),
+        ],
       ),
       body: SafeArea(
         child: Directionality(
@@ -105,24 +130,33 @@ class _ChainStoryPageState extends State<ChainStoryPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                DropdownButtonFormField<Lesson>(
-                  value: selectedLesson,
-                  dropdownColor: const Color(0xFF10182E),
-                  decoration: InputDecoration(
-                    labelText: 'درس',
-                    labelStyle: const TextStyle(color: Colors.white54),
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(.05),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                InkWell(
+                  onTap: _changeLessons,
+                  borderRadius: BorderRadius.circular(12),
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.05),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: _neon.withOpacity(.3)),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(Icons.menu_book_rounded, color: _neon, size: 20),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            selectedLessons.length == 1
+                                ? selectedLessons.first.subtitle
+                                : '${selectedLessons.length} درس انتخاب شده',
+                            style: const TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        const Icon(Icons.edit_rounded, color: Colors.white38, size: 18),
+                      ],
+                    ),
                   ),
-                  style: const TextStyle(color: Colors.white),
-                  items: lessons
-                      .map((l) => DropdownMenuItem(value: l, child: Text(l.subtitle)))
-                      .toList(),
-                  onChanged: (l) {
-                    setState(() => selectedLesson = l);
-                    _pickWords();
-                  },
                 ),
                 const SizedBox(height: 20),
                 const Text('این کلمات رو توی یک داستان کوتاه (۲ تا ۳ جمله) استفاده کن:',
