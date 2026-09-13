@@ -51,6 +51,9 @@ jobs:
           cp lib/mistake_notebook.dart temp_app/lib/mistake_notebook.dart
           cp lib/update_service.dart temp_app/lib/update_service.dart
           cp lib/app_version.dart temp_app/lib/app_version.dart
+          cp lib/lesson_picker.dart temp_app/lib/lesson_picker.dart
+          cp lib/writing_hub_page.dart temp_app/lib/writing_hub_page.dart
+          cp lib/writing_topics.dart temp_app/lib/writing_topics.dart
           cp pubspec.yaml temp_app/pubspec.yaml
 
       - name: Generate real version file
@@ -73,3 +76,4 @@ jobs:
           tag_name: build-${{ github.run_number }}
           name: "Build ${{ github.run_number }}"
           files: temp_app/build/app/outputs/flutter-apk/app-release.apk
+          
